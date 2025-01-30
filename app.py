@@ -7,12 +7,14 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
 from email import encoders
+from openpyxl.styles import Alignment, numbers
+from openpyxl.utils import get_column_letter
 
 # Load environment variables from .env file
 load_dotenv()
 
 # Configuration
-main_folder = r'''C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Temp_Files'''
+main_folder = os.getenv("MAIN_FOLDER")  # Folder containing the exported file
 input_file_name = "Sales_Report_Temp.xlsx"  # exported file name
 output_folder = os.path.join(main_folder, "Filtered_Reports")  # Folder to save filtered files
 input_file = os.path.join(main_folder, input_file_name)
@@ -23,12 +25,14 @@ email_config = {
     "test_email": "rghosh@veritivcorp.com"
 }
 
+print(f"Email User: {email_config['sender_email']}")
 # Get the current month and year
 current_date = dt.datetime.now()
 month_year = current_date.strftime("%b, %Y")
 
 # Load the exported file
 data = pd.read_excel(input_file)
+print(f"Data loaded from {input_file}")
 
 # Filter out rows where Sales Rep Email or Manager Email is NaN
 data = data.dropna(subset=["Rep Email", "Manager Email"])
@@ -55,6 +59,8 @@ for col in sales_columns + opp_columns:
 
 for col in margin_columns:
     formatted_data[col] = formatted_data[col].apply(lambda x: f"{x:.1f}%")
+    
+print(f"Data formatted for display")
     
 # Get unique sales rep emails and names, limited to the first 3
 sales_reps = data[["Rep Email", "Rep Name"]].drop_duplicates().head(3).set_index("Rep Email")["Rep Name"].to_dict()
@@ -105,6 +111,8 @@ def send_email(to_email, subject, body, attachment_path=None):
     with smtplib.SMTP(email_config["smtp_server"], email_config["smtp_port"]) as server:
         server.sendmail(email_config["sender_email"], to_email, msg.as_string())
 
+print("Email function defined")
+
 # Process and send emails to sales reps
 for email, name in sales_reps.items():
     # Use the ORIGINAL DATA (not formatted_data) for calculations
@@ -114,9 +122,46 @@ for email, name in sales_reps.items():
     # Remove columns from formatted data
     filtered_data_formatted = filtered_data_formatted.drop(columns=["Rep Email", "Rep Name", "Manager Email", "Manager Name"])
 
-    # Save the formatted data to a new file
+    # Save the formatted data to a new file WITH RIGHT-ALIGNED NUMBERS
     output_file = os.path.join(output_folder, f"{name}_Report.xlsx")
-    filtered_data_formatted.to_excel(output_file, index=False)
+    
+    # Use OpenPyXL to format cells
+    with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
+        filtered_data_formatted.to_excel(writer, index=False, sheet_name='Report')
+        worksheet = writer.sheets['Report']
+        
+        # Identify numerical columns (sales, opp, margin)
+        numerical_columns = [
+            col for col in filtered_data_formatted.columns 
+            if any(keyword in col.lower() for keyword in ['sales', 'opp', 'margin'])
+        ]
+        
+        # Right-align numerical columns and headers
+        for col_name in numerical_columns:
+            col_idx = filtered_data_formatted.columns.get_loc(col_name)
+            col_letter = get_column_letter(col_idx + 1)  # Columns are 1-based in Excel
+            
+            # Format cells (skip header row)
+            for row in worksheet.iter_rows(min_row=2, max_row=worksheet.max_row, min_col=col_idx+1, max_col=col_idx+1):
+                for cell in row:
+                    cell.alignment = Alignment(horizontal='right')
+                    
+            # Right-align header
+            header_cell = worksheet.cell(row=1, column=col_idx+1)
+            header_cell.alignment = Alignment(horizontal='right')
+
+        # Auto-adjust column widths (existing code)
+        for col in worksheet.columns:
+            max_length = 0
+            column = col[0].column_letter
+            for cell in col:
+                try:
+                    if len(str(cell.value)) > max_length:
+                        max_length = len(str(cell.value))
+                except:
+                    pass
+            adjusted_width = (max_length + 2)
+            worksheet.column_dimensions[column].width = adjusted_width
 
     # Calculate sums using RAW DATA (numeric)
     basement_count = filtered_data_raw[filtered_data_raw["Region"] == "Basement"].shape[0]
@@ -178,3 +223,4 @@ for email, name in sales_reps.items():
         body=body,
         attachment_path=output_file,
     )
+    print(f"Email sent to {name} at {email_config['test_email']}")
