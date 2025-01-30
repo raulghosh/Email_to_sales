@@ -19,5 +19,5 @@ This project automates the process of sending sales reports via email within the
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/your-username/Email_to_sales.git
+   cd Email_to_sales
