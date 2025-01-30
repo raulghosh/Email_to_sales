@@ -1,12 +1,12 @@
+import os
+import datetime as dt
+import pandas as pd
+from dotenv import load_dotenv
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
 from email import encoders
-import os
-import datetime as dt
-import pandas as pd
-from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()
@@ -33,6 +33,29 @@ data = pd.read_excel(input_file)
 # Filter out rows where Sales Rep Email or Manager Email is NaN
 data = data.dropna(subset=["Rep Email", "Manager Email"])
 
+
+# Format columns
+sales_columns = [col for col in data.columns if 'sales' in col.lower()]
+for col in sales_columns:
+    data[col] = data[col].fillna(0).round(0).astype(int)  # Ensure no decimals
+
+opp_columns = [col for col in data.columns if 'opp' in col.lower()]
+for col in opp_columns:
+    data[col] = data[col].fillna(0).round(0).astype(int)  # Ensure no decimals
+
+margin_columns = [col for col in data.columns if 'margin' in col.lower()]
+for col in margin_columns:
+    data[col] = (data[col].fillna(0) * 100).round(1)
+
+# Apply formatting for display/export
+formatted_data = data.copy()
+for col in sales_columns + opp_columns:
+    # Use comma-separated format without trailing zeros
+    formatted_data[col] = formatted_data[col].apply(lambda x: f"{x:,}") 
+
+for col in margin_columns:
+    formatted_data[col] = formatted_data[col].apply(lambda x: f"{x:.1f}%")
+    
 # Get unique sales rep emails and names, limited to the first 3
 sales_reps = data[["Rep Email", "Rep Name"]].drop_duplicates().head(3).set_index("Rep Email")["Rep Name"].to_dict()
 
@@ -42,6 +65,25 @@ managers = data[["Manager Email", "Manager Name"]].drop_duplicates().head(3).set
 # Create output folder if it doesn't exist
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)
+
+# Save the formatted data to an Excel file with filters on the header
+output_file = os.path.join(output_folder, f"Formatted_Sales_Report_{month_year}.xlsx")
+
+with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
+    formatted_data.to_excel(writer, index=False, sheet_name='Sales Report')
+    worksheet = writer.sheets['Sales Report']
+    for col in worksheet.columns:
+        max_length = 0
+        column = col[0].column_letter  # Get the column name
+        for cell in col:
+            try:
+                if len(str(cell.value)) > max_length:
+                    max_length = len(cell.value)
+            except:
+                pass
+        adjusted_width = (max_length + 2)
+        worksheet.column_dimensions[column].width = adjusted_width
+    worksheet.auto_filter.ref = worksheet.dimensions
 
 # Function to send email
 def send_email(to_email, subject, body, attachment_path=None):
@@ -65,46 +107,48 @@ def send_email(to_email, subject, body, attachment_path=None):
 
 # Process and send emails to sales reps
 for email, name in sales_reps.items():
-    # Filter data for the current sales rep
-    filtered_data = data[data["Rep Email"] == email]
+    # Use the ORIGINAL DATA (not formatted_data) for calculations
+    filtered_data_raw = data[data["Rep Email"] == email]  # <-- Use raw data for sums
+    filtered_data_formatted = formatted_data[formatted_data["Rep Email"] == email]  # <-- For saving to Excel
 
-    # Remove the SalesRepEmail column
-    filtered_data = filtered_data.drop(columns=["Rep Email", "Rep Name", "Manager Email", "Manager Name"])
+    # Remove columns from formatted data
+    filtered_data_formatted = filtered_data_formatted.drop(columns=["Rep Email", "Rep Name", "Manager Email", "Manager Name"])
 
-    # Save the filtered data to a new file
+    # Save the formatted data to a new file
     output_file = os.path.join(output_folder, f"{name}_Report.xlsx")
-    filtered_data.to_excel(output_file, index=False)
+    filtered_data_formatted.to_excel(output_file, index=False)
 
-    # Generate custom email body
-    basement_count = filtered_data[filtered_data["Region"] == "Basement"].shape[0]
-    attic_count = filtered_data[filtered_data["Region"] == "Attic"].shape[0]
-    KVI_count = filtered_data[(filtered_data["KVI Type"] == "2: KVI") | (filtered_data["KVI Type"] == "3: Super KVI")].shape[0]
-    basement_sales = round(filtered_data[filtered_data["Region"] == "Basement"]["LTM Gross Sales"].sum(), 0)
-    attic_sales = round(filtered_data[filtered_data["Region"] == "Attic"]["LTM Gross Sales"].sum(), 0)
-    opp_to_floor = round(filtered_data["Opp to Floor"].sum(), 0)
+    # Calculate sums using RAW DATA (numeric)
+    basement_count = filtered_data_raw[filtered_data_raw["Region"] == "Basement"].shape[0]
+    attic_count = filtered_data_raw[filtered_data_raw["Region"] == "Attic"].shape[0]
+    KVI_count = filtered_data_raw[(filtered_data_raw["KVI Type"] == "2: KVI") | (filtered_data_raw["KVI Type"] == "3: Super KVI")].shape[0]
+    basement_sales = filtered_data_raw[filtered_data_raw["Region"] == "Basement"]["LTM Gross Sales"].sum()
+    attic_sales = filtered_data_raw[filtered_data_raw["Region"] == "Attic"]["LTM Gross Sales"].sum()
+    opp_to_floor = filtered_data_raw["Opp to Floor"].sum()
+
+    # Format numbers using raw numeric values
+    basement_sales_formatted = f"{basement_sales:,.0f}"
+    attic_sales_formatted = f"{attic_sales:,.0f}"
+    opp_to_floor_formatted = f"{opp_to_floor:,.0f}"
 
     # Format numbers with comma separation and round to zero decimals
     basement_sales_formatted = f"{basement_sales:,.0f}"
     attic_sales_formatted = f"{attic_sales:,.0f}"
     opp_to_floor_formatted = f"{opp_to_floor:,.0f}"
 
-    # Create summary table by Region
-    summary_table = filtered_data.groupby("Region").agg({
+    # Create summary table by Region using RAW DATA (numeric)
+    summary_table = filtered_data_raw.groupby("Region").agg({
         "LTM Gross Sales": "sum",
-        "Region": "count",
         "Opp to Floor": "sum"
-    }).rename(columns={"Region": "#Rows count"}).reset_index()
+    }).reset_index()
 
-    # Format the numeric columns with comma separation and round to zero
+    # Format the summary table numbers (using the raw numeric values)
     summary_table["LTM Gross Sales"] = summary_table["LTM Gross Sales"].apply(lambda x: f"{x:,.0f}")
     summary_table["Opp to Floor"] = summary_table["Opp to Floor"].apply(lambda x: f"{x:,.0f}")
 
-    # Sort the summary table by Region in descending order
-    summary_table = summary_table.sort_values(by="Region", ascending=False)
-
     # Convert summary table to HTML with right-aligned numbers
     summary_html = summary_table.to_html(index=False, classes='summary-table')
-
+    
     # Add CSS for right-aligning numbers in the table
     summary_html = f"""
     <style>
@@ -134,56 +178,3 @@ for email, name in sales_reps.items():
         body=body,
         attachment_path=output_file,
     )
-
-    # Delete the temporary filtered file
-    os.remove(output_file)
-
-# Generate and send summary email to managers
-for manager_email, manager_name in managers.items():
-    manager_data = data[data["Manager Email"] == manager_email]
-    summary_by_rep = manager_data.groupby(["Rep Name", "Region"]).agg({
-    "LTM Gross Sales": "sum",
-    "Opp to Floor": "sum",
-    "Rep Name": "count",
-    "KVI Type": lambda x: (x == "2: KVI").sum() + (x == "3: Super KVI").sum()
-}).rename(columns={
-    "Rep Name": "#Rows",
-    "KVI Type": "#Key Item"
-}).reset_index()
-
-# Format the numeric columns with comma separation and round to zero
-summary_by_rep["LTM Gross Sales"] = summary_by_rep["LTM Gross Sales"].apply(lambda x: f"{x:,.0f}")
-summary_by_rep["Opp to Floor"] = summary_by_rep["Opp to Floor"].apply(lambda x: f"{x:,.0f}")
-
-# Sort the summary table by Rep Name (ascending), Region (descending), and LTM Gross Sales (descending)
-summary_by_rep = summary_by_rep.sort_values(by=["Rep Name", "Region", "LTM Gross Sales"], ascending=[True, False, False])
-
-# Convert summary table to HTML with right-aligned numbers
-summary_by_rep_html = summary_by_rep.to_html(index=False, classes='summary-table')
-
-# Add CSS for right-aligning numbers in the table
-summary_by_rep_html = f"""
-<style>
-    .summary-table th, .summary-table td {{
-        text-align: right;
-    }}
-</style>
-{summary_by_rep_html}
-"""
-
-manager_body = f"""
-<div style="text-align: left;">
-    <p>Hi {manager_name},</p>
-    <p>Attached is the summary report for your sales reps for {month_year}.</p>
-    <p>Summary by Sales Rep:</p>
-    {summary_by_rep_html}
-    <p>Thanks,<br>Pricing Team</p>
-</div>
-"""
-
-# Send summary email to manager
-send_email(
-    to_email=email_config["test_email"],  # test email
-    subject=f"Summary Report for Your Sales Reps - {month_year}",
-    body=manager_body
-)
