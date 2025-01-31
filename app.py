@@ -7,7 +7,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
 from email import encoders
-from openpyxl.styles import Alignment
+from openpyxl.styles import Alignment,PatternFill, Font
 from openpyxl.utils import get_column_letter
 
 # Load environment variables from .env file
@@ -122,13 +122,32 @@ for email, name in sales_reps.items():
     # Remove columns from formatted data
     filtered_data_formatted = filtered_data_formatted.drop(columns=["Rep Email", "Rep Name", "Manager Email", "Manager Name"])
 
+    cols = list(filtered_data_formatted.columns)
+    ltm_index = cols.index('LTM Gross Sales')
+    opp_index = cols.index('Opp to Floor')
+    cols.insert(ltm_index + 1, cols.pop(opp_index))
+    filtered_data_formatted = filtered_data_formatted[cols]
+
     # Save the formatted data to a new file WITH RIGHT-ALIGNED NUMBERS
     output_file = os.path.join(output_folder, f"{name}_Report.xlsx")
     
+    # Apply filter to the header row
+    worksheet.auto_filter.ref = worksheet.dimensions
+    
+    # Color the header row in dark green with white font
+    header_fill = PatternFill(start_color="006400", end_color="006400", fill_type="solid")
+    header_font = Font(color="FFFFFF", bold=True)
+    left_alignment = Alignment(horizontal='left')
+    right_alignment = Alignment(horizontal='right')
+    for cell in worksheet[1]:
+        cell.fill = header_fill
+        cell.font = header_font
+        cell.alignment = left_alignment  # Left-align headers
+    
     # Use OpenPyXL to format cells
     with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
-        filtered_data_formatted.to_excel(writer, index=False, sheet_name='Report')
-        worksheet = writer.sheets['Report']
+        filtered_data_formatted.to_excel(writer, index=False, sheet_name='Sales Report')
+        worksheet = writer.sheets['Sales Report']
         
         # Identify numerical columns (sales, opp, margin)
         numerical_columns = [
@@ -136,33 +155,34 @@ for email, name in sales_reps.items():
             if any(keyword in col.lower() for keyword in ['sales', 'opp', 'margin'])
         ]
         
-        # Right-align numerical columns and headers
+        # Format numerical columns
         for col_name in numerical_columns:
             col_idx = filtered_data_formatted.columns.get_loc(col_name)
-            col_letter = get_column_letter(col_idx + 1)  # Columns are 1-based in Excel
             
-            # Format cells (skip header row)
+            # Right-align data cells
             for row in worksheet.iter_rows(min_row=2, max_row=worksheet.max_row, min_col=col_idx+1, max_col=col_idx+1):
                 for cell in row:
-                    cell.alignment = Alignment(horizontal='right')
-                    
-            # Right-align header
-            header_cell = worksheet.cell(row=1, column=col_idx+1)
-            header_cell.alignment = Alignment(horizontal='right')
+                    cell.alignment = right_alignment
 
-        # Auto-adjust column widths
-        for col in worksheet.columns:
+        # Set column widths
+        for col_idx, column in enumerate(worksheet.columns):
             max_length = 0
-            column = col[0].column_letter
-            for cell in col:
-                try:
-                    if len(str(cell.value)) > max_length:
-                        max_length = len(str(cell.value))
-                except:
-                    pass
-            adjusted_width = min(max(max_length + 2, len(col[0].value)), 10)
-            worksheet.column_dimensions[column].width = adjusted_width
+            column_letter = get_column_letter(col_idx + 1)
+            
+            # Include header in width calculation
+            header_length = len(str(column[0].value))
+            cell_lengths = [len(str(cell.value)) for cell in column[1:]]  # Exclude header
+            max_cell_length = max(cell_lengths) if cell_lengths else 0
+            
+            # Use whichever is larger: header length or max data length
+            calculated_width = max(header_length, max_cell_length)
+            adjusted_width = min(calculated_width + 2, 30)  # Max 30 characters
+            
+            worksheet.column_dimensions[column_letter].width = adjusted_width
 
+        # Apply filter to header row
+        worksheet.auto_filter.ref = worksheet.dimensions
+        
     # Calculate sums using RAW DATA
     basement_count = filtered_data_raw[filtered_data_raw["Region"] == "Basement"].shape[0]
     attic_count = filtered_data_raw[filtered_data_raw["Region"] == "Attic"].shape[0]
