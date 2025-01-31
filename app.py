@@ -7,7 +7,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
 from email import encoders
-from openpyxl.styles import Alignment, numbers
+from openpyxl.styles import Alignment
 from openpyxl.utils import get_column_letter
 
 # Load environment variables from .env file
@@ -63,10 +63,10 @@ for col in margin_columns:
 print(f"Data formatted for display")
     
 # Get unique sales rep emails and names, limited to the first 3
-sales_reps = data[["Rep Email", "Rep Name"]].drop_duplicates().head(3).set_index("Rep Email")["Rep Name"].to_dict()
+sales_reps = data[["Rep Email", "Rep Name"]].drop_duplicates().head(1).set_index("Rep Email")["Rep Name"].to_dict()
 
 # Get unique managers emails and names, limited to the first 3
-managers = data[["Manager Email", "Manager Name"]].drop_duplicates().head(3).set_index("Manager Email")["Manager Name"].to_dict()
+managers = data[["Manager Email", "Manager Name"]].drop_duplicates().head(1).set_index("Manager Email")["Manager Name"].to_dict()
 
 # Create output folder if it doesn't exist
 if not os.path.exists(output_folder):
@@ -87,7 +87,7 @@ with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
                     max_length = len(cell.value)
             except:
                 pass
-        adjusted_width = (max_length + 2)
+        adjusted_width = min(max(max_length + 2, len(col[0].value)), 30)
         worksheet.column_dimensions[column].width = adjusted_width
     worksheet.auto_filter.ref = worksheet.dimensions
 
@@ -150,7 +150,7 @@ for email, name in sales_reps.items():
             header_cell = worksheet.cell(row=1, column=col_idx+1)
             header_cell.alignment = Alignment(horizontal='right')
 
-        # Auto-adjust column widths (existing code)
+        # Auto-adjust column widths
         for col in worksheet.columns:
             max_length = 0
             column = col[0].column_letter
@@ -160,10 +160,10 @@ for email, name in sales_reps.items():
                         max_length = len(str(cell.value))
                 except:
                     pass
-            adjusted_width = (max_length + 2)
+            adjusted_width = min(max(max_length + 2, len(col[0].value)), 10)
             worksheet.column_dimensions[column].width = adjusted_width
 
-    # Calculate sums using RAW DATA (numeric)
+    # Calculate sums using RAW DATA
     basement_count = filtered_data_raw[filtered_data_raw["Region"] == "Basement"].shape[0]
     attic_count = filtered_data_raw[filtered_data_raw["Region"] == "Attic"].shape[0]
     KVI_count = filtered_data_raw[(filtered_data_raw["KVI Type"] == "2: KVI") | (filtered_data_raw["KVI Type"] == "3: Super KVI")].shape[0]
@@ -223,4 +223,4 @@ for email, name in sales_reps.items():
         body=body,
         attachment_path=output_file,
     )
-    print(f"Email sent to {name} at {email_config['test_email']}")
+    print(f"Email sent to manager {name} at {email_config['test_email']}")
