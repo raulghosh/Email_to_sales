@@ -1,4 +1,3 @@
-# data_processing.py
 import pandas as pd
 from typing import Tuple, Dict
 
@@ -31,6 +30,22 @@ def get_sales_reps(data: pd.DataFrame, limit: int = 3) -> Dict[str, str]:
     """Get a dictionary of sales reps (email: name)."""
     return data[["Rep Email", "Rep Name"]].drop_duplicates().head(limit).set_index("Rep Email")["Rep Name"].to_dict()
 
-def get_managers(data: pd.DataFrame, limit: int = 3) -> Dict[str, str]:
-    """Get a dictionary of sales reps (email: name)."""
-    return data[["Manager Email", "Manager Name"]].drop_duplicates().head(limit).set_index("Manager Email")["Manager Name"].to_dict()
+def get_managers(data: pd.DataFrame, start: int = 5, end: int = 10) -> Dict[str, str]:
+    """Get a dictionary of managers (email: name) from the specified range."""
+    return data[["Manager Email", "Manager Name"]].drop_duplicates().iloc[start:end].set_index("Manager Email")["Manager Name"].to_dict()
+
+def get_sorted_manager_data(data: pd.DataFrame) -> pd.DataFrame:
+    """Sort the manager data by Opp to Floor."""
+    # Group by Rep Name and sum Opp to Floor
+    grouped_data = data.groupby("Rep Name")["Opp to Floor"].sum().reset_index()
+    
+    # Sort by Opp to Floor in descending order
+    sorted_grouped_data = grouped_data.sort_values(by="Opp to Floor", ascending=False)
+    
+    # Merge sorted grouped data with the original data to maintain the sorting order
+    sorted_data = pd.merge(sorted_grouped_data, data, on="Rep Name", how="left")
+    
+    # Rename 'Opp to Floor_y' to 'Opp to Floor'
+    sorted_data.rename(columns={"Opp to Floor_y": "Opp to Floor"}, inplace=True)
+    
+    return sorted_data

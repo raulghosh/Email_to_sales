@@ -58,11 +58,14 @@ def _manager_email_body(
     power_bi_link: str,
     pivot_html: str
     ) -> str:
+    """Generate HTML body for managers."""
+    formatted_pivot_html = pivot_html.replace('<td>', '<td style="text-align:right;">')
+    
     return f"""
     <div style="text-align: left;">
         <p>Hi {name},</p>
         <p>Attached is your {month_year} Manager Report. Key metrics for your team:</p>
-        {pivot_html}
+        {formatted_pivot_html}
         <p>Access the live Power BI Dashboard: <a href="{power_bi_link}">Manager Dashboard</a></p>
         <p>Best regards,<br>Pricing Team</p>
     </div>

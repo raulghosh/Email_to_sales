@@ -74,7 +74,7 @@ def send_sales_rep_email(
     {summary_html}
     """
     
-    # Create email body
+    # Generate email body
     email_body = create_email_body(
         recipient_type="sales_rep",
         name=name,
@@ -90,14 +90,11 @@ def send_sales_rep_email(
         }
     )
     
-    # Send email
+    # Send email to test email
     send_email(
-        to_email=EMAIL_CONFIG["test_email"],# replace by email when productionizing
-        subject=f"{name}: Attic and Basement Report {month_year}",
+        to_email=EMAIL_CONFIG["test_email"],  # Use test email
+        subject=f"{name}: Sales Report {month_year}",
         body=email_body,
-        smtp_server=EMAIL_CONFIG["smtp_server"],
-        smtp_port=EMAIL_CONFIG["smtp_port"],
-        sender_email=EMAIL_CONFIG["sender_email"],
-        attachment_path=output_file
+        attachment_path=output_file,  # Attach the generated report
+        email_config=EMAIL_CONFIG
     )
-    print(f"Email sent to {name} at {EMAIL_CONFIG["test_email"]}")

@@ -1,20 +1,17 @@
-# email_handler.py
 import smtplib
 import os
 from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
 from email import encoders
-from typing import Optional
+from typing import Optional, Dict, Any
 
 def send_email(
     to_email: str,
     subject: str,
     body: str,
-    smtp_server: str,
-    smtp_port: int,
-    sender_email: str,
-    attachment_path: Optional[str] = None
+    attachment_path: Optional[str] = None,
+    email_config: Dict[str, Any] = None
 ) -> None:
     """
     Send an email with optional attachment.
@@ -22,11 +19,13 @@ def send_email(
         to_email: Recipient email address.
         subject: Email subject.
         body: HTML email body.
-        smtp_server: SMTP server address.
-        smtp_port: SMTP server port.
-        sender_email: Sender's email address.
         attachment_path: Path to the attachment file.
+        email_config: Dictionary containing SMTP server details.
     """
+    smtp_server = email_config["smtp_server"]
+    smtp_port = email_config["smtp_port"]
+    sender_email = email_config["sender_email"]
+
     msg = MIMEMultipart()
     msg["From"] = sender_email
     msg["To"] = to_email

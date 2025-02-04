@@ -1,4 +1,3 @@
-# excel_formatter.py
 from openpyxl.styles import Alignment, PatternFill, Font, numbers
 from openpyxl.utils import get_column_letter
 from typing import List
