@@ -33,4 +33,4 @@ def get_sales_reps(data: pd.DataFrame, limit: int = 3) -> Dict[str, str]:
 
 def get_managers(data: pd.DataFrame, limit: int = 3) -> Dict[str, str]:
     """Get a dictionary of sales reps (email: name)."""
-    return data[["Manger Email", "Manager Name"]].drop_duplicates().head(limit).set_index("Manager Email")["Manager Name"].to_dict()
+    return data[["Manager Email", "Manager Name"]].drop_duplicates().head(limit).set_index("Manager Email")["Manager Name"].to_dict()
