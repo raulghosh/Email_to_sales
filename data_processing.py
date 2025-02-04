@@ -23,10 +23,14 @@ def format_columns(data: pd.DataFrame) -> pd.DataFrame:
     # Margin columns: convert to percentages
     margin_columns = [col for col in data.columns if 'margin' in col.lower()]
     for col in margin_columns:
-        data[col] = (data[col].fillna(0) * 100).round(1)
+        data[col] = (data[col].fillna(0)).round(3)
     
     return data
 
 def get_sales_reps(data: pd.DataFrame, limit: int = 3) -> Dict[str, str]:
     """Get a dictionary of sales reps (email: name)."""
     return data[["Rep Email", "Rep Name"]].drop_duplicates().head(limit).set_index("Rep Email")["Rep Name"].to_dict()
+
+def get_managers(data: pd.DataFrame, limit: int = 3) -> Dict[str, str]:
+    """Get a dictionary of sales reps (email: name)."""
+    return data[["Manger Email", "Manager Name"]].drop_duplicates().head(limit).set_index("Manager Email")["Manager Name"].to_dict()

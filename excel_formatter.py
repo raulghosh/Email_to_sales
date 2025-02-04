@@ -2,6 +2,7 @@
 from openpyxl.styles import Alignment, PatternFill, Font, numbers
 from openpyxl.utils import get_column_letter
 from typing import List
+import pandas as pd
 
 def format_excel_sheet(worksheet, df: pd.DataFrame) -> None:
     """Apply formatting to an Excel worksheet."""
@@ -37,8 +38,10 @@ def format_excel_sheet(worksheet, df: pd.DataFrame) -> None:
         max_length = max(
             len(str(cell.value)) for cell in worksheet[col_letter]
         )
-        adjusted_width = min(max_length + 2, 30)
+        adjusted_width = min(max_length + 2, 50)
         worksheet.column_dimensions[col_letter].width = adjusted_width
     
     # Add filters to the header
     worksheet.auto_filter.ref = worksheet.dimensions
+    
+    worksheet.freeze_panes = "G2"  # Freeze all rows above row 2 (i.e., freeze row 1)

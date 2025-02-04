@@ -18,4 +18,4 @@ EMAIL_CONFIG = {
 }
 
 # Power BI link
-POWER_BI_LINK = "https://your-powerbi-link.com"
+POWER_BI_LINK = "https://app.powerbi.com/links/la6Wz4H0aX?ctid=ab15d0ad-ff4d-4eb2-b09b-e0743223e142&pbi_source=linkShare"
