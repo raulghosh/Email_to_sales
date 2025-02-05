@@ -26,11 +26,11 @@ def format_columns(data: pd.DataFrame) -> pd.DataFrame:
     
     return data
 
-def get_sales_reps(data: pd.DataFrame, limit: int = 3) -> Dict[str, str]:
+def get_sales_reps(data: pd.DataFrame, limit: int = 1) -> Dict[str, str]:
     """Get a dictionary of sales reps (email: name)."""
     return data[["Rep Email", "Rep Name"]].drop_duplicates().head(limit).set_index("Rep Email")["Rep Name"].to_dict()
 
-def get_managers(data: pd.DataFrame, start: int = 5, end: int = 10) -> Dict[str, str]:
+def get_managers(data: pd.DataFrame, start: int = 5, end: int = 7) -> Dict[str, str]:
     """Get a dictionary of managers (email: name) from the specified range."""
     return data[["Manager Email", "Manager Name"]].drop_duplicates().iloc[start:end].set_index("Manager Email")["Manager Name"].to_dict()
 
@@ -47,5 +47,8 @@ def get_sorted_manager_data(data: pd.DataFrame) -> pd.DataFrame:
     
     # Rename 'Opp to Floor_y' to 'Opp to Floor'
     sorted_data.rename(columns={"Opp to Floor_y": "Opp to Floor"}, inplace=True)
+    
+    # Drop 'Opp to Floor_x' column
+    sorted_data.drop(columns="Opp to Floor_x", inplace=True)
     
     return sorted_data

@@ -1,13 +1,8 @@
 import pandas as pd
-from typing import Dict, Any
 from email_handler import send_email
 from email_composer import create_email_body
 from config import EMAIL_CONFIG, POWER_BI_LINK
-import os
 from pivot_table_generator import generate_manager_report
-import matplotlib.pyplot as plt
-import io
-import base64
 
 def send_manager_email(
     data: pd.DataFrame,
@@ -31,8 +26,8 @@ def send_manager_email(
     pivot_html = f"""
     <style>
         .pivot-table th, .pivot-table td {{ text-align: right; }}
-        .pivot-table th:first-child, .pivot-table td:first-child {{ text-align: left; }}
-        .pivot-table th:nth-child(2), .pivot-table td:nth-child(2) {{ text-align: left; }}
+        .pivot-table th:first-child, .pivot-table td:first-child {{ text-align: left !important; }}
+        .pivot-table th:nth-child(2), .pivot-table td:nth-child(2) {{ text-align: left !important; }}
     </style>
     {pivot_html}
     """
@@ -46,19 +41,19 @@ def send_manager_email(
         pivot_html=pivot_html
     )
     
-    # Generate pivot table screenshot
-    fig, ax = plt.subplots(figsize=(10, 6))
-    ax.axis('tight')
-    ax.axis('off')
-    ax.table(cellText=pivot_df.values, colLabels=pivot_df.columns, cellLoc='center', loc='center')
-    buf = io.BytesIO()
-    plt.savefig(buf, format='png')
-    buf.seek(0)
-    img_str = base64.b64encode(buf.read()).decode('utf-8')
-    buf.close()
+    # # Generate pivot table screenshot
+    # fig, ax = plt.subplots(figsize=(10, 6))
+    # ax.axis('tight')
+    # ax.axis('off')
+    # ax.table(cellText=pivot_df.values, colLabels=pivot_df.columns, cellLoc='center', loc='center')
+    # buf = io.BytesIO()
+    # plt.savefig(buf, format='png')
+    # buf.seek(0)
+    # img_str = base64.b64encode(buf.read()).decode('utf-8')
+    # buf.close()
     
-    # Embed the image in the email body
-    email_body += f'<img src="data:image/png;base64,{img_str}" alt="Pivot Table"/>'
+    # # Embed the image in the email body
+    # email_body += f'<img src="data:image/png;base64,{img_str}" alt="Pivot Table"/>'
     
     # Send email to test email
     send_email(

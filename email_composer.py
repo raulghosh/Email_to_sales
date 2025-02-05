@@ -59,7 +59,13 @@ def _manager_email_body(
     pivot_html: str
     ) -> str:
     """Generate HTML body for managers."""
-    formatted_pivot_html = pivot_html.replace('<td>', '<td style="text-align:right;">')
+        
+    # Apply left alignment to 'Rep Name' and 'Region' columns
+    formatted_pivot_html = pivot_html.replace(
+        '<td>Region</td>', '<td style="text-align:left !important;">Region</td>'
+    ).replace(
+        '<td>Rep Name</td>', '<td style="text-align:left;">Rep Name</td>'
+    )
     
     return f"""
     <div style="text-align: left;">
