@@ -1,41 +1,6 @@
 # Attic and Basement Report Automation
 
-<<<<<<< HEAD
 An automated system for generating and distributing sales performance reports to sales representatives and managers. The system processes Excel-based sales data, creates customized reports, and distributes them via email.
-=======
-This project automates the generation and distribution of Attic and Basement reports for sales reps and managers. The reports are generated from an Excel file, formatted, and sent via email.
-
-## Table of Contents
-
-- Project Structure
-- Features
-- Prerequisites
-- Installation
-- Usage
-- File Descriptions
-  - app.py
-  - data_processing.py
-  - pivot_table_generator.py
-  - manager_service.py
-  - sales_rep_service.py
-  - excel_formatter.py
-  - config.py
-- Example
-
-## Project Structure
-
-```markdown
-├── app.py                     # Main script to load data, process it, generate reports, and send emails.
-├── config.py                  # Configuration file to load environment variables and set file paths and email settings.
-├── data_processing.py         # Functions to load, clean, and format data.
-├── pivot_table_generator.py   # Functions to generate pivot tables and manager reports.
-├── manager_service.py         # Functions to process and send emails to managers.
-├── sales_rep_service.py       # Functions to process and send emails to sales reps.
-├── excel_formatter.py         # Functions to format Excel sheets.
-├── .env                       # Environment variables file.
-└── README.md                  # Project documentation.
-```
->>>>>>> a2f48ef27241dbdc01381ec8302cfa52ceb5914e
 
 ## Features
 
@@ -154,7 +119,6 @@ python -m pytest tests/
 
 ### Logging
 
-<<<<<<< HEAD
 Logs are written to the `logs/` directory with different files for:
 - Application events
 - Email operations
@@ -192,8 +156,3 @@ For support and questions, please contact:
 - Sales Operations Team
 - IT Infrastructure Team
 - Data Analytics Team
-=======
-if __name__ == "__main__":
-    main()
-```
->>>>>>> a2f48ef27241dbdc01381ec8302cfa52ceb5914e
