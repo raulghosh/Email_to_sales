@@ -4,13 +4,21 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
 from email import encoders
+from pathlib import Path
 from typing import Optional, Dict, Any
+from utils.logger import setup_logger
+
+logger = setup_logger(__name__)
+
+class EmailError(Exception):
+    """Custom exception for email-related errors."""
+    pass
 
 def send_email(
     to_email: str,
     subject: str,
     body: str,
-    attachment_path: Optional[str] = None,
+    attachment_path: Optional[Path] = None,
     email_config: Dict[str, Any] = None
 ) -> None:
     """
@@ -21,27 +29,38 @@ def send_email(
         body: HTML email body.
         attachment_path: Path to the attachment file.
         email_config: Dictionary containing SMTP server details.
+    Raises:
+        EmailError: If there's an error sending the email
     """
-    smtp_server = email_config["smtp_server"]
-    smtp_port = email_config["smtp_port"]
-    sender_email = email_config["sender_email"]
+    try:
+        smtp_server = email_config["smtp_server"]
+        smtp_port = email_config["smtp_port"]
+        sender_email = email_config["sender_email"]
 
-    msg = MIMEMultipart()
-    msg["From"] = sender_email
-    msg["To"] = to_email
-    msg["Subject"] = subject
-    msg.attach(MIMEText(body, "html"))
-    
-    if attachment_path:
-        with open(attachment_path, "rb") as attachment:
-            part = MIMEBase("application", "octet-stream")
-            part.set_payload(attachment.read())
-            encoders.encode_base64(part)
-            part.add_header(
-                "Content-Disposition",
-                f"attachment; filename={os.path.basename(attachment_path)}"
-            )
-            msg.attach(part)
-    
-    with smtplib.SMTP(smtp_server, smtp_port) as server:
-        server.sendmail(sender_email, to_email, msg.as_string())
+        msg = MIMEMultipart()
+        msg["From"] = sender_email
+        msg["To"] = to_email
+        msg["Subject"] = subject
+        msg.attach(MIMEText(body, "html"))
+        
+        if attachment_path:
+            if not attachment_path.exists():
+                raise EmailError(f"Attachment not found: {attachment_path}")
+                
+            with open(attachment_path, "rb") as attachment:
+                part = MIMEBase("application", "octet-stream")
+                part.set_payload(attachment.read())
+                encoders.encode_base64(part)
+                part.add_header(
+                    "Content-Disposition",
+                    f"attachment; filename={attachment_path.name}"
+                )
+                msg.attach(part)
+        
+        with smtplib.SMTP(smtp_server, smtp_port) as server:
+            server.sendmail(sender_email, to_email, msg.as_string())
+            logger.info(f"Email sent successfully to {to_email}")
+            
+    except Exception as e:
+        logger.error(f"Failed to send email to {to_email}: {str(e)}")
+        raise EmailError(f"Failed to send email: {str(e)}")
