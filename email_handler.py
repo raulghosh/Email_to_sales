@@ -1,12 +1,12 @@
 import smtplib
 import os
 from email.mime.multipart import MIMEMultipart
-from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
-from email import encoders
+from email.mime.application import MIMEApplication
 from pathlib import Path
-from typing import Optional, Dict, Any
+from typing import Optional
 from utils.logger import setup_logger
+from config import EmailConfig
 
 logger = setup_logger(__name__)
 
@@ -19,7 +19,7 @@ def send_email(
     subject: str,
     body: str,
     attachment_path: Optional[Path] = None,
-    email_config: Dict[str, Any] = None
+    email_config: EmailConfig = None
 ) -> None:
     """
     Send an email with optional attachment.
@@ -28,14 +28,16 @@ def send_email(
         subject: Email subject.
         body: HTML email body.
         attachment_path: Path to the attachment file.
-        email_config: Dictionary containing SMTP server details.
+        email_config: EmailConfig object containing SMTP server details.
     Raises:
         EmailError: If there's an error sending the email
     """
     try:
-        smtp_server = email_config["smtp_server"]
-        smtp_port = email_config["smtp_port"]
-        sender_email = email_config["sender_email"]
+        smtp_server = email_config.smtp_server
+        smtp_port = email_config.smtp_port
+        sender_email = email_config.sender_email
+        username = email_config.sender_email
+        password = os.getenv("EMAIL_PASSWORD")
 
         msg = MIMEMultipart()
         msg["From"] = sender_email
@@ -48,16 +50,18 @@ def send_email(
                 raise EmailError(f"Attachment not found: {attachment_path}")
                 
             with open(attachment_path, "rb") as attachment:
-                part = MIMEBase("application", "octet-stream")
-                part.set_payload(attachment.read())
-                encoders.encode_base64(part)
-                part.add_header(
-                    "Content-Disposition",
-                    f"attachment; filename={attachment_path.name}"
-                )
+                part = MIMEApplication(attachment.read(), Name=attachment_path.name)
+                part["Content-Disposition"] = f'attachment; filename="{attachment_path.name}"'
                 msg.attach(part)
         
         with smtplib.SMTP(smtp_server, smtp_port) as server:
+            server.starttls()
+            # Skip authentication if the server does not support it
+            if username and password:
+                try:
+                    server.login(username, password)
+                except smtplib.SMTPNotSupportedError:
+                    logger.warning("SMTP AUTH extension not supported by server, skipping authentication")
             server.sendmail(sender_email, to_email, msg.as_string())
             logger.info(f"Email sent successfully to {to_email}")
             

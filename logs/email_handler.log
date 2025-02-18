@@ -1,0 +1,21 @@
+2025-02-18 14:01:40,912 - email_handler - ERROR - Failed to send email to rghosh@veritivcorp.com: 'EmailConfig' object is not subscriptable
+2025-02-18 14:25:24,419 - email_handler - ERROR - Failed to send email to rghosh@veritivcorp.com: 'NoneType' object is not subscriptable
+2025-02-18 14:28:45,337 - email_handler - ERROR - Failed to send email to rghosh@veritivcorp.com: 'NoneType' object is not subscriptable
+2025-02-18 15:43:10,541 - email_handler - ERROR - Failed to send email to rghosh@veritivcorp.com: SMTP AUTH extension not supported by server.
+2025-02-18 16:06:09,619 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-02-18 16:06:09,676 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-02-18 16:06:09,968 - email_handler - ERROR - Failed to send email to rghosh@veritivcorp.com: 'EmailConfig' object is not subscriptable
+2025-02-18 16:20:27,391 - email_handler - ERROR - Failed to send email to rghosh@veritivcorp.com: 'dict' object has no attribute 'smtp_server'
+2025-02-18 17:29:10,842 - email_handler - ERROR - Failed to send email to rghosh@veritivcorp.com: 'dict' object has no attribute 'smtp_server'
+2025-02-18 17:50:42,396 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-02-18 17:50:42,446 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-02-18 17:50:42,841 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-02-18 17:50:42,912 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-02-18 17:50:43,438 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-02-18 17:50:43,503 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-02-18 17:50:43,672 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-02-18 17:50:43,720 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-02-18 17:50:44,023 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-02-18 17:50:44,128 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-02-18 17:50:44,496 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-02-18 17:50:44,562 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com

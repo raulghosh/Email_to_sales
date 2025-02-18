@@ -1,0 +1,12 @@
+2025-02-18 16:06:09,728 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-02-18 16:06:09,969 - manager_service - ERROR - Failed to process manager Montbriand, Thomas: Failed to send email: 'EmailConfig' object is not subscriptable
+2025-02-18 17:50:42,504 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-02-18 17:50:42,922 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-02-18 17:50:42,926 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-02-18 17:50:43,511 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-02-18 17:50:43,515 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-18 17:50:43,728 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-18 17:50:43,735 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-02-18 17:50:44,138 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-02-18 17:50:44,140 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-02-18 17:50:44,570 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R

@@ -176,13 +176,7 @@ def send_sales_rep_email(
             subject=f"{name}: Sales Report {month_year}",
             body=email_body,
             attachment_path=output_file,
-            email_config={
-                "smtp_server": CONFIG.email_config.smtp_server,
-                "smtp_port": CONFIG.email_config.smtp_port,
-                "sender_email": CONFIG.email_config.sender_email,
-                "username": CONFIG.email_config.sender_email,
-                "password": os.getenv("EMAIL_PASSWORD")
-            }
+            email_config=CONFIG.email_config
         )
         
         logger.info(f"Successfully sent email to {name}")
