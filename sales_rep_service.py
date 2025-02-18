@@ -6,6 +6,7 @@ from email_handler import send_email, EmailError
 from email_composer import create_email_body
 from config import CONFIG
 from utils.logger import setup_logger
+import os
 
 logger = setup_logger(__name__)
 
@@ -175,7 +176,13 @@ def send_sales_rep_email(
             subject=f"{name}: Sales Report {month_year}",
             body=email_body,
             attachment_path=output_file,
-            email_config=CONFIG.email_config
+            email_config={
+                "smtp_server": CONFIG.email_config.smtp_server,
+                "smtp_port": CONFIG.email_config.smtp_port,
+                "sender_email": CONFIG.email_config.sender_email,
+                "username": CONFIG.email_config.sender_email,
+                "password": os.getenv("EMAIL_PASSWORD")
+            }
         )
         
         logger.info(f"Successfully sent email to {name}")
