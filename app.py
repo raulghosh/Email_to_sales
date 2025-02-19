@@ -5,6 +5,7 @@ from data_processing import load_data, clean_data, format_columns, get_sales_rep
 from sales_rep_service import send_sales_rep_email
 from manager_service import send_manager_email
 import os
+import logging
 
 def main():
     # Load and clean data
@@ -12,6 +13,9 @@ def main():
     data = load_data(input_file)
     data = clean_data(data)
     formatted_data = format_columns(data)
+    
+    # Log the formatted data for verification
+    # logger.debug(f"Formatted data:\n{formatted_data.head()}")
     
     # Get sales reps and managers
     sales_reps = get_sales_reps(data, limit=1)

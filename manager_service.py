@@ -35,11 +35,11 @@ def generate_manager_pivot_html(data: pd.DataFrame) -> str:
             "Rep Name": "count"
         }).rename(columns={
             "Rep Name": "Row Count",
-            "KVI Type": "KVI Items"
+            "KVI Type": "Item Visibility"
         }).reset_index()
         
         # Format numerical values
-        for col in ["LTM Gross Sales", "Opp to Floor", "Row Count", "KVI Items"]:
+        for col in ["LTM Gross Sales", "Opp to Floor", "Row Count", "Item Visibility"]:
             pivot_df[col] = pivot_df[col].apply(lambda x: f"{x:,.0f}")
         
         # Generate HTML with styling

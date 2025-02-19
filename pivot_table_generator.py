@@ -68,12 +68,11 @@ def _create_summary_table(data: pd.DataFrame) -> pd.DataFrame:
         "Opp to Floor": "sum",
         "KVI Type": lambda x: ((x == "2: KVI") | (x == "3: Super KVI")).sum(),
         "Rep Name": "count"
-    }).rename(columns={"Rep Name": "Row_Count"}).reset_index()
+    }).rename(columns={"Rep Name": "Row_Count","KVI Type":"Item Visibility"}).reset_index()
     
     # Sort and round values
     summary_table = summary_table.sort_values(by=["Rep Name", "Region"])
-    summary_table['LTM Gross Sales'] = summary_table['LTM Gross Sales'].round(0).astype(int)
-    summary_table['Opp to Floor'] = summary_table['Opp to Floor'].round(0).astype(int)
+
     
     return summary_table
 
@@ -86,10 +85,7 @@ def _write_summary_sheet(summary_table: pd.DataFrame, writer: pd.ExcelWriter) ->
 def _write_all_data_sheet(data: pd.DataFrame, writer: pd.ExcelWriter) -> None:
     """Write all data sheet to Excel."""
     all_data = data.drop(columns=["Rep Email", "Manager Email", 'Manager Name'])
-    all_data = all_data.rename(columns={"Opp to Floor_x": "Opp to Floor"})
-    all_data['LTM Gross Sales'] = all_data['LTM Gross Sales'].round(0).astype(int)
-    all_data['Opp to Floor'] = all_data['Opp to Floor'].round(0).astype(int)
-    
+    all_data = all_data.rename(columns={"Opp to Floor_x": "Opp to Floor"})    
     all_data.to_excel(writer, index=False, sheet_name='All Data')
     all_data_sheet = writer.sheets['All Data']
     format_excel_sheet(all_data_sheet, all_data)

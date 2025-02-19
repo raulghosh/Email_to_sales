@@ -18,3 +18,11 @@
 2025-02-18 17:29:10,843 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to send email: 'dict' object has no attribute 'smtp_server'
 2025-02-18 17:50:42,032 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
 2025-02-18 17:50:42,455 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-02-18 20:24:30,920 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-02-18 20:24:31,417 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-02-18 20:45:58,249 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-02-18 20:45:58,550 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-02-18 21:14:05,959 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-02-18 21:14:06,343 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-02-18 21:24:38,450 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-02-18 21:24:38,792 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M

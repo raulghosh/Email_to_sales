@@ -48,6 +48,7 @@ def generate_sales_rep_report(
             
         filtered_formatted = _prepare_report_data(filtered_raw)
         
+        
         # Save to Excel
         output_file = output_folder / f"{name}_Report.xlsx"
         logger.info(f"Generating sales rep report: {output_file}")
@@ -109,11 +110,11 @@ def calculate_metrics(data: pd.DataFrame) -> Dict[str, Any]:
         "KVI Type": lambda x: ((x == "2: KVI") | (x == "3: Super KVI")).sum()
     }).rename(columns={
         "Region": "Item Count",
-        "KVI Type": "KVI Items"
+        "KVI Type": "Item Visibility"
     }).reset_index()
     
     # Format numerical values
-    for col in ["LTM Gross Sales", "Opp to Floor", "Item Count", "KVI Items"]:
+    for col in ["LTM Gross Sales", "Opp to Floor", "Item Count", "Item Visibility"]:
         summary_table[col] = summary_table[col].apply(lambda x: f"{x:,.0f}")
     
     metrics["summary_html"] = _format_summary_table_html(summary_table)

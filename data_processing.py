@@ -77,15 +77,23 @@ def format_columns(data: pd.DataFrame) -> pd.DataFrame:
         if not any([sales_columns, opp_columns, margin_columns]):
             raise DataProcessingError("No sales, opp, or margin columns found")
         
+        logger.debug(f"Sales columns: {sales_columns}")
+        logger.debug(f"Opp columns: {opp_columns}")
+        logger.debug(f"Margin columns: {margin_columns}")
+        
         # Format sales and opp columns
         for col in sales_columns + opp_columns:
             data[col] = pd.to_numeric(data[col], errors='coerce').fillna(0).round(0).astype(int)
             logger.debug(f"Formatted column: {col}")
+            logger.debug(f"Data after formatting {col}:\n{data[[col]].head()}")
         
         # Format margin columns
         for col in margin_columns:
             data[col] = pd.to_numeric(data[col], errors='coerce').fillna(0).round(3)
             logger.debug(f"Formatted column: {col}")
+            logger.debug(f"Data after formatting {col}:\n{data[[col]].head()}")
+        
+        logger.debug(f"Data after formatting all columns:\n{data.head()}")
         
         return data
         
