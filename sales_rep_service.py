@@ -96,8 +96,13 @@ def _prepare_report_data(data: pd.DataFrame) -> pd.DataFrame:
     cols = list(formatted.columns)
     ltm_index = cols.index("LTM Gross Sales")
     cols.insert(ltm_index + 1, cols.pop(cols.index("Opp to Floor")))
+    formatted = formatted[cols]
     
-    return formatted[cols]
+    # Convert LTM Gross Sales and Opp to Floor to strings, right-aligned without decimals
+    formatted["LTM Gross Sales"] = formatted["LTM Gross Sales"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
+    formatted["Opp to Floor"] = formatted["Opp to Floor"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
+
+    return formatted
 
 def calculate_metrics(data: pd.DataFrame) -> Dict[str, Any]:
     """
