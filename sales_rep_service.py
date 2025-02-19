@@ -102,6 +102,13 @@ def _prepare_report_data(data: pd.DataFrame) -> pd.DataFrame:
     formatted["LTM Gross Sales"] = formatted["LTM Gross Sales"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
     formatted["Opp to Floor"] = formatted["Opp to Floor"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
 
+    # Convert Margin columns to strings with one decimal place and percentage sign
+    margin_columns = ["Floor Margin", "Target Margin"]  # Replace with actual margin column names
+    for col in margin_columns:
+        if col in formatted.columns:
+            formatted[col] = formatted[col].apply(lambda x: f"{100*x:.1f}%" if pd.notna(x) else "")
+
+    
     return formatted
 
 def calculate_metrics(data: pd.DataFrame) -> Dict[str, Any]:
