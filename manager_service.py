@@ -15,48 +15,66 @@ class ManagerServiceError(Exception):
 
 def generate_manager_pivot_html(data: pd.DataFrame) -> str:
     """
-    Generate HTML pivot table for manager email.
-    
-    Args:
-        data: Input DataFrame
-        
-    Returns:
-        HTML string of the pivot table
-        
-    Raises:
-        ManagerServiceError: If there's an error generating the pivot table
+    Generate two HTML pivot tables for manager email: 
+    one for 'Basement' sorted by 'Opp to Floor', 
+    and one for 'Attic' sorted by 'LTM Gross Sales'.
     """
     try:
-        # Create pivot table
-        pivot_df = data.groupby(["Rep Name", "Region"]).agg({
+        # Define aggregation
+        agg_funcs = {
             "LTM Gross Sales": "sum",
             "Opp to Floor": "sum",
             "KVI Type": lambda x: ((x == "2: KVI") | (x == "3: Super KVI")).sum(),
             "Rep Name": "count"
-        }).rename(columns={
-            "Rep Name": "Row Count",
-            "KVI Type": "Item Visibility"
-        }).reset_index()
-        
-        # Format numerical values
-        for col in ["LTM Gross Sales", "Opp to Floor", "Row Count", "Item Visibility"]:
-            pivot_df[col] = pivot_df[col].apply(lambda x: f"{x:,.0f}")
-        
-        # Generate HTML with styling
+        }
+
+        # Process "Basement" table
+        basement_df = (
+            data[data["Region"] == "Basement"]
+            .groupby(["Rep Name", "Region"])
+            .agg(agg_funcs)
+            .rename(columns={"Rep Name": "Row Count", "KVI Type": "Item Visibility"})
+            .reset_index()
+            .sort_values(by="Opp to Floor", ascending=False)  # Sort by 'Opp to Floor'
+        )
+
+        # Process "Attic" table
+        attic_df = (
+            data[data["Region"] == "Attic"]
+            .groupby(["Rep Name", "Region"])
+            .agg(agg_funcs)
+            .rename(columns={"Rep Name": "Row Count", "KVI Type": "Item Visibility"})
+            .reset_index()
+            .sort_values(by="LTM Gross Sales", ascending=False)  # Sort by 'LTM Gross Sales'
+        )
+
+        # Format numerical columns
+        for df in [basement_df, attic_df]:
+            for col in ["LTM Gross Sales", "Opp to Floor", "Row Count", "Item Visibility"]:
+                df[col] = df[col].apply(lambda x: f"{x:,.0f}")
+
+        # Convert to HTML
+        basement_html = basement_df.to_html(index=False, classes="pivot-table")
+        attic_html = attic_df.to_html(index=False, classes="pivot-table")
+
+        # Combine with styling
         pivot_html = f"""
         <style>
             .pivot-table th, .pivot-table td {{ text-align: right; padding: 5px; }}
             .pivot-table th:first-child, .pivot-table td:first-child,
             .pivot-table th:nth-child(2), .pivot-table td:nth-child(2) {{ text-align: left; }}
         </style>
-        {pivot_df.to_html(index=False, classes="pivot-table")}
+        <h3>Basement Summary (Sorted by 'Opp to Floor')</h3>
+        {basement_html}
+        <br>
+        <h3>Attic Summary (Sorted by 'LTM Gross Sales')</h3>
+        {attic_html}
         """
-        
         return pivot_html
-        
+
     except Exception as e:
-        logger.error(f"Failed to generate pivot table: {str(e)}")
-        raise ManagerServiceError(f"Failed to generate pivot table: {str(e)}")
+        logger.error(f"Failed to generate pivot tables: {str(e)}")
+        raise ManagerServiceError(f"Failed to generate pivot tables: {str(e)}")
 
 def send_manager_email(
     data: pd.DataFrame,
@@ -88,17 +106,18 @@ def send_manager_email(
         # Generate manager report
         output_file = generate_manager_report(data, manager_name, output_folder, month_year)
         
-        # Generate pivot table HTML
+        # Generate pivot tables for both Basement & Attic
         pivot_html = generate_manager_pivot_html(data)
-        
-        # Create email body
+
+        # Create email body with the new tables
         email_body = create_email_body(
             recipient_type="manager",
             name=manager_name,
             month_year=month_year,
             power_bi_link=CONFIG.power_bi_link,
-            pivot_html=pivot_html
-        )
+            pivot_html=pivot_html  # Ensure the email template accepts this
+            )
+
         
         # Send email
         send_email(

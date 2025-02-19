@@ -50,3 +50,23 @@
 2025-02-18 21:24:40,456 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
 2025-02-18 21:24:40,461 - manager_service - INFO - Processing manager email for: Owens, Brian R
 2025-02-18 21:24:40,897 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-02-19 00:37:32,954 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-02-19 00:37:33,433 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-02-19 00:37:33,438 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-02-19 00:37:33,868 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-02-19 00:37:33,873 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-19 00:37:34,133 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-19 00:37:34,137 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-02-19 00:37:34,578 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-02-19 00:37:34,583 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-02-19 00:37:35,156 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-02-19 00:45:09,079 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-02-19 00:45:09,476 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-02-19 00:45:09,480 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-02-19 00:45:09,884 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-02-19 00:45:09,888 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-19 00:45:10,128 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-19 00:45:10,132 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-02-19 00:45:10,481 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-02-19 00:45:10,485 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-02-19 00:45:10,888 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R

@@ -56,23 +56,17 @@ def _manager_email_body(
     name: str,
     month_year: str,
     power_bi_link: str,
-    pivot_html: str
-    ) -> str:
-    """Generate HTML body for managers."""
-        
-    # Apply left alignment to 'Rep Name' and 'Region' columns
-    formatted_pivot_html = pivot_html.replace(
-        '<td>Region</td>', '<td style="text-align:left !important;">Region</td>'
-    ).replace(
-        '<td>Rep Name</td>', '<td style="text-align:left;">Rep Name</td>'
-    )
-    
+    pivot_html: str  # Updated argument
+) -> str:
+    """Generate HTML email body for managers with Basement and Attic tables."""
     return f"""
     <div style="text-align: left;">
         <p>Hi {name},</p>
-        <p>Attached is your {month_year} Manager Report. Key metrics for your team:</p>
-        {formatted_pivot_html}
-        <p>Access the live Power BI Dashboard: <a href="{power_bi_link}">Manager Dashboard</a></p>
-        <p>Best regards,<br>Pricing Team</p>
+        <p>Attached is the Manager Report for {month_year}.</p>
+        <p>Below are summaries for the Basement and Attic items:</p>
+        {pivot_html}
+        <p>Access the live Power BI Dashboard: <a href="{power_bi_link}">Manager Report</a></p>
+        <p>Thanks,<br>Pricing Team</p>
     </div>
     """
+

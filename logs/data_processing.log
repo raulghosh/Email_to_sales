@@ -29,3 +29,7 @@
 2025-02-18 21:14:05,913 - data_processing - WARNING - Dropped 236 rows with missing emails
 2025-02-18 21:24:24,375 - data_processing - INFO - Loading data from C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Sales_Report_Temp.xlsx
 2025-02-18 21:24:38,394 - data_processing - WARNING - Dropped 236 rows with missing emails
+2025-02-19 00:37:18,051 - data_processing - INFO - Loading data from C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Sales_Report_Temp.xlsx
+2025-02-19 00:37:32,475 - data_processing - WARNING - Dropped 236 rows with missing emails
+2025-02-19 00:44:56,489 - data_processing - INFO - Loading data from C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Sales_Report_Temp.xlsx
+2025-02-19 00:45:08,643 - data_processing - WARNING - Dropped 236 rows with missing emails
