@@ -22,7 +22,7 @@ def generate_sales_rep_report(
     month_year: str
 ) -> Path:
     """
-    Generate a sales rep report and save it to Excel.
+    Generate a sales rep report and save it to Excel with separate sheets for Attic and Basement.
     
     Args:
         data: Input DataFrame
@@ -41,23 +41,38 @@ def generate_sales_rep_report(
         output_folder = Path(output_folder)
         output_folder.mkdir(parents=True, exist_ok=True)
         
-        # Filter and format data
+        # Filter data for the sales rep
         filtered_raw = data[data["Rep Email"] == email]
         if filtered_raw.empty:
             raise SalesRepServiceError(f"No data found for sales rep: {name}")
             
-        filtered_formatted = _prepare_report_data(filtered_raw)
+        # Split data into Attic and Basement
+        attic_data = filtered_raw[filtered_raw["Region"] == "Attic"]
+        basement_data = filtered_raw[filtered_raw["Region"] == "Basement"]
         
+        # Format the data
+        attic_formatted = _prepare_report_data(attic_data)
+        basement_formatted = _prepare_report_data(basement_data)
+        
+        # Sort the data
+        attic_formatted = attic_formatted.sort_values(by=["LTM Gross Sales"], ascending=False).drop(columns=["Opp to Floor"]) 
+        basement_formatted = basement_formatted.sort_values(by=["Opp to Floor"], ascending=False)
         
         # Save to Excel
         output_file = output_folder / f"{name}_Report.xlsx"
         logger.info(f"Generating sales rep report: {output_file}")
         
         with pd.ExcelWriter(output_file, engine="openpyxl") as writer:
-            filtered_formatted.to_excel(writer, index=False, sheet_name="Sales Report")
-            worksheet = writer.sheets["Sales Report"]
-            format_excel_sheet(worksheet, filtered_formatted)
             
+            # Write Basement data to its own sheet
+            basement_formatted.to_excel(writer, index=False, sheet_name="Basement")
+            basement_worksheet = writer.sheets["Basement"]
+            format_excel_sheet(basement_worksheet, basement_formatted)
+            # Write Attic data to its own sheet
+            attic_formatted.to_excel(writer, index=False, sheet_name="Attic")
+            attic_worksheet = writer.sheets["Attic"]
+            format_excel_sheet(attic_worksheet, attic_formatted)
+        
         return output_file
         
     except Exception as e:
