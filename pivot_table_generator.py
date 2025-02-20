@@ -87,10 +87,16 @@ def _write_all_data_sheet(data: pd.DataFrame, writer: pd.ExcelWriter) -> None:
     format_excel_sheet(worksheet, all_data)
 
 def generate_html_table(data: pd.DataFrame, title: str) -> str:
-    """Convert a Pandas DataFrame into an HTML table with a title."""
+    """Convert a Pandas DataFrame into an HTML table with a title and format numerical columns."""
     try:
         if data.empty:
             return f"<h3>{title}</h3><p>No data available.</p>"
+
+        # Format numerical columns
+        for col in data.columns:
+            if any(keyword in col.lower() for keyword in ['sales', 'opp', 'count']):  # Check for relevant keywords
+                data[col] = data[col].apply(lambda x: f"{x:,.0f}")
+
         return f"<h3>{title}</h3>" + data.to_html(index=False, escape=False)
     except Exception as e:
         logger.error(f"Error generating HTML table: {e}")
