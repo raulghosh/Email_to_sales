@@ -5,26 +5,29 @@ def create_email_body(
     name: str,
     month_year: str,
     power_bi_link: str,
-    sales_rep_data: Optional[Dict[str, Any]] = None,
-    pivot_html: Optional[str] = None
+    basement_html: str = "",
+    attic_html: str = "",
+    sales_rep_data: Optional[Dict[str, Any]] = None
 ) -> str:
     """
     Create an HTML email body tailored to sales reps or managers.
-    
+
     Args:
         recipient_type: "sales_rep" or "manager".
         name: Recipient's name.
         month_year: Month/year of the report (e.g., "Oct 2023").
         power_bi_link: URL to the Power BI dashboard.
+        basement_html: HTML table for Basement items.
+        attic_html: HTML table for Attic items.
         sales_rep_data: Required for "sales_rep" (keys: basement_count, attic_count, basement_sales, attic_sales, opp_to_floor, summary_html).
-        pivot_html: Required for "manager" (HTML table of pivot data).
     """
     if recipient_type == "sales_rep" and sales_rep_data:
         return _sales_rep_email_body(name, month_year, power_bi_link, **sales_rep_data)
-    elif recipient_type == "manager" and pivot_html:
-        return _manager_email_body(name, month_year, power_bi_link, pivot_html)
+    elif recipient_type == "manager":
+        return _manager_email_body(name, month_year, power_bi_link, basement_html, attic_html)
     else:
         raise ValueError("Invalid recipient type or missing data!")
+
 
 def _sales_rep_email_body(
     name: str,
@@ -56,17 +59,20 @@ def _manager_email_body(
     name: str,
     month_year: str,
     power_bi_link: str,
-    pivot_html: str  # Updated argument
+    basement_html: str,
+    attic_html: str
 ) -> str:
-    """Generate HTML email body for managers with Basement and Attic tables."""
+    """Generate HTML body for managers."""
     return f"""
     <div style="text-align: left;">
         <p>Hi {name},</p>
-        <p>Attached is the Manager Report for {month_year}.</p>
-        <p>Below are summaries for the Basement and Attic items:</p>
-        {pivot_html}
-        <p>Access the live Power BI Dashboard: <a href="{power_bi_link}">Manager Report</a></p>
-        <p>Thanks,<br>Pricing Team</p>
+        <p>Attached is your {month_year} Manager Report. Key metrics for your team:</p>
+        {basement_html}
+        <br>
+        {attic_html}
+        <p>Access the live Power BI Dashboard: <a href="{power_bi_link}">Manager Dashboard</a></p>
+        <p>Best regards,<br>Pricing Team</p>
     </div>
     """
+
 

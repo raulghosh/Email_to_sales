@@ -70,3 +70,121 @@
 2025-02-19 00:45:10,481 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
 2025-02-19 00:45:10,485 - manager_service - INFO - Processing manager email for: Owens, Brian R
 2025-02-19 00:45:10,888 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-02-19 10:56:24,641 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-02-19 10:56:24,648 - manager_service - ERROR - Unexpected error processing manager Montbriand, Thomas: name 'generate_html_table' is not defined
+2025-02-19 11:10:40,747 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-02-19 11:10:40,751 - manager_service - ERROR - Unexpected error processing manager Montbriand, Thomas: generate_html_table() missing 1 required positional argument: 'title'
+2025-02-19 13:46:46,022 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-02-19 13:46:46,025 - manager_service - ERROR - Unexpected error processing manager Montbriand, Thomas: generate_html_table() missing 1 required positional argument: 'title'
+2025-02-19 14:01:21,876 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-02-19 14:01:21,878 - manager_service - ERROR - Unexpected error processing manager Montbriand, Thomas: generate_html_table() missing 1 required positional argument: 'title'
+2025-02-19 14:04:16,154 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-02-19 14:04:16,458 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-02-19 14:04:16,465 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-02-19 14:04:16,717 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-02-19 14:04:16,720 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-19 14:04:16,914 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-19 14:04:16,919 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-02-19 14:04:17,148 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-02-19 14:04:17,153 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-02-19 14:04:17,466 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-02-19 17:12:46,233 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-02-19 17:12:46,621 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-02-19 17:12:46,628 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-02-19 17:12:46,972 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-02-19 17:12:46,979 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-19 17:12:47,128 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-19 17:12:47,133 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-02-19 17:12:47,465 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-02-19 17:12:47,473 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-02-19 17:12:47,804 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-02-19 17:28:48,178 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-02-19 17:28:48,465 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-02-19 17:28:48,469 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-02-19 17:28:48,682 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-02-19 17:28:48,688 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-19 17:28:48,809 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-19 17:28:48,812 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-02-19 17:28:49,064 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-02-19 17:28:49,068 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-02-19 17:28:49,302 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-02-19 17:33:49,539 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-02-19 17:33:49,758 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-02-19 17:33:49,762 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-02-19 17:33:50,021 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-02-19 17:33:50,025 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-19 17:33:50,146 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-19 17:33:50,151 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-02-19 17:33:50,353 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-02-19 17:33:50,360 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-02-19 17:33:50,598 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-02-19 17:38:33,144 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-02-19 17:38:33,452 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-02-19 17:38:33,457 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-02-19 17:38:33,705 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-02-19 17:38:33,710 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-19 17:38:33,845 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-19 17:38:33,850 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-02-19 17:38:34,071 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-02-19 17:38:34,075 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-02-19 17:38:34,329 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-02-19 22:13:50,535 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-02-19 22:13:50,844 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-02-19 22:13:50,848 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-02-19 22:13:51,183 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-02-19 22:13:51,186 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-19 22:13:51,318 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-19 22:13:51,321 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-02-19 22:13:51,551 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-02-19 22:13:51,555 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-02-19 22:13:51,845 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-02-19 22:17:41,501 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-02-19 22:17:41,782 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-02-19 22:17:41,786 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-02-19 22:17:42,029 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-02-19 22:17:42,033 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-19 22:17:42,212 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-19 22:17:42,217 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-02-19 22:17:42,454 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-02-19 22:17:42,458 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-02-19 22:17:42,745 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-02-19 22:29:10,076 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-02-19 22:29:10,876 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-02-19 22:29:10,878 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-02-19 22:29:11,874 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-02-19 22:29:11,878 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-19 22:29:12,632 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-19 22:29:12,638 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-02-19 22:29:13,359 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-02-19 22:29:13,362 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-02-19 22:29:14,202 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-02-19 22:41:19,548 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-02-19 22:41:19,784 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-02-19 22:41:19,791 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-02-19 22:41:20,003 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-02-19 22:41:20,007 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-19 22:41:20,193 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-19 22:41:20,197 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-02-19 22:41:20,430 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-02-19 22:41:20,435 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-02-19 22:41:20,690 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-02-19 22:48:24,720 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-02-19 22:48:24,867 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-02-19 22:48:24,875 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-02-19 22:48:25,019 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-02-19 22:48:25,023 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-19 22:48:25,218 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-19 22:48:25,227 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-02-19 22:48:25,369 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-02-19 22:48:25,374 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-02-19 22:48:25,516 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-02-19 22:59:16,763 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-02-19 22:59:17,174 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-02-19 22:59:17,177 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-02-19 22:59:17,490 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-02-19 22:59:17,493 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-19 22:59:17,659 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-19 22:59:17,662 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-02-19 22:59:17,947 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-02-19 22:59:17,950 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-02-19 22:59:18,324 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R

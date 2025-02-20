@@ -3,7 +3,7 @@ import pandas as pd
 from typing import Dict, Any
 from email_handler import send_email, EmailError
 from email_composer import create_email_body
-from pivot_table_generator import generate_manager_report, PivotTableError
+from pivot_table_generator import generate_manager_report, PivotTableError, generate_html_table, _create_summary_table
 from config import CONFIG
 from utils.logger import setup_logger
 
@@ -15,9 +15,9 @@ class ManagerServiceError(Exception):
 
 def generate_manager_pivot_html(data: pd.DataFrame) -> str:
     """
-    Generate two HTML pivot tables for manager email: 
-    one for 'Basement' sorted by 'Opp to Floor', 
-    and one for 'Attic' sorted by 'LTM Gross Sales'.
+    Generate two HTML pivot tables for the manager email: 
+    one for 'Basement' (sorted by 'Opp to Floor'), 
+    and one for 'Attic' (sorted by 'LTM Gross Sales').
     """
     try:
         # Define aggregation
@@ -31,43 +31,56 @@ def generate_manager_pivot_html(data: pd.DataFrame) -> str:
         # Process "Basement" table
         basement_df = (
             data[data["Region"] == "Basement"]
-            .groupby(["Rep Name", "Region"])
+            .groupby(["Rep Name"])
             .agg(agg_funcs)
-            .rename(columns={"Rep Name": "Row Count", "KVI Type": "Item Visibility"})
+            .rename(columns={"Rep Name": "#Rows", "KVI Type": "#Highly Visible Items"})
             .reset_index()
             .sort_values(by="Opp to Floor", ascending=False)  # Sort by 'Opp to Floor'
         )
 
-        # Process "Attic" table
+        # Process "Attic" table (Remove "Opp to Floor" column)
         attic_df = (
             data[data["Region"] == "Attic"]
-            .groupby(["Rep Name", "Region"])
+            .groupby(["Rep Name"])
             .agg(agg_funcs)
-            .rename(columns={"Rep Name": "Row Count", "KVI Type": "Item Visibility"})
+            .rename(columns={"Rep Name": "#Rows", "KVI Type": "#Highly Visible Items"})
             .reset_index()
+            .drop(columns=["Opp to Floor"])  # Remove Opp to Floor
             .sort_values(by="LTM Gross Sales", ascending=False)  # Sort by 'LTM Gross Sales'
         )
 
         # Format numerical columns
         for df in [basement_df, attic_df]:
-            for col in ["LTM Gross Sales", "Opp to Floor", "Row Count", "Item Visibility"]:
-                df[col] = df[col].apply(lambda x: f"{x:,.0f}")
+            for col in ["LTM Gross Sales", "#Highly Visible Items"]:
+                if col in df.columns:
+                    df[col] = df[col].apply(lambda x: f"{x:,.0f}")
 
-        # Convert to HTML
-        basement_html = basement_df.to_html(index=False, classes="pivot-table")
-        attic_html = attic_df.to_html(index=False, classes="pivot-table")
+        # Convert to HTML (Align Rep Name & Region to left)
+        def df_to_html(df):
+            html = df.to_html(index=False, classes="pivot-table", escape=False)
+            html = html.replace("<th>Rep Name</th>", '<th style="text-align: left;">Rep Name</th>')
+
+            # Apply right alignment to all columns except the first
+            html = html.replace("<td>", '<td style="text-align: right;">')
+
+            # Left align the first column
+            first_col_start = html.find('<td style="text-align: right;">')
+            if first_col_start != -1:
+                html = html[:first_col_start] + html[first_col_start:].replace('<td style="text-align: right;">', '<td style="text-align: left;">', 1)
+
+            return html
+
+        basement_html = df_to_html(basement_df)
+        attic_html = df_to_html(attic_df)
 
         # Combine with styling
         pivot_html = f"""
         <style>
             .pivot-table th, .pivot-table td {{ text-align: right; padding: 5px; }}
-            .pivot-table th:first-child, .pivot-table td:first-child,
-            .pivot-table th:nth-child(2), .pivot-table td:nth-child(2) {{ text-align: left; }}
+            .pivot-table th:first-child, .pivot-table td:first-child {{ text-align: left; }}
         </style>
-        <h3>Basement Summary (Sorted by 'Opp to Floor')</h3>
         {basement_html}
         <br>
-        <h3>Attic Summary (Sorted by 'LTM Gross Sales')</h3>
         {attic_html}
         """
         return pivot_html
@@ -80,45 +93,36 @@ def send_manager_email(
     data: pd.DataFrame,
     manager_email: str,
     manager_name: str,
-    output_folder: Path | str,
+    output_folder: Path,
     month_year: str
 ) -> None:
-    """
-    Process and send an email to a manager.
-    
-    Args:
-        data: Input DataFrame
-        manager_email: Manager's email
-        manager_name: Manager's name
-        output_folder: Output directory path
-        month_year: Month and year for the report
-        
-    Raises:
-        ManagerServiceError: If there's an error in the process
-    """
     try:
-        # Validate input data
         if data.empty:
             raise ManagerServiceError(f"No data provided for manager: {manager_name}")
-            
-        logger.info(f"Processing manager email for: {manager_name}")
-        
-        # Generate manager report
-        output_file = generate_manager_report(data, manager_name, output_folder, month_year)
-        
-        # Generate pivot tables for both Basement & Attic
-        pivot_html = generate_manager_pivot_html(data)
 
-        # Create email body with the new tables
+        logger.info(f"Processing manager email for: {manager_name}")
+
+        # Generate and save report
+        output_file = generate_manager_report(data, manager_name, output_folder, month_year)
+
+        # Use aggregated summaries instead of raw data
+        attic_summary = _create_summary_table(data[data["Region"] == "Attic"])
+        basement_summary = _create_summary_table(data[data["Region"] == "Basement"])
+
+        # Generate HTML tables using the aggregated data
+        basement_html = generate_html_table(basement_summary, title="Basement Summary:")
+        attic_html = generate_html_table(attic_summary, title="Attic Summary:")
+
+        # Create email body
         email_body = create_email_body(
             recipient_type="manager",
             name=manager_name,
             month_year=month_year,
             power_bi_link=CONFIG.power_bi_link,
-            pivot_html=pivot_html  # Ensure the email template accepts this
-            )
+            basement_html=basement_html,
+            attic_html=attic_html
+        )
 
-        
         # Send email
         send_email(
             to_email=CONFIG.email_config.test_email,
@@ -127,9 +131,9 @@ def send_manager_email(
             attachment_path=output_file,
             email_config=CONFIG.email_config
         )
-        
+
         logger.info(f"Successfully sent email to manager: {manager_name}")
-        
+
     except (PivotTableError, EmailError) as e:
         logger.error(f"Failed to process manager {manager_name}: {str(e)}")
         raise ManagerServiceError(f"Failed to process manager: {str(e)}")
