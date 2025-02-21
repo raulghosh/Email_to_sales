@@ -69,7 +69,7 @@ def _create_summary_table(data: pd.DataFrame) -> pd.DataFrame:
         "Opp to Floor": "sum",
         "KVI Type": lambda x: ((x == "2: KVI") | (x == "3: Super KVI")).sum(),
         "Rep Name": "count"
-    }).rename(columns={"Rep Name": "Row_Count", "KVI Type": "Item Visibility"}).reset_index()
+    }).rename(columns={"Rep Name": "# Rows", "KVI Type": "# Visible Items"}).reset_index()
     
     return summary_table.sort_values(by="Rep Name")
 
