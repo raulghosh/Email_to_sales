@@ -19,7 +19,7 @@ def main():
     
     # Get sales reps and managers
     sales_reps = get_sales_reps(data, limit=1)
-    managers = get_managers(data, start=5, end=10)
+    managers = get_managers(data, start=5, end=8)
     
     # Create output folder
     os.makedirs(CONFIG.output_folder, exist_ok=True)
