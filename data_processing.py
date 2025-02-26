@@ -105,9 +105,7 @@ def format_columns(data: pd.DataFrame) -> pd.DataFrame:
             logger.debug(f"Formatted column: {col}")
             logger.debug(f"Data after formatting {col}:\n{data[[col]].head()}")
         
-        logger.debug(f"Data after formatting all columns:\n{data.head()}")
-        print(f"Sales Rep data => {data[data['Sales Rep Name'] == 'Ahlers, Thomas M']}")
-        
+        logger.debug(f"Data after formatting all columns:\n{data.head()}")        
         return data
         
     except Exception as e:
@@ -167,22 +165,3 @@ def get_managers(data: pd.DataFrame, start: int = 5, end: int = 7) -> Dict[str, 
     except Exception as e:
         logger.error(f"Error getting managers: {str(e)}")
         raise DataProcessingError(f"Failed to get managers: {str(e)}")
-
-# def get_sorted_manager_data(data: pd.DataFrame) -> pd.DataFrame:
-#     """Sort the manager data by Opp to Floor."""
-#     # Group by Sales Rep Name and sum Opp to Floor
-#     grouped_data = data.groupby("Sales Rep Name")["Opp to Floor"].sum().reset_index()
-    
-#     # Sort by Opp to Floor in descending order
-#     sorted_grouped_data = grouped_data.sort_values(by="Opp to Floor", ascending=False)
-    
-#     # Merge sorted grouped data with the original data to maintain the sorting order
-#     sorted_data = pd.merge(sorted_grouped_data, data, on="Sales Rep Name", how="left")
-    
-#     # Rename 'Opp to Floor_y' to 'Opp to Floor'
-#     sorted_data.rename(columns={"Opp to Floor_y": "Opp to Floor"}, inplace=True)
-    
-#     # Drop 'Opp to Floor_x' column
-#     sorted_data.drop(columns="Opp to Floor_x", inplace=True)
-    
-#     return sorted_data
