@@ -96,6 +96,7 @@ def _prepare_report_data(data: pd.DataFrame, category: str) -> pd.DataFrame:
     # Sort the data
     if category == "Attic":
         formatted = formatted.sort_values(by=["LTM Gross Sales1"], ascending=False)
+        formatted.drop(columns=["Opp to Floor", "Opp to Target"], inplace=True)
     else:
         formatted = formatted.sort_values(by=["Opp to Floor1"], ascending=False)
         
@@ -103,8 +104,11 @@ def _prepare_report_data(data: pd.DataFrame, category: str) -> pd.DataFrame:
     formatted = formatted.drop(columns=["LTM Gross Sales1", "Opp to Floor1"])
     
     formatted["LTM Gross Sales"] = formatted["LTM Gross Sales"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
-    formatted["Opp to Floor"] = formatted["Opp to Floor"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
-    formatted["Opp to Target"] = formatted["Opp to Target"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
+    formatted["Legacy Item #"] = formatted["Legacy Item #"].apply(lambda x: f"{int(float(x))}" if pd.notna(x) and x != '' else "")
+    
+    if category=="Basement":
+        formatted["Opp to Floor"] = formatted["Opp to Floor"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
+        formatted["Opp to Target"] = formatted["Opp to Target"].apply(lambda x: f"{int(float(x)):,}" if pd.notna(x) else "")
 
     # Convert Margin columns to strings with one decimal place and percentage sign
     margin_columns = [col for col in formatted.columns if 'margin' in col.lower()]  # Replace with actual margin column names
