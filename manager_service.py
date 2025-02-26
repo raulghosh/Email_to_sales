@@ -24,7 +24,7 @@ def generate_manager_pivot_html(data: pd.DataFrame) -> str:
         agg_funcs = {
             "LTM Gross Sales": "sum",
             "Opp to Floor": "sum",
-            "Item Visibility": lambda x: ((x == "2: KVI") | (x == "3: Super KVI")).sum(),
+            "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum(),
             "Sales Rep Name": "count"
         }
 
@@ -33,7 +33,7 @@ def generate_manager_pivot_html(data: pd.DataFrame) -> str:
             data[data["Category"] == "Basement"]
             .groupby(["Sales Rep Name"])
             .agg(agg_funcs)
-            .rename(columns={"Sales Rep Name": "#Rows", "Item Visibility": "#Highly Visible Items"})
+            .rename(columns={"Sales Rep Name": "# Rows", "Item Visibility": "# Visible Items"})
             .reset_index()
             .sort_values(by="Opp to Floor", ascending=False)  # Sort by 'Opp to Floor'
         )
@@ -43,7 +43,7 @@ def generate_manager_pivot_html(data: pd.DataFrame) -> str:
             data[data["Category"] == "Attic"]
             .groupby(["Sales Rep Name"])
             .agg(agg_funcs)
-            .rename(columns={"Sales Rep Name": "#Rows", "Item Visibility": "#Highly Visible Items"})
+            .rename(columns={"Sales Rep Name": "# Rows", "Item Visibility": "# Visible Items"})
             .reset_index()
             .drop(columns=["Opp to Floor"])  # Remove Opp to Floor
             .sort_values(by="LTM Gross Sales", ascending=False)  # Sort by 'LTM Gross Sales'
@@ -51,7 +51,7 @@ def generate_manager_pivot_html(data: pd.DataFrame) -> str:
 
         # Format numerical columns
         for df in [basement_df, attic_df]:
-            for col in ["LTM Gross Sales", "#Highly Visible Items"]:
+            for col in ["LTM Gross Sales", "# Visible Items"]:
                 if col in df.columns:
                     df[col] = df[col].apply(lambda x: f"{x:,.0f}")
 
@@ -106,8 +106,8 @@ def send_manager_email(
         output_file = generate_manager_report(data, manager_name, output_folder, month_year)
 
         # Use aggregated summaries instead of raw data
-        attic_summary = _create_summary_table(data[data["Category"] == "Attic"])
-        basement_summary = _create_summary_table(data[data["Category"] == "Basement"])
+        attic_summary = _create_summary_table(data[data["Category"] == "Attic"], category="Attic")
+        basement_summary = _create_summary_table(data[data["Category"] == "Basement"], category="Basement")
 
         # Generate HTML tables using the aggregated data
         basement_html = generate_html_table(basement_summary, title="Basement Summary:")

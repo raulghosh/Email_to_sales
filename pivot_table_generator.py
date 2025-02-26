@@ -39,8 +39,8 @@ def generate_manager_report(
         manager_data = data[data["Manager Name"] == manager_name]
 
         # Generate summary tables
-        attic_summary = _create_summary_table(manager_data[manager_data["Category"] == "Attic"])
-        basement_summary = _create_summary_table(manager_data[manager_data["Category"] == "Basement"])
+        attic_summary = _create_summary_table(manager_data[manager_data["Category"] == "Attic"], category="Attic")
+        basement_summary = _create_summary_table(manager_data[manager_data["Category"] == "Basement"], category="Basement")
 
         # Write to Excel
         with pd.ExcelWriter(file_path, engine="openpyxl") as writer:
@@ -59,7 +59,7 @@ def generate_manager_report(
 
     return None
 
-def _create_summary_table(data: pd.DataFrame) -> pd.DataFrame:
+def _create_summary_table(data: pd.DataFrame, category: str) -> pd.DataFrame:
     """Create an aggregated summary table from input data."""
     if data.empty:
         return pd.DataFrame()
@@ -67,11 +67,25 @@ def _create_summary_table(data: pd.DataFrame) -> pd.DataFrame:
     summary_table = data.groupby("Sales Rep Name").agg({
         "LTM Gross Sales": "sum",
         "Opp to Floor": "sum",
-        "Item Visibility": lambda x: ((x == "2: KVI") | (x == "3: Super KVI")).sum(),
+        "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum(),
         "Sales Rep Name": "count"
     }).rename(columns={"Sales Rep Name": "# Rows", "Item Visibility": "# Visible Items"}).reset_index()
     
-    return summary_table.sort_values(by="Sales Rep Name")
+    # Create two columns for sorting
+    summary_table["Gross Sales LTM1"] = summary_table["LTM Gross Sales"]
+    summary_table["Opp to Floor1"] = summary_table["Opp to Floor"]
+    
+    
+    summary_table["LTM Gross Sales"] = summary_table["LTM Gross Sales"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
+    summary_table["Opp to Floor"] = summary_table["Opp to Floor"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
+    
+    # Sort the tables 
+    if category == "Attic":
+        summary_table = summary_table.sort_values(by="Gross Sales LTM1", ascending=False).drop(columns=["Gross Sales LTM1", "Opp to Floor1"])
+    else:
+        summary_table = summary_table.sort_values(by="Opp to Floor1", ascending=False).drop(columns=["Gross Sales LTM1", "Opp to Floor1"])
+    
+    return summary_table
 
 def _write_summary_sheet(summary_table: pd.DataFrame, writer: pd.ExcelWriter, sheet_name: str) -> None:
     """Write an aggregated summary sheet to Excel."""
@@ -81,7 +95,7 @@ def _write_summary_sheet(summary_table: pd.DataFrame, writer: pd.ExcelWriter, sh
 
 def _write_all_data_sheet(data: pd.DataFrame, writer: pd.ExcelWriter) -> None:
     """Write all filtered data to an Excel sheet."""
-    all_data = data.drop(columns=["Sales Rep Email", "Manager Email"])
+    all_data = data.drop(columns=["Sales Rep Email", "Manager Email", "RVP Email", "VP Email"])
     all_data.to_excel(writer, index=False, sheet_name='All Data')
     worksheet = writer.sheets['All Data']
     format_excel_sheet(worksheet, all_data)
