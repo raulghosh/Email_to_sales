@@ -26,8 +26,8 @@ def generate_sales_rep_report(
     
     Args:
         data: Input DataFrame
-        email: Sales rep email
-        name: Sales rep name
+        email: Sales Rep Email
+        name: Sales Rep Name
         output_folder: Output directory path
         month_year: Month and year for the report
         
@@ -42,13 +42,13 @@ def generate_sales_rep_report(
         output_folder.mkdir(parents=True, exist_ok=True)
         
         # Filter data for the sales rep
-        filtered_raw = data[data["Rep Email"] == email]
+        filtered_raw = data[data["Sales Rep Email"] == email]
         if filtered_raw.empty:
             raise SalesRepServiceError(f"No data found for sales rep: {name}")
             
         # Split data into Attic and Basement
-        attic_data = filtered_raw[filtered_raw["Region"] == "Attic"]
-        basement_data = filtered_raw[filtered_raw["Region"] == "Basement"]
+        attic_data = filtered_raw[filtered_raw["Category"] == "Attic"]
+        basement_data = filtered_raw[filtered_raw["Category"] == "Basement"]
         
         # Format the data
         attic_formatted = _prepare_report_data(attic_data)
@@ -90,20 +90,21 @@ def _prepare_report_data(data: pd.DataFrame) -> pd.DataFrame:
         Formatted DataFrame
     """
     # Drop unnecessary columns and reorder
-    formatted = data.drop(columns=["Rep Email", "Rep Name", "Manager Email", "Manager Name"])
+    formatted = data.drop(columns=["Sales Rep Email", "Sales Rep Name", "Manager Email", "Manager Name", "RVP Name", "RVP Email", "VP Name", "VP Email"])
     
-    # Reorder columns (Opp to Floor next to LTM Gross Sales)
-    cols = list(formatted.columns)
-    ltm_index = cols.index("LTM Gross Sales")
-    cols.insert(ltm_index + 1, cols.pop(cols.index("Opp to Floor")))
-    formatted = formatted[cols]
+    # # Reorder columns (Opp to Floor next to LTM Gross Sales)
+    # cols = list(formatted.columns)
+    # ltm_index = cols.index("LTM Gross Sales")
+    # cols.insert(ltm_index + 1, cols.pop(cols.index("Opp to Floor")))
+    # formatted = formatted[cols]
     
     # Convert LTM Gross Sales and Opp to Floor to strings, right-aligned without decimals
     formatted["LTM Gross Sales"] = formatted["LTM Gross Sales"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
     formatted["Opp to Floor"] = formatted["Opp to Floor"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
+    formatted["Opp to Target"] = formatted["Opp to Target"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
 
     # Convert Margin columns to strings with one decimal place and percentage sign
-    margin_columns = ["Floor Margin", "Target Margin"]  # Replace with actual margin column names
+    margin_columns = [col for col in formatted.columns if 'margin' in col.lower()]  # Replace with actual margin column names
     for col in margin_columns:
         if col in formatted.columns:
             formatted[col] = formatted[col].apply(lambda x: f"{100*x:.1f}%" if pd.notna(x) else "")
@@ -122,26 +123,26 @@ def calculate_metrics(data: pd.DataFrame) -> Dict[str, Any]:
         Dictionary containing calculated metrics
     """
     metrics = {
-        "basement_count": int(data[data["Region"] == "Basement"].shape[0]),
-        "attic_count": int(data[data["Region"] == "Attic"].shape[0]),
-        "basement_sales": float(data[data["Region"] == "Basement"]["LTM Gross Sales"].sum()),
-        "attic_sales": float(data[data["Region"] == "Attic"]["LTM Gross Sales"].sum()),
+        "basement_count": int(data[data["Category"] == "Basement"].shape[0]),
+        "attic_count": int(data[data["Category"] == "Attic"].shape[0]),
+        "basement_sales": float(data[data["Category"] == "Basement"]["LTM Gross Sales"].sum()),
+        "attic_sales": float(data[data["Category"] == "Attic"]["LTM Gross Sales"].sum()),
         "opp_to_floor": float(data["Opp to Floor"].sum())
     }
     
     # Generate summary table
-    summary_table = data.groupby("Region").agg({
+    summary_table = data.groupby("Category").agg({
         "LTM Gross Sales": "sum",
         "Opp to Floor": "sum",
-        "Region": "count",
-        "KVI Type": lambda x: ((x == "2: KVI") | (x == "3: Super KVI")).sum()
+        "Category": "count",
+        "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum()
     }).rename(columns={
-        "Region": "Item Count",
-        "KVI Type": "Item Visibility"
+        "Category": "# Rows",
+        "Item Visibility": "# Visible Items"
     }).reset_index()
     
     # Format numerical values
-    for col in ["LTM Gross Sales", "Opp to Floor", "Item Count", "Item Visibility"]:
+    for col in ["LTM Gross Sales", "Opp to Floor", "# Rows", "# Visible Items"]:
         summary_table[col] = summary_table[col].apply(lambda x: f"{x:,.0f}")
     
     metrics["summary_html"] = _format_summary_table_html(summary_table)
@@ -169,8 +170,8 @@ def send_sales_rep_email(
     
     Args:
         data: Input DataFrame
-        email: Sales rep email
-        name: Sales rep name
+        email: Sales Rep Email
+        name: Sales Rep Name
         output_folder: Output directory path
         month_year: Month and year for the report
         
@@ -179,8 +180,9 @@ def send_sales_rep_email(
     """
     try:
         # Filter data for the rep
-        rep_data = data[data["Rep Email"] == email]
+        rep_data = data[data["Sales Rep Email"] == email]
         if rep_data.empty:
+            logger.debug(f"Data for sales rep {name} ({email}):\n{data.head()}")
             raise SalesRepServiceError(f"No data found for sales rep: {name}")
         
         # Generate report
@@ -215,3 +217,28 @@ def send_sales_rep_email(
     except Exception as e:
         logger.error(f"Unexpected error processing sales rep {name}: {str(e)}")
         raise SalesRepServiceError(f"Unexpected error: {str(e)}")
+
+def clean_data(data: pd.DataFrame) -> pd.DataFrame:
+    """
+    Remove rows with missing Rep/Manager emails.
+    
+    Args:
+        data: Input DataFrame
+        
+    Returns:
+        Cleaned DataFrame
+    """
+    if data.empty:
+        logger.warning("Empty DataFrame received for cleaning")
+        return data
+        
+    initial_rows = len(data)
+    cleaned_data = data.dropna(subset=["Sales Rep Email", "Manager Email"])
+    dropped_rows = initial_rows - len(cleaned_data)
+    
+    if dropped_rows > 0:
+        logger.warning(f"Dropped {dropped_rows} rows with missing emails")
+    
+    logger.debug(f"Data after cleaning:\n{cleaned_data.head()}")
+    
+    return cleaned_data

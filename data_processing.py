@@ -45,11 +45,13 @@ def clean_data(data: pd.DataFrame) -> pd.DataFrame:
         return data
         
     initial_rows = len(data)
-    cleaned_data = data.dropna(subset=["Rep Email", "Manager Email"])
+    cleaned_data = data.dropna(subset=["Sales Rep Email", "Manager Email"])
     dropped_rows = initial_rows - len(cleaned_data)
     
     if dropped_rows > 0:
         logger.warning(f"Dropped {dropped_rows} rows with missing emails")
+    
+    logger.debug(f"Data after cleaning:\n{cleaned_data.head()}")
     
     return cleaned_data
 
@@ -68,9 +70,14 @@ def format_columns(data: pd.DataFrame) -> pd.DataFrame:
     """
     try:
         data = data.copy()
+        print(f"Sales Rep data pre processing=> {data[data['Sales Rep Name'] == 'Ahlers, Thomas M']}")
+        # columns = Category | Customer Name | Bill_to # | Legacy Item # | Item Desc | Channel | LTM Gross Sales | LTM Comm. Margin | Last Comm. Margin |\
+        # Last Trans. Date | Floor Margin | Target Margin | Start Margin | Opp to Floor | Opp to Target | Item Visibility |Vendor Name | Cat1 |\
+        # Sales Rep Name | Sales Rep Email | Manager Name | Manager Email | RVP Name | RVP Email | VP Name | VP Email
+
         
         # Identify columns by type
-        sales_columns = [col for col in data.columns if 'sales' in col.lower()]
+        sales_columns = [col for col in data.columns if 'sales' in col.lower() and 'rep' not in col.lower()]
         opp_columns = [col for col in data.columns if 'opp' in col.lower()]
         margin_columns = [col for col in data.columns if 'margin' in col.lower()]
         
@@ -80,6 +87,11 @@ def format_columns(data: pd.DataFrame) -> pd.DataFrame:
         logger.debug(f"Sales columns: {sales_columns}")
         logger.debug(f"Opp columns: {opp_columns}")
         logger.debug(f"Margin columns: {margin_columns}")
+        
+        # Force Legacy Item # to string
+        if "Legacy Item #" in data.columns:
+            data["Legacy Item #"] = data["Legacy Item #"].astype(str)
+            logger.debug("Converted 'Legacy Item #' to string")
         
         # Format sales and opp columns
         for col in sales_columns + opp_columns:
@@ -94,6 +106,7 @@ def format_columns(data: pd.DataFrame) -> pd.DataFrame:
             logger.debug(f"Data after formatting {col}:\n{data[[col]].head()}")
         
         logger.debug(f"Data after formatting all columns:\n{data.head()}")
+        print(f"Sales Rep data => {data[data['Sales Rep Name'] == 'Ahlers, Thomas M']}")
         
         return data
         
@@ -116,14 +129,14 @@ def get_sales_reps(data: pd.DataFrame, limit: Optional[int] = None) -> Dict[str,
         DataProcessingError: If required columns are missing
     """
     try:
-        if "Rep Email" not in data.columns or "Rep Name" not in data.columns:
-            raise DataProcessingError("Required columns 'Rep Email' or 'Rep Name' missing")
+        if "Sales Rep Email" not in data.columns or "Sales Rep Name" not in data.columns:
+            raise DataProcessingError("Required columns 'Sales Rep Email' or 'Sales Rep Name' missing")
             
-        reps_df = data[["Rep Email", "Rep Name"]].drop_duplicates()
+        reps_df = data[["Sales Rep Email", "Sales Rep Name"]].drop_duplicates()
         if limit:
             reps_df = reps_df.head(limit)
             
-        return reps_df.set_index("Rep Email")["Rep Name"].to_dict()
+        return reps_df.set_index("Sales Rep Email")["Sales Rep Name"].to_dict()
         
     except Exception as e:
         logger.error(f"Error getting sales reps: {str(e)}")
@@ -155,21 +168,21 @@ def get_managers(data: pd.DataFrame, start: int = 5, end: int = 7) -> Dict[str, 
         logger.error(f"Error getting managers: {str(e)}")
         raise DataProcessingError(f"Failed to get managers: {str(e)}")
 
-def get_sorted_manager_data(data: pd.DataFrame) -> pd.DataFrame:
-    """Sort the manager data by Opp to Floor."""
-    # Group by Rep Name and sum Opp to Floor
-    grouped_data = data.groupby("Rep Name")["Opp to Floor"].sum().reset_index()
+# def get_sorted_manager_data(data: pd.DataFrame) -> pd.DataFrame:
+#     """Sort the manager data by Opp to Floor."""
+#     # Group by Sales Rep Name and sum Opp to Floor
+#     grouped_data = data.groupby("Sales Rep Name")["Opp to Floor"].sum().reset_index()
     
-    # Sort by Opp to Floor in descending order
-    sorted_grouped_data = grouped_data.sort_values(by="Opp to Floor", ascending=False)
+#     # Sort by Opp to Floor in descending order
+#     sorted_grouped_data = grouped_data.sort_values(by="Opp to Floor", ascending=False)
     
-    # Merge sorted grouped data with the original data to maintain the sorting order
-    sorted_data = pd.merge(sorted_grouped_data, data, on="Rep Name", how="left")
+#     # Merge sorted grouped data with the original data to maintain the sorting order
+#     sorted_data = pd.merge(sorted_grouped_data, data, on="Sales Rep Name", how="left")
     
-    # Rename 'Opp to Floor_y' to 'Opp to Floor'
-    sorted_data.rename(columns={"Opp to Floor_y": "Opp to Floor"}, inplace=True)
+#     # Rename 'Opp to Floor_y' to 'Opp to Floor'
+#     sorted_data.rename(columns={"Opp to Floor_y": "Opp to Floor"}, inplace=True)
     
-    # Drop 'Opp to Floor_x' column
-    sorted_data.drop(columns="Opp to Floor_x", inplace=True)
+#     # Drop 'Opp to Floor_x' column
+#     sorted_data.drop(columns="Opp to Floor_x", inplace=True)
     
-    return sorted_data
+#     return sorted_data
