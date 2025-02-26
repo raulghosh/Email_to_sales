@@ -39,7 +39,16 @@ def format_excel_sheet(worksheet, df: pd.DataFrame) -> None:
                 else:
                     cell.number_format = numbers.FORMAT_NUMBER_COMMA_SEPARATED1
 
+    # Format "Last Trans. Date" column
+    if "Last Trans. Date" in df.columns:
+        date_col_idx = df.columns.get_loc("Last Trans. Date") + 1
+        for row in worksheet.iter_rows(min_row=2, min_col=date_col_idx, max_col=date_col_idx):
+            for cell in row:
+                cell.number_format = "MM/DD/YYYY"
+
     # Adjust column widths
     for col_num, column in enumerate(df.columns, 1):
         max_length = max(df[column].astype(str).apply(len).max(), len(column)) + 2
+        if column == "Item Desc":
+            max_length += 10  # Increase the width of "Item Desc" column by 10 characters
         worksheet.column_dimensions[get_column_letter(col_num)].width = min(max_length, 30)

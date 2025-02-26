@@ -48,7 +48,7 @@ def _sales_rep_email_body(
         <p>Attached is the Attic and Basement Report for {month_year}.</p>
         <p>This month you have {basement_count} action items in 'Basement' corresponding to ${basement_sales:,.0f} of gross sales and you have {attic_count} action items in 'Attic' corresponding to {attic_sales:,.0f} of gross sales.</p>
         <p>Raising the items in basement to the recommended margin will result in ${opp_to_floor:,.0f} of commission profit gain.</p>
-        <p>Summary by Region:</p>
+        <p>Summary by Category:</p>
         {summary_html}
         <p>Access the live Power BI Dashboard: <a href="{power_bi_link}">Attic and Basement Report</a></p>
         <p>Thanks,<br>Pricing Team</p>

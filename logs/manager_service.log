@@ -188,3 +188,31 @@
 2025-02-19 22:59:17,947 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
 2025-02-19 22:59:17,950 - manager_service - INFO - Processing manager email for: Owens, Brian R
 2025-02-19 22:59:18,324 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-02-26 11:26:34,214 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-26 11:26:34,228 - manager_service - ERROR - Unexpected error processing manager Quinlan, Martin: "Column(s) ['Item Visibility'] do not exist"
+2025-02-26 11:27:57,174 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-26 11:27:57,186 - manager_service - ERROR - Unexpected error processing manager Quinlan, Martin: "Column(s) ['Item Visibility'] do not exist"
+2025-02-26 11:30:09,542 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-26 11:30:10,050 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-02-26 11:30:10,051 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-26 11:30:10,348 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-26 11:46:43,018 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-26 11:46:43,467 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-02-26 11:46:43,469 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-26 11:46:43,853 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-26 13:10:25,353 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-26 13:10:25,959 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-02-26 13:10:25,961 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-26 13:10:26,273 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-26 13:49:05,235 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-26 13:49:05,720 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-02-26 13:49:05,722 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-26 13:49:06,035 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-26 14:02:52,101 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-26 14:02:52,689 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-02-26 14:02:52,691 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-26 14:02:53,069 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-26 14:23:59,156 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-26 14:23:59,676 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-02-26 14:23:59,677 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-26 14:24:00,009 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor

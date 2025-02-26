@@ -51,12 +51,8 @@ def generate_sales_rep_report(
         basement_data = filtered_raw[filtered_raw["Category"] == "Basement"]
         
         # Format the data
-        attic_formatted = _prepare_report_data(attic_data)
-        basement_formatted = _prepare_report_data(basement_data)
-        
-        # Sort the data
-        attic_formatted = attic_formatted.sort_values(by=["LTM Gross Sales"], ascending=False).drop(columns=["Opp to Floor"]) 
-        basement_formatted = basement_formatted.sort_values(by=["Opp to Floor"], ascending=False)
+        attic_formatted = _prepare_report_data(attic_data,category="Attic")
+        basement_formatted = _prepare_report_data(basement_data,category="Basement")
         
         # Save to Excel
         output_file = output_folder / f"{name}_Report.xlsx"
@@ -68,6 +64,7 @@ def generate_sales_rep_report(
             basement_formatted.to_excel(writer, index=False, sheet_name="Basement")
             basement_worksheet = writer.sheets["Basement"]
             format_excel_sheet(basement_worksheet, basement_formatted)
+
             # Write Attic data to its own sheet
             attic_formatted.to_excel(writer, index=False, sheet_name="Attic")
             attic_worksheet = writer.sheets["Attic"]
@@ -79,7 +76,7 @@ def generate_sales_rep_report(
         logger.error(f"Failed to generate sales rep report for {name}: {str(e)}")
         raise SalesRepServiceError(f"Failed to generate report: {str(e)}")
 
-def _prepare_report_data(data: pd.DataFrame) -> pd.DataFrame:
+def _prepare_report_data(data: pd.DataFrame, category: str) -> pd.DataFrame:
     """
     Prepare and format data for the sales rep report.
     
@@ -92,13 +89,19 @@ def _prepare_report_data(data: pd.DataFrame) -> pd.DataFrame:
     # Drop unnecessary columns and reorder
     formatted = data.drop(columns=["Sales Rep Email", "Sales Rep Name", "Manager Email", "Manager Name", "RVP Name", "RVP Email", "VP Name", "VP Email"])
     
-    # # Reorder columns (Opp to Floor next to LTM Gross Sales)
-    # cols = list(formatted.columns)
-    # ltm_index = cols.index("LTM Gross Sales")
-    # cols.insert(ltm_index + 1, cols.pop(cols.index("Opp to Floor")))
-    # formatted = formatted[cols]
-    
     # Convert LTM Gross Sales and Opp to Floor to strings, right-aligned without decimals
+    formatted["LTM Gross Sales1"] = pd.to_numeric(formatted["LTM Gross Sales"],errors="coerce")
+    formatted["Opp to Floor1"] = pd.to_numeric(formatted["Opp to Floor"],errors="coerce")
+    
+    # Sort the data
+    if category == "Attic":
+        formatted = formatted.sort_values(by=["LTM Gross Sales1"], ascending=False)
+    else:
+        formatted = formatted.sort_values(by=["Opp to Floor1"], ascending=False)
+        
+    # Drop the temporary columns after sorting
+    formatted = formatted.drop(columns=["LTM Gross Sales1", "Opp to Floor1"])
+    
     formatted["LTM Gross Sales"] = formatted["LTM Gross Sales"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
     formatted["Opp to Floor"] = formatted["Opp to Floor"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
     formatted["Opp to Target"] = formatted["Opp to Target"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
@@ -108,8 +111,6 @@ def _prepare_report_data(data: pd.DataFrame) -> pd.DataFrame:
     for col in margin_columns:
         if col in formatted.columns:
             formatted[col] = formatted[col].apply(lambda x: f"{100*x:.1f}%" if pd.notna(x) else "")
-
-    
     return formatted
 
 def calculate_metrics(data: pd.DataFrame) -> Dict[str, Any]:
