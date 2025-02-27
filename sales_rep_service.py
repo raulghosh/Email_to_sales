@@ -99,10 +99,20 @@ def _prepare_report_data(data: pd.DataFrame, category: str, include_sales_rep_na
     formatted["Opp to Floor1"] = formatted["Opp to Floor"]
     
     # Sort the data
-    if category == "Attic":
-        formatted = formatted.sort_values(by=["LTM Gross Sales1"], ascending=False)
-    else:
-        formatted = formatted.sort_values(by=["Opp to Floor1"], ascending=False)
+    if include_sales_rep_name:
+        cols=["Sales Rep Name"] + [col for col in formatted.columns if col != "Sales Rep Name"]
+        formatted = formatted[cols]
+        if category == "Attic":
+            formatted = formatted.sort_values(by=["Sales Rep Name","LTM Gross Sales1"], ascending=[True,False])
+        else:
+            formatted = formatted.sort_values(by=["Sales Rep Name","Opp to Floor1"], ascending=[True, False])
+
+        # formatted=formatted.style.set_property(subset=["Sales Rep Name"], **{'text-align', 'left'})        
+    else:    
+        if category == "Attic":
+            formatted = formatted.sort_values(by=["LTM Gross Sales1"], ascending=False)
+        else:
+            formatted = formatted.sort_values(by=["Opp to Floor1"], ascending=False)
         
     # Drop the temporary columns after sorting
     formatted = formatted.drop(columns=["LTM Gross Sales1", "Opp to Floor1"])
