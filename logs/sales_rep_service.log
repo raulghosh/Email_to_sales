@@ -91,3 +91,39 @@
 2025-02-26 14:02:52,100 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
 2025-02-26 14:23:58,882 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
 2025-02-26 14:23:59,155 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-02-26 14:33:27,796 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-02-26 14:33:28,193 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-02-26 14:58:46,721 - sales_rep_service - ERROR - Failed to generate sales rep report for Ahlers, Thomas M: 'Opp to Floor'
+2025-02-26 14:58:46,722 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to generate report: 'Opp to Floor'
+2025-02-26 15:20:24,945 - sales_rep_service - ERROR - Failed to generate sales rep report for Ahlers, Thomas M: invalid literal for int() with base 10: '10959474.0'
+2025-02-26 15:20:24,946 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to generate report: invalid literal for int() with base 10: '10959474.0'
+2025-02-26 15:29:07,120 - sales_rep_service - ERROR - Failed to generate sales rep report for Ahlers, Thomas M: invalid literal for int() with base 10: '10959474.0'
+2025-02-26 15:29:07,122 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to generate report: invalid literal for int() with base 10: '10959474.0'
+2025-02-26 15:30:25,281 - sales_rep_service - ERROR - Failed to generate sales rep report for Ahlers, Thomas M: invalid literal for int() with base 10: '10959474.0'
+2025-02-26 15:30:25,282 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to generate report: invalid literal for int() with base 10: '10959474.0'
+2025-02-26 15:31:16,957 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-02-26 15:31:17,334 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-02-26 17:08:45,265 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-02-26 17:08:45,638 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-02-26 17:12:57,665 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-02-26 17:12:57,935 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-02-26 17:13:54,840 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-02-26 17:13:55,218 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-02-26 17:36:11,996 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-02-26 17:36:12,298 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-02-26 17:43:56,480 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-02-26 17:43:56,759 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-02-27 10:20:05,641 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-02-27 10:20:06,003 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-02-27 11:06:35,480 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-02-27 11:06:35,863 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-02-27 11:28:41,902 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-02-27 11:28:42,178 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-02-27 11:34:29,728 - sales_rep_service - ERROR - Failed to generate sales rep report for Ahlers, Thomas M: invalid literal for int() with base 10: '10959474.0'
+2025-02-27 11:34:29,729 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to generate report: invalid literal for int() with base 10: '10959474.0'
+2025-02-27 11:37:27,576 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-02-27 11:37:27,977 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-02-27 11:57:29,545 - sales_rep_service - ERROR - Failed to generate sales rep report for Ahlers, Thomas M: invalid literal for int() with base 10: '10959474.0'
+2025-02-27 11:57:29,546 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to generate report: invalid literal for int() with base 10: '10959474.0'
+2025-02-27 11:58:32,718 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-02-27 11:58:32,999 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M

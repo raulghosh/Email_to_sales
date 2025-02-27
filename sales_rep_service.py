@@ -51,8 +51,8 @@ def generate_sales_rep_report(
         basement_data = filtered_raw[filtered_raw["Category"] == "Basement"]
         
         # Format the data
-        attic_formatted = _prepare_report_data(attic_data,category="Attic")
-        basement_formatted = _prepare_report_data(basement_data,category="Basement")
+        attic_formatted = _prepare_report_data(attic_data, category="Attic", include_sales_rep_name=False)
+        basement_formatted = _prepare_report_data(basement_data, category="Basement", include_sales_rep_name=False)
         
         # Save to Excel
         output_file = output_folder / f"{name}_Report.xlsx"
@@ -76,45 +76,53 @@ def generate_sales_rep_report(
         logger.error(f"Failed to generate sales rep report for {name}: {str(e)}")
         raise SalesRepServiceError(f"Failed to generate report: {str(e)}")
 
-def _prepare_report_data(data: pd.DataFrame, category: str) -> pd.DataFrame:
+def _prepare_report_data(data: pd.DataFrame, category: str, include_sales_rep_name: bool = False) -> pd.DataFrame:
     """
     Prepare and format data for the sales rep report.
     
     Args:
         data: Input DataFrame
+        category: Category of the data ("Attic" or "Basement")
+        include_sales_rep_name: Whether to include the "Sales Rep Name" column
         
     Returns:
         Formatted DataFrame
     """
     # Drop unnecessary columns and reorder
-    formatted = data.drop(columns=["Sales Rep Email", "Sales Rep Name", "Manager Email", "Manager Name", "RVP Name", "RVP Email", "VP Name", "VP Email"])
+    columns_to_drop = ["Sales Rep Email", "Manager Email", "Manager Name", "RVP Name", "RVP Email", "VP Name", "VP Email"]
+    if not include_sales_rep_name:
+        columns_to_drop.append("Sales Rep Name")
     
-    # Convert LTM Gross Sales and Opp to Floor to strings, right-aligned without decimals
-    formatted["LTM Gross Sales1"] = pd.to_numeric(formatted["LTM Gross Sales"],errors="coerce")
-    formatted["Opp to Floor1"] = pd.to_numeric(formatted["Opp to Floor"],errors="coerce")
+    formatted = data.drop(columns=columns_to_drop)
+    
+    formatted["LTM Gross Sales1"] = formatted["LTM Gross Sales"]
+    formatted["Opp to Floor1"] = formatted["Opp to Floor"]
     
     # Sort the data
     if category == "Attic":
         formatted = formatted.sort_values(by=["LTM Gross Sales1"], ascending=False)
-        formatted.drop(columns=["Opp to Floor", "Opp to Target"], inplace=True)
     else:
         formatted = formatted.sort_values(by=["Opp to Floor1"], ascending=False)
         
     # Drop the temporary columns after sorting
     formatted = formatted.drop(columns=["LTM Gross Sales1", "Opp to Floor1"])
     
+    # Convert LTM Gross Sales and Opp to Floor to strings, right-aligned without decimals
     formatted["LTM Gross Sales"] = formatted["LTM Gross Sales"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
-    formatted["Legacy Item #"] = formatted["Legacy Item #"].apply(lambda x: f"{int(float(x))}" if pd.notna(x) and x != '' else "")
-    
-    if category=="Basement":
-        formatted["Opp to Floor"] = formatted["Opp to Floor"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
-        formatted["Opp to Target"] = formatted["Opp to Target"].apply(lambda x: f"{int(float(x)):,}" if pd.notna(x) else "")
+    formatted["Opp to Floor"] = formatted["Opp to Floor"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
+    formatted["Opp to Target"] = formatted["Opp to Target"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
+    formatted["Legacy Item #"] = formatted["Legacy Item #"].astype(float).astype(int).astype(str)
 
     # Convert Margin columns to strings with one decimal place and percentage sign
     margin_columns = [col for col in formatted.columns if 'margin' in col.lower()]  # Replace with actual margin column names
     for col in margin_columns:
         if col in formatted.columns:
             formatted[col] = formatted[col].apply(lambda x: f"{100*x:.1f}%" if pd.notna(x) else "")
+    
+    # Retain the Sales Rep Name column if required
+    if include_sales_rep_name:
+        formatted["Sales Rep Name"] = data["Sales Rep Name"]
+    
     return formatted
 
 def calculate_metrics(data: pd.DataFrame) -> Dict[str, Any]:

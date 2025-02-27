@@ -4,6 +4,7 @@ from openpyxl import Workbook
 from openpyxl.utils.dataframe import dataframe_to_rows
 from utils.logger import setup_logger
 from excel_formatter import format_excel_sheet
+from sales_rep_service import _prepare_report_data
 
 logger = setup_logger(__name__)
 
@@ -38,15 +39,24 @@ def generate_manager_report(
         # Filter data for the given manager
         manager_data = data[data["Manager Name"] == manager_name]
 
+        # Split data into Attic and Basement
+        attic_data = manager_data[manager_data["Category"] == "Attic"]
+        basement_data = manager_data[manager_data["Category"] == "Basement"]
+
+        # Format the data
+        attic_formatted = _prepare_report_data(attic_data, category="Attic", include_sales_rep_name=True)
+        basement_formatted = _prepare_report_data(basement_data, category="Basement", include_sales_rep_name=True)
+
         # Generate summary tables
-        attic_summary = _create_summary_table(manager_data[manager_data["Category"] == "Attic"], category="Attic")
-        basement_summary = _create_summary_table(manager_data[manager_data["Category"] == "Basement"], category="Basement")
+        attic_summary = _create_summary_table(attic_data, category="Attic")
+        basement_summary = _create_summary_table(basement_data, category="Basement")
 
         # Write to Excel
         with pd.ExcelWriter(file_path, engine="openpyxl") as writer:
             _write_summary_sheet(basement_summary, writer, "Basement Summary")
             _write_summary_sheet(attic_summary, writer, "Attic Summary")
-            _write_all_data_sheet(manager_data, writer)
+            _write_data_sheet(basement_formatted, writer, "Basement")
+            _write_data_sheet(attic_formatted, writer, "Attic")
 
         return file_path
 
@@ -75,13 +85,12 @@ def _create_summary_table(data: pd.DataFrame, category: str) -> pd.DataFrame:
     summary_table["Gross Sales LTM1"] = summary_table["LTM Gross Sales"]
     summary_table["Opp to Floor1"] = summary_table["Opp to Floor"]
     
-    
     summary_table["LTM Gross Sales"] = summary_table["LTM Gross Sales"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
     summary_table["Opp to Floor"] = summary_table["Opp to Floor"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
     
     # Sort the tables 
     if category == "Attic":
-        summary_table = summary_table.sort_values(by="Gross Sales LTM1", ascending=False).drop(columns=["Gross Sales LTM1", "Opp to Floor1"])
+        summary_table = summary_table.sort_values(by="Gross Sales LTM1", ascending=False).drop(columns=["Gross Sales LTM1", "Opp to Floor1", "Opp to Floor"])
     else:
         summary_table = summary_table.sort_values(by="Opp to Floor1", ascending=False).drop(columns=["Gross Sales LTM1", "Opp to Floor1"])
     
@@ -93,12 +102,11 @@ def _write_summary_sheet(summary_table: pd.DataFrame, writer: pd.ExcelWriter, sh
     worksheet = writer.sheets[sheet_name]
     format_excel_sheet(worksheet, summary_table)
 
-def _write_all_data_sheet(data: pd.DataFrame, writer: pd.ExcelWriter) -> None:
-    """Write all filtered data to an Excel sheet."""
-    all_data = data.drop(columns=["Sales Rep Email", "Manager Email", "RVP Email", "VP Email"])
-    all_data.to_excel(writer, index=False, sheet_name='All Data')
-    worksheet = writer.sheets['All Data']
-    format_excel_sheet(worksheet, all_data)
+def _write_data_sheet(data: pd.DataFrame, writer: pd.ExcelWriter, sheet_name: str) -> None:
+    """Write formatted data to an Excel sheet."""
+    data.to_excel(writer, index=False, sheet_name=sheet_name)
+    worksheet = writer.sheets[sheet_name]
+    format_excel_sheet(worksheet, data)
 
 def generate_html_table(data: pd.DataFrame, title: str) -> str:
     """Convert a Pandas DataFrame into an HTML table with a title and format numerical columns."""

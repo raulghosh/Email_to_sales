@@ -4,6 +4,7 @@ from typing import Dict, Any
 from email_handler import send_email, EmailError
 from email_composer import create_email_body
 from pivot_table_generator import generate_manager_report, PivotTableError, generate_html_table, _create_summary_table
+from sales_rep_service import generate_sales_rep_report
 from config import CONFIG
 from utils.logger import setup_logger
 

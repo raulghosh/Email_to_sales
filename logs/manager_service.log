@@ -216,3 +216,33 @@
 2025-02-26 14:23:59,676 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
 2025-02-26 14:23:59,677 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
 2025-02-26 14:24:00,009 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-26 14:33:28,194 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-26 14:33:28,831 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-02-26 14:33:28,832 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-26 14:33:29,302 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-26 15:31:17,336 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-26 15:31:17,797 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-02-26 15:31:17,799 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-26 15:31:18,085 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-26 17:08:45,640 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-26 17:08:45,655 - manager_service - ERROR - Unexpected error processing manager Quinlan, Martin: _create_summary_table() missing 1 required positional argument: 'category'
+2025-02-26 17:12:57,937 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-26 17:12:58,013 - manager_service - ERROR - Unexpected error processing manager Quinlan, Martin: 'Gross Sales LTM'
+2025-02-26 17:13:55,219 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-26 17:13:55,312 - manager_service - ERROR - Unexpected error processing manager Quinlan, Martin: "[' Opp to Floor 1'] not found in axis"
+2025-02-26 17:36:12,300 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-26 17:36:12,767 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-02-26 17:36:12,768 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-02-26 17:36:13,172 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-02-26 17:43:56,760 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-26 17:43:57,325 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-02-27 10:20:06,004 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-27 10:20:06,491 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-02-27 11:06:35,864 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-27 11:06:36,422 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-02-27 11:28:42,179 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-27 11:28:42,716 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-02-27 11:37:27,979 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-27 11:37:28,624 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-02-27 11:58:33,000 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-02-27 11:58:33,482 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
