@@ -258,3 +258,26 @@
 2025-02-27 13:38:55,765 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
 2025-02-27 13:42:01,860 - manager_service - INFO - Processing manager email for: Quinlan, Martin
 2025-02-27 13:42:02,427 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-03-03 17:19:08,798 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-03-03 17:19:09,335 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-03-03 17:29:14,058 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-03-03 17:29:14,616 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-03-03 17:31:27,821 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-03-03 17:31:28,140 - manager_service - ERROR - Unexpected error processing manager Quinlan, Martin: generate_html_table() got an unexpected keyword argument 'manager_name'
+2025-03-03 17:34:13,378 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-03-03 17:34:13,695 - manager_service - ERROR - Unexpected error processing manager Quinlan, Martin: generate_manager_pivot_html() got an unexpected keyword argument 'title'
+2025-03-03 17:37:11,371 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-03-03 17:37:11,678 - manager_service - ERROR - Failed to generate pivot tables: 'Sales Manager Name'
+2025-03-03 17:37:11,679 - manager_service - ERROR - Unexpected error processing manager Quinlan, Martin: Failed to generate pivot tables: 'Sales Manager Name'
+2025-03-03 17:39:43,377 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-03-03 17:39:43,658 - manager_service - ERROR - Failed to generate pivot tables: 'Manager Name'
+2025-03-03 17:39:43,659 - manager_service - ERROR - Unexpected error processing manager Quinlan, Martin: Failed to generate pivot tables: 'Manager Name'
+2025-03-03 17:40:51,741 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-03-03 17:40:52,047 - manager_service - ERROR - Failed to generate pivot tables: 'Manager Name'
+2025-03-03 17:40:52,047 - manager_service - ERROR - Unexpected error processing manager Quinlan, Martin: Failed to generate pivot tables: 'Manager Name'
+2025-03-03 17:45:49,538 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-03-03 17:45:50,040 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-03-03 18:05:26,615 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-03-03 18:05:26,788 - manager_service - ERROR - Unexpected error processing manager Quinlan, Martin: create_email_body() got an unexpected keyword argument 'pivot_html'
+2025-03-03 18:14:14,604 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-03-03 18:14:14,928 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin

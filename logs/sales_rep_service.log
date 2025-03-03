@@ -141,3 +141,25 @@
 2025-02-27 13:38:55,502 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
 2025-02-27 13:42:01,560 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
 2025-02-27 13:42:01,858 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-03 17:19:08,501 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-03 17:19:08,797 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-03 17:29:13,808 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-03 17:29:14,057 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-03 17:31:27,527 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-03 17:31:27,819 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-03 17:34:13,064 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-03 17:34:13,377 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-03 17:37:11,102 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-03 17:37:11,370 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-03 17:39:42,991 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-03 17:39:43,377 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-03 17:40:51,495 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-03 17:40:51,740 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-03 17:45:49,125 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-03 17:45:49,536 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-03 18:05:26,282 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-03 18:05:26,614 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-03 18:11:07,925 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-03 18:11:08,024 - sales_rep_service - ERROR - Unexpected error processing sales rep Ahlers, Thomas M: create_email_body() got an unexpected keyword argument 'sales_rep_data'
+2025-03-03 18:14:14,268 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-03 18:14:14,603 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M

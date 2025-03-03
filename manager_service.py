@@ -3,7 +3,7 @@ import pandas as pd
 from typing import Dict, Any
 from email_handler import send_email, EmailError
 from email_composer import create_email_body
-from pivot_table_generator import generate_manager_report, PivotTableError, generate_html_table, _create_summary_table
+from pivot_table_generator import generate_manager_report, PivotTableError, _create_summary_table
 from sales_rep_service import generate_sales_rep_report
 from config import CONFIG
 from utils.logger import setup_logger
@@ -14,13 +14,14 @@ class ManagerServiceError(Exception):
     """Custom exception for manager service errors."""
     pass
 
-def generate_manager_pivot_html(data: pd.DataFrame) -> str:
+def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
     """
     Generate two HTML pivot tables for the manager email: 
     one for 'Basement' (sorted by 'Opp to Floor'), 
     and one for 'Attic' (sorted by 'LTM Gross Sales').
     """
     try:
+        data = data[data["Manager Name"] == manager_name]
         # Define aggregation
         agg_funcs = {
             "LTM Gross Sales": "sum",
@@ -55,9 +56,12 @@ def generate_manager_pivot_html(data: pd.DataFrame) -> str:
             for col in ["LTM Gross Sales", "# Visible Items"]:
                 if col in df.columns:
                     df[col] = df[col].apply(lambda x: f"{x:,.0f}")
+        # Format "Opp to Floor" column in basement_df
+        if "Opp to Floor" in basement_df.columns:
+            basement_df["Opp to Floor"] = basement_df["Opp to Floor"].apply(lambda x: f"{x:,.0f}")
 
         # Convert to HTML (Align Sales Rep Name & Category to left)
-        def df_to_html(df):
+        def df_to_html(df, title):
             html = df.to_html(index=False, classes="pivot-table", escape=False)
             html = html.replace("<th>Sales Rep Name</th>", '<th style="text-align: left;">Sales Rep Name</th>')
 
@@ -69,10 +73,10 @@ def generate_manager_pivot_html(data: pd.DataFrame) -> str:
             if first_col_start != -1:
                 html = html[:first_col_start] + html[first_col_start:].replace('<td style="text-align: right;">', '<td style="text-align: left;">', 1)
 
-            return html
+            return f"<h3>{title}</h3>" + html
 
-        basement_html = df_to_html(basement_df)
-        attic_html = df_to_html(attic_df)
+        basement_html = df_to_html(basement_df, "Basement Summary")
+        attic_html = df_to_html(attic_df, "Attic Summary")
 
         # Combine with styling
         pivot_html = f"""
@@ -97,6 +101,19 @@ def send_manager_email(
     output_folder: Path,
     month_year: str
 ) -> None:
+    """
+    Process and send an email to a manager.
+    
+    Args:
+        data: Input DataFrame
+        manager_email: Manager's email
+        manager_name: Manager's name
+        output_folder: Output directory path
+        month_year: Month and year for the report
+        
+    Raises:
+        ManagerServiceError: If there's an error in the process
+    """
     try:
         if data.empty:
             raise ManagerServiceError(f"No data provided for manager: {manager_name}")
@@ -106,13 +123,8 @@ def send_manager_email(
         # Generate and save report
         output_file = generate_manager_report(data, manager_name, output_folder, month_year)
 
-        # Use aggregated summaries instead of raw data
-        attic_summary = _create_summary_table(data[data["Category"] == "Attic"], category="Attic")
-        basement_summary = _create_summary_table(data[data["Category"] == "Basement"], category="Basement")
-
         # Generate HTML tables using the aggregated data
-        basement_html = generate_html_table(basement_summary, title="Basement Summary:")
-        attic_html = generate_html_table(attic_summary, title="Attic Summary:")
+        pivot_html = generate_manager_pivot_html(data, manager_name=manager_name)
 
         # Create email body
         email_body = create_email_body(
@@ -120,8 +132,7 @@ def send_manager_email(
             name=manager_name,
             month_year=month_year,
             power_bi_link=CONFIG.power_bi_link,
-            basement_html=basement_html,
-            attic_html=attic_html
+            pivot_html=pivot_html
         )
 
         # Send email
