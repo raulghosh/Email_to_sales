@@ -281,3 +281,13 @@
 2025-03-03 18:05:26,788 - manager_service - ERROR - Unexpected error processing manager Quinlan, Martin: create_email_body() got an unexpected keyword argument 'pivot_html'
 2025-03-03 18:14:14,604 - manager_service - INFO - Processing manager email for: Quinlan, Martin
 2025-03-03 18:14:14,928 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-03-05 11:38:52,287 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-03-05 11:38:52,609 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-03-05 11:43:39,934 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-03-05 11:43:40,406 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-03-05 13:04:12,627 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-03-05 13:04:12,948 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-03-05 13:05:00,496 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-03-05 13:05:00,963 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-03-05 13:35:33,843 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-03-05 13:35:34,193 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin

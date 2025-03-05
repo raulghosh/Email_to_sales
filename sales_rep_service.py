@@ -157,6 +157,7 @@ def calculate_metrics(data: pd.DataFrame) -> Dict[str, Any]:
     summary_table = data.groupby("Category").agg({
         "LTM Gross Sales": "sum",
         "Opp to Floor": "sum",
+        "Opp to Target": "sum",
         "Category": "count",
         "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum()
     }).rename(columns={
@@ -165,7 +166,7 @@ def calculate_metrics(data: pd.DataFrame) -> Dict[str, Any]:
     }).reset_index()
     
     # Format numerical values
-    for col in ["LTM Gross Sales", "Opp to Floor", "# Rows", "# Visible Items"]:
+    for col in ["LTM Gross Sales", "Opp to Floor", "Opp to Target","# Rows", "# Visible Items"]:
         summary_table[col] = summary_table[col].apply(lambda x: f"{x:,.0f}")
     
     metrics["summary_html"] = _format_summary_table_html(summary_table)
@@ -226,7 +227,7 @@ def send_sales_rep_email(
         # Send email
         send_email(
             to_email=CONFIG.email_config.test_email,
-            subject=f"{name}: Sales Report {month_year}",
+            subject=f"{name}: Attic and Basement Report {month_year}",
             body=email_body,
             attachment_path=output_file,
             email_config=CONFIG.email_config

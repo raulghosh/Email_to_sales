@@ -26,6 +26,7 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
         agg_funcs = {
             "LTM Gross Sales": "sum",
             "Opp to Floor": "sum",
+            "Opp to Target": "sum",
             "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum(),
             "Sales Rep Name": "count"
         }
@@ -47,7 +48,7 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
             .agg(agg_funcs)
             .rename(columns={"Sales Rep Name": "# Rows", "Item Visibility": "# Visible Items"})
             .reset_index()
-            .drop(columns=["Opp to Floor"])  # Remove Opp to Floor
+            .drop(columns=["Opp to Floor","Opp to Target"])  # Remove Opp to Floor
             .sort_values(by="LTM Gross Sales", ascending=False)  # Sort by 'LTM Gross Sales'
         )
 
@@ -59,6 +60,8 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
         # Format "Opp to Floor" column in basement_df
         if "Opp to Floor" in basement_df.columns:
             basement_df["Opp to Floor"] = basement_df["Opp to Floor"].apply(lambda x: f"{x:,.0f}")
+        if "Opp to Floor" in basement_df.columns:
+            basement_df["Opp to Target"] = basement_df["Opp to Target"].apply(lambda x: f"{x:,.0f}")
 
         # Convert to HTML (Align Sales Rep Name & Category to left)
         def df_to_html(df, title):
@@ -138,7 +141,7 @@ def send_manager_email(
         # Send email
         send_email(
             to_email=CONFIG.email_config.test_email,
-            subject=f"{manager_name}: Manager Report {month_year}",
+            subject=f"{manager_name}: Attic and Basement Report {month_year}",
             body=email_body,
             attachment_path=output_file,
             email_config=CONFIG.email_config

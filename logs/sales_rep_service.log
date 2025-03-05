@@ -163,3 +163,13 @@
 2025-03-03 18:11:08,024 - sales_rep_service - ERROR - Unexpected error processing sales rep Ahlers, Thomas M: create_email_body() got an unexpected keyword argument 'sales_rep_data'
 2025-03-03 18:14:14,268 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
 2025-03-03 18:14:14,603 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-05 11:38:51,901 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-05 11:38:52,285 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-05 11:43:39,547 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-05 11:43:39,932 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-05 13:04:12,224 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-05 13:04:12,626 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-05 13:05:00,249 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-05 13:05:00,494 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-05 13:35:33,434 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-05 13:35:33,842 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M

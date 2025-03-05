@@ -25,7 +25,7 @@ def create_email_body(
     if recipient_type == "manager":
         body = f"""
         <p>Dear {parse_first_name(name)},</p>
-        <p>Please find attached the sales report for {month_year}.</p>
+        <p>Please find attached the Attic and Basement report for {month_year}.</p>
         {pivot_html}
         <p>You can also view the detailed report on Power BI: <a href="{power_bi_link}">Power BI Report</a></p>
         <p>Best regards,</p>
@@ -35,7 +35,7 @@ def create_email_body(
         summary_html = sales_rep_data.get("summary_html", "") if sales_rep_data else ""
         body = f"""
         <p>Dear {parse_first_name(name)},</p>
-        <p>Please find attached the sales report for {month_year}.</p>
+        <p>Please find attached the Attic and Basement report for {month_year}.</p>
         {summary_html}
         <p>You can also view the detailed report on Power BI: <a href="{power_bi_link}">Power BI Report</a></p>
         <p>Best regards,</p>
