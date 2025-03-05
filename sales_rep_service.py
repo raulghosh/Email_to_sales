@@ -63,17 +63,13 @@ def generate_sales_rep_report(
             # Write Basement data to its own sheet
             basement_formatted.to_excel(writer, index=False, sheet_name="Basement")
             basement_worksheet = writer.sheets["Basement"]
-            format_excel_sheet(basement_worksheet, basement_formatted)
+            format_excel_sheet(basement_worksheet, basement_formatted, sales_rep=False, sheet_name="Basement")
 
             # Write Attic data to its own sheet
             attic_formatted=attic_formatted.drop(columns=["Opp to Floor","Opp to Target"])
             attic_formatted.to_excel(writer, index=False, sheet_name="Attic")
             attic_worksheet = writer.sheets["Attic"]
-            format_excel_sheet(attic_worksheet, attic_formatted)
-            # Freeze cell G2 and apply a filter on the top row for both sheets
-            for worksheet in [basement_worksheet, attic_worksheet]:
-                worksheet.freeze_panes = 'G2'
-                worksheet.auto_filter.ref = worksheet.dimensions
+            format_excel_sheet(attic_worksheet, attic_formatted, sales_rep=False, sheet_name="Attic")
         
         return output_file
         

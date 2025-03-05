@@ -102,7 +102,7 @@ def _write_summary_sheet(summary_table: pd.DataFrame, writer: pd.ExcelWriter, sh
         summary_table.drop(columns=["Opp to Floor"], inplace=True)
     summary_table.to_excel(writer, index=False, sheet_name=sheet_name)
     worksheet = writer.sheets[sheet_name]
-    format_excel_sheet(worksheet, summary_table)
+    format_excel_sheet(worksheet, summary_table, sales_rep=False,sheet_name=sheet_name)
 
 def _write_data_sheet(data: pd.DataFrame, writer: pd.ExcelWriter, sheet_name: str, category: str) -> None:
     """Write formatted data to an Excel sheet."""
@@ -111,4 +111,4 @@ def _write_data_sheet(data: pd.DataFrame, writer: pd.ExcelWriter, sheet_name: st
         
     data.to_excel(writer, index=False, sheet_name=sheet_name)
     worksheet = writer.sheets[sheet_name]
-    format_excel_sheet(worksheet, data)
+    format_excel_sheet(worksheet, data, sales_rep=False,sheet_name = sheet_name)

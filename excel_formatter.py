@@ -4,7 +4,7 @@ from typing import List
 import pandas as pd
 import numpy as np
 
-def format_excel_sheet(worksheet, df: pd.DataFrame) -> None:
+def format_excel_sheet(worksheet, df: pd.DataFrame,  sheet_name: str, sales_rep=True) -> None:
     """Apply formatting to an Excel worksheet."""
     # Style the header row
     header_fill = PatternFill(start_color="006400", end_color="006400", fill_type="solid")
@@ -52,3 +52,10 @@ def format_excel_sheet(worksheet, df: pd.DataFrame) -> None:
         if column == "Item Desc":
             max_length += 10  # Increase the width of "Item Desc" column by 10 characters
         worksheet.column_dimensions[get_column_letter(col_num)].width = min(max_length, 30)
+        worksheet.auto_filter.ref = worksheet.dimensions
+    if sales_rep:
+        worksheet.freeze_panes = "G2"
+    elif sheet_name not in ["Attic", "Basement"]:
+        worksheet.freeze_panes = None
+    else:
+        worksheet.freeze_panes = "H2"
