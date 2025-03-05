@@ -66,9 +66,14 @@ def generate_sales_rep_report(
             format_excel_sheet(basement_worksheet, basement_formatted)
 
             # Write Attic data to its own sheet
+            attic_formatted=attic_formatted.drop(columns=["Opp to Floor","Opp to Target"])
             attic_formatted.to_excel(writer, index=False, sheet_name="Attic")
             attic_worksheet = writer.sheets["Attic"]
             format_excel_sheet(attic_worksheet, attic_formatted)
+            # Freeze cell G2 and apply a filter on the top row for both sheets
+            for worksheet in [basement_worksheet, attic_worksheet]:
+                worksheet.freeze_panes = 'G2'
+                worksheet.auto_filter.ref = worksheet.dimensions
         
         return output_file
         
@@ -118,11 +123,11 @@ def _prepare_report_data(data: pd.DataFrame, category: str, include_sales_rep_na
     formatted = formatted.drop(columns=["LTM Gross Sales1", "Opp to Floor1"])
     
     # Convert LTM Gross Sales and Opp to Floor to strings, right-aligned without decimals
+    formatted["Legacy Item #"] = formatted["Legacy Item #"].astype(float).astype(int).astype(str)
     formatted["LTM Gross Sales"] = formatted["LTM Gross Sales"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
     formatted["Opp to Floor"] = formatted["Opp to Floor"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
     formatted["Opp to Target"] = formatted["Opp to Target"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
-    formatted["Legacy Item #"] = formatted["Legacy Item #"].astype(float).astype(int).astype(str)
-
+    
     # Convert Margin columns to strings with one decimal place and percentage sign
     margin_columns = [col for col in formatted.columns if 'margin' in col.lower()]  # Replace with actual margin column names
     for col in margin_columns:
