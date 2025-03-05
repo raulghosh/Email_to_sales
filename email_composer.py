@@ -24,21 +24,47 @@ def create_email_body(
     """
     if recipient_type == "manager":
         body = f"""
-        <p>Dear {name},</p>
+        <p>Dear {parse_first_name(name)},</p>
         <p>Please find attached the sales report for {month_year}.</p>
-        <p>You can also view the detailed report on Power BI: <a href="{power_bi_link}">Power BI Report</a></p>
         {pivot_html}
-        <p>Best regards,<br>Your Sales Team</p>
+        <p>You can also view the detailed report on Power BI: <a href="{power_bi_link}">Power BI Report</a></p>
+        <p>Best regards,</p>
+        <p>Pricing Team</p>
         """
     else:
         summary_html = sales_rep_data.get("summary_html", "") if sales_rep_data else ""
         body = f"""
-        <p>Dear {name},</p>
+        <p>Dear {parse_first_name(name)},</p>
         <p>Please find attached the sales report for {month_year}.</p>
-        <p>You can also view the detailed report on Power BI: <a href="{power_bi_link}">Power BI Report</a></p>
         {summary_html}
-        <p>Best regards,<br>Your Sales Team</p>
+        <p>You can also view the detailed report on Power BI: <a href="{power_bi_link}">Power BI Report</a></p>
+        <p>Best regards,</p>
+        <p>Pricing Team</p>
         """
     return body
+
+def parse_first_name(full_name):
+    """
+    Parse the first name from a full name string.
+    
+    Args:
+        full_name (str): Full name string in the format "Last Name, First Name Middle Name"
+        
+    Returns:
+        str: First name extracted from the full name
+    """
+    # Split the name by comma to separate last name and first name
+    parts = full_name.split(',')
+    
+    # Check if the name has a comma
+    if len(parts) > 1:
+        # Split the first name part by space to separate first name and middle name (if any)
+        first_name_parts = parts[1].strip().split()
+        
+        # Return the first name
+        return first_name_parts[0]
+    else:
+        # If no comma, assume the full name is just the first name
+        return full_name.strip()
 
 
