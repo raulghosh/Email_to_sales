@@ -30,8 +30,8 @@ def create_email_body(
         <p>We also are providing you with a list of Basement items, these are the items that are underpriced relative to what similar customers pay. We are recommending you increase prices for these items. To the extend that you find it necessary to reduce prices for any of the items in the Attic, increasing prices for Basement items is a great way to keep the margins for the customer, unchanged.</p>
         {pivot_html}
         <p>Access the Power BI Dashboard where you can drill into more information including the past 12 months sales transactions for these items: : <a href="{power_bi_link}">Power BI Report</a></p>
+        <p> If you would like the pricing team to help with the deal manager then please submit a work order by logging on to salesforce.com </p>        
         <p>Best regards,<br>Pricing Team</p>
-        <p> If you would like the pricing team to help with the deal manager then please submit a work order by logging on to salesforce.com </p>
         <p style="font-size: smaller; font-style: italic;">*TTM: Last 12 months</p>
         """
     else:
@@ -43,8 +43,8 @@ def create_email_body(
         <p>We also are providing you with a list of Basement items, these are the items that are underpriced relative to what similar customers pay. We are recommending you increase prices for these items. To the extend that you find it necessary to reduce prices for any of the items in the Attic, increasing prices for Basement items is a great way to keep the margins for the customer, unchanged.</p>
         {summary_html}
         <p>Access the Power BI Dashboard where you can drill into more information including the past 12 months sales transactions for these items:  <a href="{power_bi_link}">Power BI Report</a></p>
-        <p>Best regards,<br>Pricing Team</p>
         <p> If you would like the pricing team to help with the deal manager then please submit a work order by logging on to salesforce.com </p>
+        <p>Best regards,<br>Pricing Team</p>
         <p style="font-size: smaller; font-style: italic;">*TTM: Last 12 months</p>
         """
     return body

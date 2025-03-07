@@ -63,13 +63,13 @@ def generate_sales_rep_report(
             # Write Basement data to its own sheet
             basement_formatted.to_excel(writer, index=False, sheet_name="Basement")
             basement_worksheet = writer.sheets["Basement"]
-            format_excel_sheet(basement_worksheet, basement_formatted, sales_rep=False, sheet_name="Basement")
+            format_excel_sheet(basement_worksheet, basement_formatted, sales_rep=True, sheet_name="Basement")
 
             # Write Attic data to its own sheet
             attic_formatted=attic_formatted.drop(columns=["Opp to Floor","Opp to Target"])
             attic_formatted.to_excel(writer, index=False, sheet_name="Attic")
             attic_worksheet = writer.sheets["Attic"]
-            format_excel_sheet(attic_worksheet, attic_formatted, sales_rep=False, sheet_name="Attic")
+            format_excel_sheet(attic_worksheet, attic_formatted, sales_rep=True, sheet_name="Attic")
         
         return output_file
         
