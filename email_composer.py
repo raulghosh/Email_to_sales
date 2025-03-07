@@ -26,8 +26,10 @@ def create_email_body(
         body = f"""
         <p>Dear {parse_first_name(name)},</p>
         <p>Please find attached the Attic and Basement report for {month_year}.</p>
+        <p>The Attic represents items with higher-than-average commission margins across similar customers and these items are highly visible to customers because they make up a significant portion of the customers total spend with Veritiv. We are not suggesting that you reduce price, however, want to provide you with our analytics driven insights to support your focus on growth with your customers.</p>
+        <p>We also are providing you with a list of Basement items, these are the items that are underpriced relative to what similar customers pay. We are recommending you increase prices for these items. To the extend that you find it necessary to reduce prices for any of the items in the Attic, increasing prices for Basement items is a great way to keep the margins for the customer, unchanged.</p>
         {pivot_html}
-        <p>You can also view the detailed report on Power BI: <a href="{power_bi_link}">Power BI Report</a></p>
+        <p>Access the Power BI Dashboard where you can drill into more information including the past 12 months sales transactions for these items: : <a href="{power_bi_link}">Power BI Report</a></p>
         <p>Best regards,</p>
         <p>Pricing Team</p>
         """
@@ -36,8 +38,10 @@ def create_email_body(
         body = f"""
         <p>Dear {parse_first_name(name)},</p>
         <p>Please find attached the Attic and Basement report for {month_year}.</p>
+        <p>The Attic represents items with higher-than-average commission margins across similar customers and these items are highly visible to customers because they make up a significant portion of the customers total spend with Veritiv. We are not suggesting that you reduce price, however, want to provide you with our analytics driven insights to support your focus on growth with your customers.</p>
+        <p>We also are providing you with a list of Basement items, these are the items that are underpriced relative to what similar customers pay. We are recommending you increase prices for these items. To the extend that you find it necessary to reduce prices for any of the items in the Attic, increasing prices for Basement items is a great way to keep the margins for the customer, unchanged.</p>
         {summary_html}
-        <p>You can also view the detailed report on Power BI: <a href="{power_bi_link}">Power BI Report</a></p>
+        <p>Access the Power BI Dashboard where you can drill into more information including the past 12 months sales transactions for these items:  <a href="{power_bi_link}">Power BI Report</a></p>
         <p>Best regards,</p>
         <p>Pricing Team</p>
         """
