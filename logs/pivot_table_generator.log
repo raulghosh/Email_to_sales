@@ -164,7 +164,7 @@
 2025-02-27 13:02:41,460 - pivot_table_generator - ERROR - Error generating HTML table: Unknown format code 'f' for object of type 'str'
 2025-02-27 13:15:01,014 - pivot_table_generator - ERROR - Error generating HTML table: Unknown format code 'f' for object of type 'str'
 2025-02-27 13:15:01,015 - pivot_table_generator - ERROR - Error generating HTML table: Unknown format code 'f' for object of type 'str'
-2025-02-27 13:33:37,912 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['LTM Gross Sales1' 'Opp to Floor1'] not found in axis"
+2025-02-27 13:33:37,912 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['Gross Sales (TTM)1' 'Opp to Floor1'] not found in axis"
 2025-02-27 13:33:38,063 - pivot_table_generator - ERROR - Error generating HTML table: Unknown format code 'f' for object of type 'str'
 2025-02-27 13:33:38,064 - pivot_table_generator - ERROR - Error generating HTML table: Unknown format code 'f' for object of type 'str'
 2025-02-27 13:38:55,509 - pivot_table_generator - ERROR - Data validation error: The column label 'Sales Rep Name' is not unique.

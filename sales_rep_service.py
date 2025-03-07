@@ -96,7 +96,7 @@ def _prepare_report_data(data: pd.DataFrame, category: str, include_sales_rep_na
     
     formatted = data.drop(columns=columns_to_drop)
     
-    formatted["LTM Gross Sales1"] = formatted["LTM Gross Sales"]
+    formatted["Gross Sales (TTM)1"] = formatted["Gross Sales (TTM)"]
     formatted["Opp to Floor1"] = formatted["Opp to Floor"]
     
     # Sort the data
@@ -104,23 +104,23 @@ def _prepare_report_data(data: pd.DataFrame, category: str, include_sales_rep_na
         cols=["Sales Rep Name"] + [col for col in formatted.columns if col != "Sales Rep Name"]
         formatted = formatted[cols]
         if category == "Attic":
-            formatted = formatted.sort_values(by=["Sales Rep Name","LTM Gross Sales1"], ascending=[True,False])
+            formatted = formatted.sort_values(by=["Sales Rep Name","Gross Sales (TTM)1"], ascending=[True,False])
         else:
             formatted = formatted.sort_values(by=["Sales Rep Name","Opp to Floor1"], ascending=[True, False])
 
         # formatted=formatted.style.set_property(subset=["Sales Rep Name"], **{'text-align', 'left'})        
     else:    
         if category == "Attic":
-            formatted = formatted.sort_values(by=["LTM Gross Sales1"], ascending=False)
+            formatted = formatted.sort_values(by=["Gross Sales (TTM)1"], ascending=False)
         else:
             formatted = formatted.sort_values(by=["Opp to Floor1"], ascending=False)
         
     # Drop the temporary columns after sorting
-    formatted = formatted.drop(columns=["LTM Gross Sales1", "Opp to Floor1"])
+    formatted = formatted.drop(columns=["Gross Sales (TTM)1", "Opp to Floor1"])
     
-    # Convert LTM Gross Sales and Opp to Floor to strings, right-aligned without decimals
+    # Convert Gross Sales (TTM) and Opp to Floor to strings, right-aligned without decimals
     formatted["Legacy Item #"] = formatted["Legacy Item #"].astype(float).astype(int).astype(str)
-    formatted["LTM Gross Sales"] = formatted["LTM Gross Sales"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
+    formatted["Gross Sales (TTM)"] = formatted["Gross Sales (TTM)"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
     formatted["Opp to Floor"] = formatted["Opp to Floor"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
     formatted["Opp to Target"] = formatted["Opp to Target"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
     
@@ -149,14 +149,14 @@ def calculate_metrics(data: pd.DataFrame) -> Dict[str, Any]:
     metrics = {
         "basement_count": int(data[data["Category"] == "Basement"].shape[0]),
         "attic_count": int(data[data["Category"] == "Attic"].shape[0]),
-        "basement_sales": float(data[data["Category"] == "Basement"]["LTM Gross Sales"].sum()),
-        "attic_sales": float(data[data["Category"] == "Attic"]["LTM Gross Sales"].sum()),
+        "basement_sales": float(data[data["Category"] == "Basement"]["Gross Sales (TTM)"].sum()),
+        "attic_sales": float(data[data["Category"] == "Attic"]["Gross Sales (TTM)"].sum()),
         "opp_to_floor": float(data["Opp to Floor"].sum())
     }
     
     # Generate summary table
     summary_table = data.groupby("Category").agg({
-        "LTM Gross Sales": "sum",
+        "Gross Sales (TTM)": "sum",
         "Opp to Floor": "sum",
         "Opp to Target": "sum",
         "Category": "count",
@@ -167,7 +167,7 @@ def calculate_metrics(data: pd.DataFrame) -> Dict[str, Any]:
     }).reset_index()
     
     # Format numerical values
-    for col in ["LTM Gross Sales", "Opp to Floor", "Opp to Target","# Rows", "# Visible Items"]:
+    for col in ["Gross Sales (TTM)", "Opp to Floor", "Opp to Target","# Rows", "# Visible Items"]:
         summary_table[col] = summary_table[col].apply(lambda x: f"{x:,.0f}")
     
     metrics["summary_html"] = _format_summary_table_html(summary_table)

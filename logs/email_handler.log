@@ -411,3 +411,35 @@
 2025-03-05 16:15:53,701 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
 2025-03-05 16:15:53,989 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
 2025-03-05 16:15:54,044 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-07 11:08:09,301 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-07 11:08:09,351 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-07 11:08:09,705 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-07 11:08:09,760 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-07 11:16:58,589 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-07 11:16:58,658 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-07 11:16:58,994 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-07 11:16:59,054 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-07 11:23:32,993 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-07 11:23:33,057 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-07 11:23:33,358 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-07 11:23:33,417 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-07 11:27:31,937 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-07 11:27:31,996 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-07 11:27:32,264 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-07 11:27:32,315 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-07 11:41:29,308 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-07 11:41:29,353 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-07 11:41:29,695 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-07 11:41:29,860 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-07 11:59:04,970 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-07 11:59:05,027 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-07 11:59:05,370 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-07 11:59:05,423 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-07 11:59:30,386 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-07 11:59:30,436 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-07 11:59:30,703 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-07 11:59:30,917 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-07 13:39:13,498 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-07 13:39:13,554 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-07 13:39:14,011 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-07 13:39:14,065 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com

@@ -18,13 +18,13 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
     """
     Generate two HTML pivot tables for the manager email: 
     one for 'Basement' (sorted by 'Opp to Floor'), 
-    and one for 'Attic' (sorted by 'LTM Gross Sales').
+    and one for 'Attic' (sorted by 'Gross Sales (TTM)').
     """
     try:
         data = data[data["Manager Name"] == manager_name]
         # Define aggregation
         agg_funcs = {
-            "LTM Gross Sales": "sum",
+            "Gross Sales (TTM)": "sum",
             "Opp to Floor": "sum",
             "Opp to Target": "sum",
             "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum(),
@@ -49,12 +49,12 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
             .rename(columns={"Sales Rep Name": "# Rows", "Item Visibility": "# Visible Items"})
             .reset_index()
             .drop(columns=["Opp to Floor","Opp to Target"])  # Remove Opp to Floor
-            .sort_values(by="LTM Gross Sales", ascending=False)  # Sort by 'LTM Gross Sales'
+            .sort_values(by="Gross Sales (TTM)", ascending=False)  # Sort by 'Gross Sales (TTM)'
         )
 
         # Format numerical columns
         for df in [basement_df, attic_df]:
-            for col in ["LTM Gross Sales", "# Visible Items"]:
+            for col in ["Gross Sales (TTM)", "# Visible Items"]:
                 if col in df.columns:
                     df[col] = df[col].apply(lambda x: f"{x:,.0f}")
         # Format "Opp to Floor" column in basement_df

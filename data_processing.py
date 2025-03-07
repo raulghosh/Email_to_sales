@@ -70,7 +70,7 @@ def format_columns(data: pd.DataFrame) -> pd.DataFrame:
     """
     try:
         data = data.copy()
-        # columns = Category | Customer Name | Bill_to # | Legacy Item # | Item Desc | Channel | LTM Gross Sales | LTM Comm. Margin | Last Comm. Margin |\
+        # columns = Category | Customer Name | Bill_to # | Legacy Item # | Item Desc | Channel | Gross Sales (TTM) | Comm. Margin (TTM) | Last Comm. Margin |\
         # Last Trans. Date | Floor Margin | Target Margin | Start Margin | Opp to Floor | Opp to Target | Item Visibility |Vendor Name | Cat1 |\
         # Sales Rep Name | Sales Rep Email | Manager Name | Manager Email | RVP Name | RVP Email | VP Name | VP Email
 
