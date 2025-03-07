@@ -203,3 +203,9 @@
 2025-03-07 14:57:35,121 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to generate report: 'Gross Sales (TTM)'
 2025-03-07 15:49:49,030 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
 2025-03-07 15:49:49,458 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-07 16:06:21,102 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-07 16:06:21,489 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-07 16:13:06,619 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-07 16:13:07,054 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-07 16:27:14,784 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-07 16:27:15,062 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
