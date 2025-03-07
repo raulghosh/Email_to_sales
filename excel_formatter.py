@@ -49,9 +49,12 @@ def format_excel_sheet(worksheet, df: pd.DataFrame,  sheet_name: str, sales_rep=
     # Adjust column widths
     for col_num, column in enumerate(df.columns, 1):
         max_length = max(df[column].astype(str).apply(len).max(), len(column)) + 2
-        if column == "Item Desc":
-            max_length += 10  # Increase the width of "Item Desc" column by 10 characters
         worksheet.column_dimensions[get_column_letter(col_num)].width = min(max_length, 30)
+        
+        if "Item Desc" in df.columns:
+            item_desc_col_idx = df.columns.get_loc("Item Desc") + 1
+            max_length = max(df["Item Desc"].astype(str).apply(len).max(), len("Item Desc")) + 12
+            worksheet.column_dimensions[get_column_letter(item_desc_col_idx)].width = min(max_length, 50)
         worksheet.auto_filter.ref = worksheet.dimensions
     if sales_rep:
         worksheet.freeze_panes = "G2"
