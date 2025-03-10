@@ -159,15 +159,13 @@ def calculate_metrics(data: pd.DataFrame) -> Dict[str, Any]:
         "Gross Sales (TTM)": "sum",
         "Opp to Floor": "sum",
         "Opp to Target": "sum",
-        "Category": "count",
         "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum()
     }).rename(columns={
-        "Category": "# Rows",
         "Item Visibility": "# Visible Items"
     }).reset_index()
     
     # Format numerical values
-    for col in ["Gross Sales (TTM)", "Opp to Floor", "Opp to Target","# Rows", "# Visible Items"]:
+    for col in ["Gross Sales (TTM)", "Opp to Floor", "Opp to Target", "# Visible Items"]:
         summary_table[col] = summary_table[col].apply(lambda x: f"{x:,.0f}")
     
     metrics["summary_html"] = _format_summary_table_html(summary_table)
