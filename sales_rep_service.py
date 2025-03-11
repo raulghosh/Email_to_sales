@@ -66,7 +66,7 @@ def generate_sales_rep_report(
             format_excel_sheet(basement_worksheet, basement_formatted, sales_rep=True, sheet_name="Basement")
 
             # Write Attic data to its own sheet
-            attic_formatted=attic_formatted.drop(columns=["Opp to Floor","Opp to Target"])
+            attic_formatted=attic_formatted.drop(columns=["$ Opp to Floor","$ Opp to Target"])
             attic_formatted.to_excel(writer, index=False, sheet_name="Attic")
             attic_worksheet = writer.sheets["Attic"]
             format_excel_sheet(attic_worksheet, attic_formatted, sales_rep=True, sheet_name="Attic")
@@ -97,7 +97,7 @@ def _prepare_report_data(data: pd.DataFrame, category: str, include_sales_rep_na
     formatted = data.drop(columns=columns_to_drop)
     
     formatted["Gross Sales (TTM)1"] = formatted["Gross Sales (TTM)"]
-    formatted["Opp to Floor1"] = formatted["Opp to Floor"]
+    formatted["$ Opp to Floor1"] = formatted["$ Opp to Floor"]
     
     # Sort the data
     if include_sales_rep_name:
@@ -106,23 +106,23 @@ def _prepare_report_data(data: pd.DataFrame, category: str, include_sales_rep_na
         if category == "Attic":
             formatted = formatted.sort_values(by=["Sales Rep Name","Gross Sales (TTM)1"], ascending=[True,False])
         else:
-            formatted = formatted.sort_values(by=["Sales Rep Name","Opp to Floor1"], ascending=[True, False])
+            formatted = formatted.sort_values(by=["Sales Rep Name","$ Opp to Floor1"], ascending=[True, False])
 
         # formatted=formatted.style.set_property(subset=["Sales Rep Name"], **{'text-align', 'left'})        
     else:    
         if category == "Attic":
             formatted = formatted.sort_values(by=["Gross Sales (TTM)1"], ascending=False)
         else:
-            formatted = formatted.sort_values(by=["Opp to Floor1"], ascending=False)
+            formatted = formatted.sort_values(by=["$ Opp to Floor1"], ascending=False)
         
     # Drop the temporary columns after sorting
-    formatted = formatted.drop(columns=["Gross Sales (TTM)1", "Opp to Floor1"])
+    formatted = formatted.drop(columns=["Gross Sales (TTM)1", "$ Opp to Floor1"])
     
-    # Convert Gross Sales (TTM) and Opp to Floor to strings, right-aligned without decimals
+    # Convert Gross Sales (TTM) and $ Opp to Floor to strings, right-aligned without decimals
     formatted["Legacy Item #"] = formatted["Legacy Item #"].astype(float).astype(int).astype(str)
     formatted["Gross Sales (TTM)"] = formatted["Gross Sales (TTM)"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
-    formatted["Opp to Floor"] = formatted["Opp to Floor"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
-    formatted["Opp to Target"] = formatted["Opp to Target"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
+    formatted["$ Opp to Floor"] = formatted["$ Opp to Floor"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
+    formatted["$ Opp to Target"] = formatted["$ Opp to Target"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
     
     # Convert Margin columns to strings with one decimal place and percentage sign
     margin_columns = [col for col in formatted.columns if 'margin' in col.lower()]  # Replace with actual margin column names
@@ -151,21 +151,21 @@ def calculate_metrics(data: pd.DataFrame) -> Dict[str, Any]:
         "attic_count": int(data[data["Category"] == "Attic"].shape[0]),
         "basement_sales": float(data[data["Category"] == "Basement"]["Gross Sales (TTM)"].sum()),
         "attic_sales": float(data[data["Category"] == "Attic"]["Gross Sales (TTM)"].sum()),
-        "opp_to_floor": float(data["Opp to Floor"].sum())
+        "$ Opp_to_floor": float(data["$ Opp to Floor"].sum())
     }
     
     # Generate summary table
     summary_table = data.groupby("Category").agg({
         "Gross Sales (TTM)": "sum",
-        "Opp to Floor": "sum",
-        "Opp to Target": "sum",
+        "$ Opp to Floor": "sum",
+        "$ Opp to Target": "sum",
         "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum()
     }).rename(columns={
         "Item Visibility": "# Visible Items"
     }).reset_index()
     
     # Format numerical values
-    for col in ["Gross Sales (TTM)", "Opp to Floor", "Opp to Target", "# Visible Items"]:
+    for col in ["Gross Sales (TTM)", "$ Opp to Floor", "$ Opp to Target", "# Visible Items"]:
         summary_table[col] = summary_table[col].apply(lambda x: f"{x:,.0f}")
     
     metrics["summary_html"] = _format_summary_table_html(summary_table)
@@ -260,7 +260,7 @@ def clean_data(data: pd.DataFrame) -> pd.DataFrame:
     dropped_rows = initial_rows - len(cleaned_data)
     
     if dropped_rows > 0:
-        logger.warning(f"Dropped {dropped_rows} rows with missing emails")
+        logger.warning(f"Dr$ Opped {dropped_rows} rows with missing emails")
     
     logger.debug(f"Data after cleaning:\n{cleaned_data.head()}")
     

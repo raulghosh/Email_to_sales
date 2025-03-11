@@ -77,14 +77,14 @@
 2025-02-26 13:02:49,671 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to generate report: invalid literal for int() with base 10: '1,542'
 2025-02-26 13:10:24,974 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
 2025-02-26 13:10:25,352 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
-2025-02-26 13:24:52,581 - sales_rep_service - ERROR - Failed to generate sales rep report for Ahlers, Thomas M: 'Opp to Floor1'
-2025-02-26 13:24:52,582 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to generate report: 'Opp to Floor1'
-2025-02-26 13:29:32,329 - sales_rep_service - ERROR - Failed to generate sales rep report for Ahlers, Thomas M: 'Opp to Floor1'
-2025-02-26 13:29:32,330 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to generate report: 'Opp to Floor1'
-2025-02-26 13:36:17,720 - sales_rep_service - ERROR - Failed to generate sales rep report for Ahlers, Thomas M: 'Opp to Floor1'
-2025-02-26 13:36:17,721 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to generate report: 'Opp to Floor1'
-2025-02-26 13:40:52,020 - sales_rep_service - ERROR - Failed to generate sales rep report for Ahlers, Thomas M: 'Opp to Floor1'
-2025-02-26 13:40:52,021 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to generate report: 'Opp to Floor1'
+2025-02-26 13:24:52,581 - sales_rep_service - ERROR - Failed to generate sales rep report for Ahlers, Thomas M: '$ Opp to Floor1'
+2025-02-26 13:24:52,582 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to generate report: '$ Opp to Floor1'
+2025-02-26 13:29:32,329 - sales_rep_service - ERROR - Failed to generate sales rep report for Ahlers, Thomas M: '$ Opp to Floor1'
+2025-02-26 13:29:32,330 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to generate report: '$ Opp to Floor1'
+2025-02-26 13:36:17,720 - sales_rep_service - ERROR - Failed to generate sales rep report for Ahlers, Thomas M: '$ Opp to Floor1'
+2025-02-26 13:36:17,721 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to generate report: '$ Opp to Floor1'
+2025-02-26 13:40:52,020 - sales_rep_service - ERROR - Failed to generate sales rep report for Ahlers, Thomas M: '$ Opp to Floor1'
+2025-02-26 13:40:52,021 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to generate report: '$ Opp to Floor1'
 2025-02-26 13:49:04,944 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
 2025-02-26 13:49:05,234 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
 2025-02-26 14:02:51,779 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
@@ -93,8 +93,8 @@
 2025-02-26 14:23:59,155 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
 2025-02-26 14:33:27,796 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
 2025-02-26 14:33:28,193 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
-2025-02-26 14:58:46,721 - sales_rep_service - ERROR - Failed to generate sales rep report for Ahlers, Thomas M: 'Opp to Floor'
-2025-02-26 14:58:46,722 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to generate report: 'Opp to Floor'
+2025-02-26 14:58:46,721 - sales_rep_service - ERROR - Failed to generate sales rep report for Ahlers, Thomas M: '$ Opp to Floor'
+2025-02-26 14:58:46,722 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to generate report: '$ Opp to Floor'
 2025-02-26 15:20:24,945 - sales_rep_service - ERROR - Failed to generate sales rep report for Ahlers, Thomas M: invalid literal for int() with base 10: '10959474.0'
 2025-02-26 15:20:24,946 - sales_rep_service - ERROR - Failed to process sales rep Ahlers, Thomas M: Failed to generate report: invalid literal for int() with base 10: '10959474.0'
 2025-02-26 15:29:07,120 - sales_rep_service - ERROR - Failed to generate sales rep report for Ahlers, Thomas M: invalid literal for int() with base 10: '10959474.0'
@@ -209,3 +209,11 @@
 2025-03-07 16:13:07,054 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
 2025-03-07 16:27:14,784 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
 2025-03-07 16:27:15,062 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-10 09:26:51,395 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-10 09:26:51,864 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-10 13:59:41,667 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-10 13:59:42,114 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-10 14:53:14,172 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-10 14:53:14,577 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-10 15:08:25,341 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
+2025-03-10 15:08:25,776 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M

@@ -76,30 +76,29 @@ def _create_summary_table(data: pd.DataFrame, category: str) -> pd.DataFrame:
     
     summary_table = data.groupby("Sales Rep Name").agg({
         "Gross Sales (TTM)": "sum",
-        "Opp to Floor": "sum",
+        "$ Opp to Floor": "sum",
         "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum(),
-        "Sales Rep Name": "count"
-    }).rename(columns={"Sales Rep Name": "# Rows", "Item Visibility": "# Visible Items"}).reset_index()
+    }).rename(columns={"Item Visibility": "# Visible Items"}).reset_index()
     
     # Create two columns for sorting
     summary_table["Gross Sales LTM1"] = summary_table["Gross Sales (TTM)"]
-    summary_table["Opp to Floor1"] = summary_table["Opp to Floor"]
+    summary_table["$ Opp to Floor1"] = summary_table["$ Opp to Floor"]
     
     summary_table["Gross Sales (TTM)"] = summary_table["Gross Sales (TTM)"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
-    summary_table["Opp to Floor"] = summary_table["Opp to Floor"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
+    summary_table["$ Opp to Floor"] = summary_table["$ Opp to Floor"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
     
     # Sort the tables 
     if category == "Attic":
-        summary_table = summary_table.sort_values(by="Gross Sales LTM1", ascending=False).drop(columns=["Gross Sales LTM1", "Opp to Floor1"])
+        summary_table = summary_table.sort_values(by="Gross Sales LTM1", ascending=False).drop(columns=["Gross Sales LTM1", "$ Opp to Floor1"])
     else:
-        summary_table = summary_table.sort_values(by="Opp to Floor1", ascending=False).drop(columns=["Gross Sales LTM1", "Opp to Floor1"])
+        summary_table = summary_table.sort_values(by="$ Opp to Floor1", ascending=False).drop(columns=["Gross Sales LTM1", "$ Opp to Floor1"])
     
     return summary_table
 
 def _write_summary_sheet(summary_table: pd.DataFrame, writer: pd.ExcelWriter, sheet_name: str, category: str) -> None:
     """Write an aggregated summary sheet to Excel."""
     if category == "Attic":
-        summary_table.drop(columns=["Opp to Floor"], inplace=True)
+        summary_table.drop(columns=["$ Opp to Floor"], inplace=True)
     summary_table.to_excel(writer, index=False, sheet_name=sheet_name)
     worksheet = writer.sheets[sheet_name]
     format_excel_sheet(worksheet, summary_table, sales_rep=False,sheet_name=sheet_name)
@@ -107,7 +106,7 @@ def _write_summary_sheet(summary_table: pd.DataFrame, writer: pd.ExcelWriter, sh
 def _write_data_sheet(data: pd.DataFrame, writer: pd.ExcelWriter, sheet_name: str, category: str) -> None:
     """Write formatted data to an Excel sheet."""
     if category == "Attic":
-        data.drop(columns=["Opp to Floor", "Opp to Target"], inplace=True)
+        data.drop(columns=["$ Opp to Floor", "$ Opp to Target"], inplace=True)
     data=data.drop(columns=["Category"])   
     data.to_excel(writer, index=False, sheet_name=sheet_name)
     worksheet = writer.sheets[sheet_name]

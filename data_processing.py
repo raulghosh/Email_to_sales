@@ -104,6 +104,9 @@ def format_columns(data: pd.DataFrame) -> pd.DataFrame:
             logger.debug(f"Formatted column: {col}")
             logger.debug(f"Data after formatting {col}:\n{data[[col]].head()}")
         
+        for col in opp_columns:
+            data.rename(columns={col: col.replace("Opp", "$ Opp")}, inplace=True)
+        
         logger.debug(f"Data after formatting all columns:\n{data.head()}")        
         return data
         

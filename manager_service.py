@@ -17,7 +17,7 @@ class ManagerServiceError(Exception):
 def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
     """
     Generate two HTML pivot tables for the manager email: 
-    one for 'Basement' (sorted by 'Opp to Floor'), 
+    one for 'Basement' (sorted by '$ Opp to Floor'), 
     and one for 'Attic' (sorted by 'Gross Sales (TTM)').
     """
     try:
@@ -25,10 +25,9 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
         # Define aggregation
         agg_funcs = {
             "Gross Sales (TTM)": "sum",
-            "Opp to Floor": "sum",
-            "Opp to Target": "sum",
+            "$ Opp to Floor": "sum",
+            "$ Opp to Target": "sum",
             "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum(),
-            "Sales Rep Name": "count"
         }
 
         # Process "Basement" table
@@ -36,19 +35,19 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
             data[data["Category"] == "Basement"]
             .groupby(["Sales Rep Name"])
             .agg(agg_funcs)
-            .rename(columns={"Sales Rep Name": "# Rows", "Item Visibility": "# Visible Items"})
+            .rename(columns={"Item Visibility": "# Visible Items"})
             .reset_index()
-            .sort_values(by="Opp to Floor", ascending=False)  # Sort by 'Opp to Floor'
+            .sort_values(by="$ Opp to Floor", ascending=False)  # Sort by '$ Opp to Floor'
         )
 
-        # Process "Attic" table (Remove "Opp to Floor" column)
+        # Process "Attic" table (Remove "$ Opp to Floor" column)
         attic_df = (
             data[data["Category"] == "Attic"]
             .groupby(["Sales Rep Name"])
             .agg(agg_funcs)
-            .rename(columns={"Sales Rep Name": "# Rows", "Item Visibility": "# Visible Items"})
+            .rename(columns={ "Item Visibility": "# Visible Items"})
             .reset_index()
-            .drop(columns=["Opp to Floor","Opp to Target"])  # Remove Opp to Floor
+            .drop(columns=["$ Opp to Floor","$ Opp to Target"])  # Remove $ Opp to Floor
             .sort_values(by="Gross Sales (TTM)", ascending=False)  # Sort by 'Gross Sales (TTM)'
         )
 
@@ -57,11 +56,11 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
             for col in ["Gross Sales (TTM)", "# Visible Items"]:
                 if col in df.columns:
                     df[col] = df[col].apply(lambda x: f"{x:,.0f}")
-        # Format "Opp to Floor" column in basement_df
-        if "Opp to Floor" in basement_df.columns:
-            basement_df["Opp to Floor"] = basement_df["Opp to Floor"].apply(lambda x: f"{x:,.0f}")
-        if "Opp to Floor" in basement_df.columns:
-            basement_df["Opp to Target"] = basement_df["Opp to Target"].apply(lambda x: f"{x:,.0f}")
+        # Format "$ Opp to Floor" column in basement_df
+        if "$ Opp to Floor" in basement_df.columns:
+            basement_df["$ Opp to Floor"] = basement_df["$ Opp to Floor"].apply(lambda x: f"{x:,.0f}")
+        if "$ Opp to Floor" in basement_df.columns:
+            basement_df["$ Opp to Target"] = basement_df["$ Opp to Target"].apply(lambda x: f"{x:,.0f}")
 
         # Convert to HTML (Align Sales Rep Name & Category to left)
         def df_to_html(df, title):

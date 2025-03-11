@@ -459,3 +459,19 @@
 2025-03-07 16:27:15,051 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
 2025-03-07 16:27:15,324 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
 2025-03-07 16:27:15,383 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-10 09:26:51,799 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-10 09:26:51,853 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-10 09:26:52,385 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-10 09:26:52,454 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-10 13:59:42,044 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-10 13:59:42,101 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-10 13:59:42,408 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-10 13:59:42,459 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-10 14:53:14,512 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-10 14:53:14,564 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-10 14:53:14,842 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-10 14:53:14,911 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-10 15:08:25,714 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-10 15:08:25,767 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
+2025-03-10 15:08:26,095 - email_handler - WARNING - SMTP AUTH extension not supported by server, skipping authentication
+2025-03-10 15:08:26,177 - email_handler - INFO - Email sent successfully to rghosh@veritivcorp.com
