@@ -76,6 +76,9 @@ def format_columns(data: pd.DataFrame) -> pd.DataFrame:
 
         
         # Identify columns by type
+        if "Start Margin" in data.columns:
+            data=data.drop(columns=["Start Margin"])
+        sales_columns = [col for col in data.columns if 'sales' in col.lower() and 'rep' not in col.lower() and 'margin' not in col.lower()]
         sales_columns = [col for col in data.columns if 'sales' in col.lower() and 'rep' not in col.lower()]
         opp_columns = [col for col in data.columns if 'opp' in col.lower()]
         margin_columns = [col for col in data.columns if 'margin' in col.lower()]
