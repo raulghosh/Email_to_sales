@@ -18,7 +18,7 @@ def format_excel_sheet(worksheet, df: pd.DataFrame,  sheet_name: str, sales_rep)
     # Right-align numerical columns
     numerical_columns = [
         col for col in df.columns 
-        if any(keyword in col.lower() for keyword in ['sales', '$ Opp', 'margin'])
+        if any(keyword in col.lower() for keyword in ['sales', 'opp', 'margin'])
     ]
     
     for col_name in numerical_columns:

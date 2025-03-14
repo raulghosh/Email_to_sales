@@ -51,7 +51,16 @@ def clean_data(data: pd.DataFrame) -> pd.DataFrame:
     if dropped_rows > 0:
         logger.warning(f"Dropped {dropped_rows} rows with missing emails")
     
+    cleaned_data=cleaned_data[cleaned_data["Category"]!='Market']
+    
+    dropped_rows = initial_rows - len(cleaned_data)
+    
+    if dropped_rows > 0:
+        logger.warning(f"Dropped {dropped_rows} rows with missing emails")
+        
     logger.debug(f"Data after cleaning:\n{cleaned_data.head()}")
+    
+    
     
     return cleaned_data
 
@@ -74,10 +83,7 @@ def format_columns(data: pd.DataFrame) -> pd.DataFrame:
         # Last Trans. Date | Floor Margin | Target Margin | Start Margin | Opp to Floor | Opp to Target | Item Visibility |Vendor Name | Cat1 |\
         # Sales Rep Name | Sales Rep Email | Manager Name | Manager Email | RVP Name | RVP Email | VP Name | VP Email
 
-        
-        # Identify columns by type
-        if "Start Margin" in data.columns:
-            data=data.drop(columns=["Start Margin"])
+
         sales_columns = [col for col in data.columns if 'sales' in col.lower() and 'rep' not in col.lower() and 'margin' not in col.lower()]
         sales_columns = [col for col in data.columns if 'sales' in col.lower() and 'rep' not in col.lower()]
         opp_columns = [col for col in data.columns if 'opp' in col.lower()]

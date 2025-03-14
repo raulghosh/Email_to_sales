@@ -227,3 +227,18 @@
 2025-03-10 14:53:14,055 - data_processing - WARNING - Dr$ Opped 282 rows with missing emails
 2025-03-10 15:08:12,649 - data_processing - INFO - Loading data from C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Sales_Report_Temp.xlsx
 2025-03-10 15:08:25,232 - data_processing - WARNING - Dropped 282 rows with missing emails
+2025-03-14 14:00:09,758 - data_processing - INFO - Loading data from C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Sales_Report_Temp.xlsx
+2025-03-14 14:00:27,818 - data_processing - WARNING - Dropped 282 rows with missing emails
+2025-03-14 15:07:36,373 - data_processing - INFO - Loading data from C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Sales_Report_Temp.xlsx
+2025-03-14 15:07:56,065 - data_processing - WARNING - Dropped 282 rows with missing emails
+2025-03-14 16:19:55,699 - data_processing - INFO - Loading data from C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Sales_Report_Temp.xlsx
+2025-03-14 16:20:08,212 - data_processing - WARNING - Dropped 282 rows with missing emails
+2025-03-14 16:35:59,332 - data_processing - INFO - Loading data from C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Sales_Report_Temp.xlsx
+2025-03-14 16:36:18,455 - data_processing - WARNING - Dropped 286 rows with missing emails
+2025-03-14 16:59:40,421 - data_processing - INFO - Loading data from C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Sales_Report_Temp.xlsx
+2025-03-14 16:59:50,219 - data_processing - WARNING - Dropped 85 rows with missing emails
+2025-03-14 17:11:02,043 - data_processing - INFO - Loading data from C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Sales_Report_Temp.xlsx
+2025-03-14 17:11:11,767 - data_processing - WARNING - Dropped 82 rows with missing emails
+2025-03-14 17:16:22,480 - data_processing - INFO - Loading data from C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Sales_Report_Temp.xlsx
+2025-03-14 17:16:26,131 - data_processing - WARNING - Dropped 82 rows with missing emails
+2025-03-14 17:16:26,136 - data_processing - WARNING - Dropped 82 rows with missing emails

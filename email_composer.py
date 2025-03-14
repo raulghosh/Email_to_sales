@@ -32,7 +32,8 @@ def create_email_body(
         <p>Access the Power BI Dashboard where you can drill into more information including the past 12 months sales transactions for these items: : <a href="{power_bi_link}">Power BI Report</a></p>
         <p> If you would like the pricing team to help with the deal manager then please submit a work order by logging on to salesforce.com </p>        
         <p>Best regards,<br>Pricing Team</p>
-        <p style="font-size: smaller; font-style: italic;">*TTM: Last 12 months</p>
+        <p style="font-size: smaller; font-style: italic;">Items priced by extent team are not included</p>
+        <p style="font-size: smaller; font-style: italic;">*TTM: Trailing 12 months</p>
         """
     else:
         summary_html = sales_rep_data.get("summary_html", "") if sales_rep_data else ""
@@ -45,7 +46,8 @@ def create_email_body(
         <p>Access the Power BI Dashboard where you can drill into more information including the past 12 months sales transactions for these items:  <a href="{power_bi_link}">Power BI Report</a></p>
         <p> If you would like the pricing team to help with the deal manager then please submit a work order by logging on to salesforce.com </p>
         <p>Best regards,<br>Pricing Team</p>
-        <p style="font-size: smaller; font-style: italic;">*TTM: Last 12 months</p>
+        <p style="font-size: smaller; font-style: italic;">Items priced by extent team are not included</p>
+        <p style="font-size: smaller; font-style: italic;">*TTM: Trailing 12 months</p>
         """
     return body
 
