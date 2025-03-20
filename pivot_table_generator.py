@@ -75,23 +75,23 @@ def _create_summary_table(data: pd.DataFrame, category: str) -> pd.DataFrame:
         return pd.DataFrame()
     
     summary_table = data.groupby("Sales Rep Name").agg({
-        "Gross Sales (TTM)": "sum",
+        "$ Gross Sales (TTM)": "sum",
         "$ Opp to Floor": "sum",
         "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum(),
     }).rename(columns={"Item Visibility": "# Visible Items"}).reset_index()
     
     # Create two columns for sorting
-    summary_table["Gross Sales LTM1"] = summary_table["Gross Sales (TTM)"]
+    summary_table["$ Gross Sales LTM1"] = summary_table["$ Gross Sales (TTM)"]
     summary_table["$ Opp to Floor1"] = summary_table["$ Opp to Floor"]
     
-    summary_table["Gross Sales (TTM)"] = summary_table["Gross Sales (TTM)"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
+    summary_table["$ Gross Sales (TTM)"] = summary_table["$ Gross Sales (TTM)"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
     summary_table["$ Opp to Floor"] = summary_table["$ Opp to Floor"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
     
     # Sort the tables 
     if category == "Attic":
-        summary_table = summary_table.sort_values(by="Gross Sales LTM1", ascending=False).drop(columns=["Gross Sales LTM1", "$ Opp to Floor1"])
+        summary_table = summary_table.sort_values(by="$ Gross Sales LTM1", ascending=False).drop(columns=["$ Gross Sales LTM1", "$ Opp to Floor1"])
     else:
-        summary_table = summary_table.sort_values(by="$ Opp to Floor1", ascending=False).drop(columns=["Gross Sales LTM1", "$ Opp to Floor1"])
+        summary_table = summary_table.sort_values(by="$ Opp to Floor1", ascending=False).drop(columns=["$ Gross Sales LTM1", "$ Opp to Floor1"])
     
     return summary_table
 
@@ -116,13 +116,13 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
     """
     Generate two HTML pivot tables for the manager email: 
     one for 'Basement' (sorted by '$ Opp to Floor'), 
-    and one for 'Attic' (sorted by 'Gross Sales (TTM)').
+    and one for 'Attic' (sorted by '$ Gross Sales (TTM)').
     """
     try:
         data = data[data["Manager Name"] == manager_name]
         # Define aggregation
         agg_funcs = {
-            "Gross Sales (TTM)": "sum",
+            "$ Gross Sales (TTM)": "sum",
             "$ Opp to Floor": "sum",
             "$ Opp to Target": "sum",
             "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum(),
@@ -146,12 +146,12 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
             .rename(columns={ "Item Visibility": "# Visible Items"})
             .reset_index()
             .drop(columns=["$ Opp to Floor","$ Opp to Target"])  # Remove $ Opp to Floor
-            .sort_values(by="Gross Sales (TTM)", ascending=False)  # Sort by 'Gross Sales (TTM)'
+            .sort_values(by="$ Gross Sales (TTM)", ascending=False)  # Sort by '$ Gross Sales (TTM)'
         )
 
         # Format numerical columns
         for df in [basement_df, attic_df]:
-            for col in ["Gross Sales (TTM)", "# Visible Items"]:
+            for col in ["$ Gross Sales (TTM)", "# Visible Items"]:
                 if col in df.columns:
                     df[col] = df[col].apply(lambda x: f"{x:,.0f}")
         # Format "$ Opp to Floor" column in basement_df
