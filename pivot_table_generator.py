@@ -111,3 +111,79 @@ def _write_data_sheet(data: pd.DataFrame, writer: pd.ExcelWriter, sheet_name: st
     data.to_excel(writer, index=False, sheet_name=sheet_name)
     worksheet = writer.sheets[sheet_name]
     format_excel_sheet(worksheet, data, sales_rep=False,sheet_name = sheet_name)
+
+def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
+    """
+    Generate two HTML pivot tables for the manager email: 
+    one for 'Basement' (sorted by '$ Opp to Floor'), 
+    and one for 'Attic' (sorted by 'Gross Sales (TTM)').
+    """
+    try:
+        data = data[data["Manager Name"] == manager_name]
+        # Define aggregation
+        agg_funcs = {
+            "Gross Sales (TTM)": "sum",
+            "$ Opp to Floor": "sum",
+            "$ Opp to Target": "sum",
+            "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum(),
+        }
+
+        # Process "Basement" table
+        basement_df = (
+            data[data["Category"] == "Basement"]
+            .groupby(["Sales Rep Name"])
+            .agg(agg_funcs)
+            .rename(columns={"Item Visibility": "# Visible Items"})
+            .reset_index()
+            .sort_values(by="$ Opp to Floor", ascending=False)  # Sort by '$ Opp to Floor'
+        )
+
+        # Process "Attic" table (Remove "$ Opp to Floor" column)
+        attic_df = (
+            data[data["Category"] == "Attic"]
+            .groupby(["Sales Rep Name"])
+            .agg(agg_funcs)
+            .rename(columns={ "Item Visibility": "# Visible Items"})
+            .reset_index()
+            .drop(columns=["$ Opp to Floor","$ Opp to Target"])  # Remove $ Opp to Floor
+            .sort_values(by="Gross Sales (TTM)", ascending=False)  # Sort by 'Gross Sales (TTM)'
+        )
+
+        # Format numerical columns
+        for df in [basement_df, attic_df]:
+            for col in ["Gross Sales (TTM)", "# Visible Items"]:
+                if col in df.columns:
+                    df[col] = df[col].apply(lambda x: f"{x:,.0f}")
+        # Format "$ Opp to Floor" column in basement_df
+        if "$ Opp to Floor" in basement_df.columns:
+            basement_df["$ Opp to Floor"] = basement_df["$ Opp to Floor"].apply(lambda x: f"{x:,.0f}")
+        if "$ Opp to Floor" in basement_df.columns:
+            basement_df["$ Opp to Target"] = basement_df["$ Opp to Target"].apply(lambda x: f"{x:,.0f}")
+
+        # Convert to HTML (Align Sales Rep Name & Category to left)
+        def _format_summary_table_html(summary_table: pd.DataFrame) -> str:
+            """Format summary table as HTML with styling."""
+            return f"""
+            <style>
+                .summary-table th, .summary-table td {{ text-align: right; }}
+                .summary-table th:first-child, .summary-table td:first-child {{ text-align: left; }}
+            </style>
+            {summary_table.to_html(index=False, classes="summary-table")}
+            """
+
+        basement_html = _format_summary_table_html(basement_df)
+        attic_html = _format_summary_table_html(attic_df)
+
+        # Combine with styling
+        pivot_html = f"""
+        <h3>Basement Summary</h3>
+        {basement_html}
+        <br>
+        <h3>Attic Summary</h3>
+        {attic_html}
+        """
+        return pivot_html
+
+    except Exception as e:
+        logger.error(f"Failed to generate pivot tables: {str(e)}")
+        raise ManagerServiceError(f"Failed to generate pivot tables: {str(e)}")

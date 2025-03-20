@@ -64,28 +64,22 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
 
         # Convert to HTML (Align Sales Rep Name & Category to left)
         def df_to_html(df, title):
-            html = df.to_html(index=False, classes="pivot-table", escape=False)
-            html = html.replace("<th>Sales Rep Name</th>", '<th style="text-align: left;">Sales Rep Name</th>')
-
-            # Apply right alignment to all columns except the first
-            html = html.replace("<td>", '<td style="text-align: right;">')
-
-            # Left align the first column
-            first_col_start = html.find('<td style="text-align: right;">')
-            if first_col_start != -1:
-                html = html[:first_col_start] + html[first_col_start:].replace('<td style="text-align: right;">', '<td style="text-align: left;">', 1)
-
-            return f"<h3>{title}</h3>" + html
+            """Format summary table as HTML with styling and title."""
+            html = f"""
+            <h3>{title}</h3>
+            <style>
+                .summary-table th, .summary-table td {{ text-align: right; }}
+                .summary-table th:first-child, .summary-table td:first-child {{ text-align: left; }}
+            </style>
+            {df.to_html(index=False, classes="summary-table")}
+            """
+            return html
 
         basement_html = df_to_html(basement_df, "Basement Summary")
         attic_html = df_to_html(attic_df, "Attic Summary")
 
         # Combine with styling
         pivot_html = f"""
-        <style>
-            .pivot-table th, .pivot-table td {{ text-align: right; padding: 5px; }}
-            .pivot-table th:first-child, .pivot-table td:first-child {{ text-align: left; }}
-        </style>
         {basement_html}
         <br>
         {attic_html}
