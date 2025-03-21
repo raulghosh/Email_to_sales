@@ -355,3 +355,5 @@
 2025-03-20 10:21:43,898 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
 2025-03-20 10:59:32,739 - manager_service - INFO - Processing manager email for: Quinlan, Martin
 2025-03-20 10:59:33,027 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-03-20 16:27:11,749 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-03-20 16:27:12,039 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin

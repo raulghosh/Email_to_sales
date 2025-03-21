@@ -83,17 +83,17 @@ def format_columns(data: pd.DataFrame) -> pd.DataFrame:
         # Last Trans. Date | Floor Margin | Target Margin | Start Margin | Opp to Floor | Opp to Target | Item Visibility |Vendor Name | Cat1 |\
         # Sales Rep Name | Sales Rep Email | Manager Name | Manager Email | RVP Name | RVP Email | VP Name | VP Email
 
-
         sales_columns = [col for col in data.columns if 'sales' in col.lower() and 'rep' not in col.lower() and 'margin' not in col.lower()]
-        sales_columns = [col for col in data.columns if 'sales' in col.lower() and 'rep' not in col.lower()]
         opp_columns = [col for col in data.columns if 'opp' in col.lower()]
         margin_columns = [col for col in data.columns if 'margin' in col.lower()]
         
         if not any([sales_columns, opp_columns, margin_columns]):
             raise DataProcessingError("No sales, opp, or margin columns found")
         
-        for col in sales_columns:
-            data.rename(columns={col: col.replace("Gross Sales", "$ Gross Sales")}, inplace=True)
+        # Rename 'Gross Sales (TTM)' to '$ Gross Sales (TTM)'
+        if 'Gross Sales (TTM)' in data.columns:
+            data.rename(columns={'Gross Sales (TTM)': '$ Gross Sales (TTM)'}, inplace=True)
+            sales_columns = [col.replace('Gross Sales (TTM)', '$ Gross Sales (TTM)') if col == 'Gross Sales (TTM)' else col for col in sales_columns]
         
         logger.debug(f"Sales columns: {sales_columns}")
         logger.debug(f"Opp columns: {opp_columns}")
@@ -109,7 +109,6 @@ def format_columns(data: pd.DataFrame) -> pd.DataFrame:
             data[col] = pd.to_numeric(data[col], errors='coerce').fillna(0).round(0).astype(int)
             logger.debug(f"Formatted column: {col}")
             logger.debug(f"Data after formatting {col}:\n{data[[col]].head()}")
-        
         
         # Format margin columns
         for col in margin_columns:

@@ -257,3 +257,16 @@
 2025-03-20 10:59:28,441 - data_processing - INFO - Loading data from C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Sales_Report_Temp.xlsx
 2025-03-20 10:59:32,420 - data_processing - WARNING - Dropped 82 rows with missing emails
 2025-03-20 10:59:32,425 - data_processing - WARNING - Dropped 82 rows with missing emails
+2025-03-20 16:20:48,835 - data_processing - INFO - Loading data from C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Sales_Report_Temp.xlsx
+2025-03-20 16:20:52,706 - data_processing - WARNING - Dropped 82 rows with missing emails
+2025-03-20 16:20:52,710 - data_processing - WARNING - Dropped 82 rows with missing emails
+2025-03-20 16:20:52,739 - data_processing - ERROR - Error formatting columns: 'Gross Sales (TTM)'
+2025-03-20 16:21:30,819 - data_processing - INFO - Loading data from C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Sales_Report_Temp.xlsx
+2025-03-20 16:21:34,671 - data_processing - WARNING - Dropped 82 rows with missing emails
+2025-03-20 16:21:34,676 - data_processing - WARNING - Dropped 82 rows with missing emails
+2025-03-20 16:21:34,703 - data_processing - ERROR - Error formatting columns: 'Gross Sales (TTM)'
+2025-03-20 16:27:00,426 - data_processing - INFO - Loading data from C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Sales_Report_Temp.xlsx
+2025-03-20 16:27:00,429 - data_processing - ERROR - Failed to load data: [Errno 13] Permission denied: 'C:\\Users\\rghosh\\OneDrive - Veritiv Corp\\AI Lab\\Attic and Basement\\Email_to_sales\\Temp_Files\\Sales_Report_Temp.xlsx'
+2025-03-20 16:27:07,621 - data_processing - INFO - Loading data from C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Sales_Report_Temp.xlsx
+2025-03-20 16:27:11,224 - data_processing - WARNING - Dropped 82 rows with missing emails
+2025-03-20 16:27:11,230 - data_processing - WARNING - Dropped 82 rows with missing emails
