@@ -159,13 +159,15 @@ def calculate_metrics(data: pd.DataFrame) -> Dict[str, Any]:
         "$ Gross Sales (TTM)": "sum",
         "$ Opp to Floor": "sum",
         "$ Opp to Target": "sum",
-        "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum()
+        "Sales Rep Name": "count",  # Count of lines (items) for each category
+        # "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum()
     }).rename(columns={
-        "Item Visibility": "# Visible Items"
+        "Sales Rep Name": "# Lines",
+        # "Item Visibility": "# Visible Items"
     }).reset_index()
     
     # Format numerical values
-    for col in ["$ Gross Sales (TTM)", "$ Opp to Floor", "$ Opp to Target", "# Visible Items"]:
+    for col in ["$ Gross Sales (TTM)", "$ Opp to Floor", "$ Opp to Target", "# Lines"]:
         summary_table[col] = summary_table[col].apply(lambda x: f"{x:,.0f}")
     
     metrics["summary_html"] = _format_summary_table_html(summary_table)
@@ -265,3 +267,92 @@ def clean_data(data: pd.DataFrame) -> pd.DataFrame:
     logger.debug(f"Data after cleaning:\n{cleaned_data.head()}")
     
     return cleaned_data
+
+def generate_sales_rep_pivot_html(data: pd.DataFrame, sales_rep_name: str) -> str:
+    """
+    Generate two HTML pivot tables for the sales rep email:
+    one for 'Basement' (sorted by '$ Opp to Floor'),
+    and one for 'Attic' (sorted by '$ Gross Sales (TTM)').
+    """
+    try:
+        data = data[data["Sales Rep Name"] == sales_rep_name]
+        # Define aggregation
+        agg_funcs = {
+            "$ Gross Sales (TTM)": "sum",
+            "$ Opp to Floor": "sum",
+            "$ Opp to Target": "sum",
+            "Sales Rep Name": "count",
+            # "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum(),
+        }
+
+        # Process "Basement" table
+        basement_df = (
+            data[data["Category"] == "Basement"]
+            .groupby(["Item Name"])
+            .agg(agg_funcs)
+            .rename(columns={"Sales Rep Name": "# Lines"})  # Change to "# Lines" for clarity
+            # .rename(columns={"Item Visibility": "# Visible Items"})
+            .reset_index()
+            .sort_values(by="$ Opp to Floor", ascending=False)  # Sort by '$ Opp to Floor'
+        )
+
+        # Process "Attic" table (Remove "$ Opp to Floor" column)
+        attic_df = (
+            data[data["Category"] == "Attic"]
+            .groupby(["Item Name"])
+            .agg(agg_funcs)
+            .rename(columns={"Sales Rep Name": "# Lines"})  # Change to "# Lines" for clarity
+            # .rename(columns={"Item Visibility": "# Visible Items"})
+            .reset_index()
+            .drop(columns=["$ Opp to Floor", "$ Opp to Target"])  # Remove $ Opp to Floor
+            .sort_values(by="$ Gross Sales (TTM)", ascending=False)  # Sort by '$ Gross Sales (TTM)'
+        )
+
+        # Add totals row to both tables
+        def add_totals_row(df, columns_to_format):
+            totals = {col: df[col].sum() if col in df.columns else None for col in df.columns}
+            totals["Item Name"] = "Total"
+            df = pd.concat([df, pd.DataFrame([totals])], ignore_index=True)
+            for col in columns_to_format:
+                if col in df.columns:
+                    df[col] = df[col].apply(lambda x: f"{x:,.0f}" if pd.notna(x) else "")
+            return df
+
+        basement_df = add_totals_row(basement_df, ["$ Gross Sales (TTM)", "$ Opp to Floor", "# Lines"])
+        attic_df = add_totals_row(attic_df, ["$ Gross Sales (TTM)", "# Lines"])
+
+        # Convert to HTML (Align Item Name & Category to left)
+        def df_to_html(df, title):
+            """Format summary table as HTML with styling and title."""
+            # Apply bold styling to the totals row
+            def highlight_totals(row):
+                if row["Item Name"] == "Total":
+                    return ["font-weight: bold;" for _ in row]
+                return [""] * len(row)
+
+            styled_df = df.style.apply(highlight_totals, axis=1)
+
+            html = f"""
+            <h3>{title}</h3>
+            <style>
+                .summary-table th, .summary-table td {{ text-align: right; }}
+                .summary-table th:first-child, .summary-table td:first-child {{ text-align: left; }}
+            </style>
+            {styled_df.to_html(index=False, classes="summary-table", escape=False)}
+            """
+            return html
+
+        basement_html = df_to_html(basement_df, "Basement Summary")
+        attic_html = df_to_html(attic_df, "Attic Summary")
+
+        # Combine with styling
+        pivot_html = f"""
+        {basement_html}
+        <br>
+        {attic_html}
+        """
+        return pivot_html
+
+    except Exception as e:
+        logger.error(f"Failed to generate pivot tables for sales rep {sales_rep_name}: {str(e)}")
+        raise SalesRepServiceError(f"Failed to generate pivot tables for sales rep: {str(e)}")

@@ -12,6 +12,10 @@ class PivotTableError(Exception):
     """Custom exception for pivot table generation errors."""
     pass
 
+class ManagerServiceError(Exception):
+    """Custom exception for manager service errors."""
+    pass
+
 def generate_manager_report(
     data: pd.DataFrame,
     manager_name: str,
@@ -70,28 +74,43 @@ def generate_manager_report(
     return None
 
 def _create_summary_table(data: pd.DataFrame, category: str) -> pd.DataFrame:
-    """Create an aggregated summary table from input data."""
+    """Create an aggregated summary table from input data with a totals row."""
     if data.empty:
         return pd.DataFrame()
     
+    # Group and aggregate data
     summary_table = data.groupby("Sales Rep Name").agg({
         "$ Gross Sales (TTM)": "sum",
         "$ Opp to Floor": "sum",
-        "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum(),
-    }).rename(columns={"Item Visibility": "# Visible Items"}).reset_index()
+        "Manager Name": "count",  # Count of lines for each sales rep
+        # "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum(),
+    }).rename(columns={"Manager Name": "# Lines"}).reset_index()
     
     # Create two columns for sorting
     summary_table["$ Gross Sales LTM1"] = summary_table["$ Gross Sales (TTM)"]
     summary_table["$ Opp to Floor1"] = summary_table["$ Opp to Floor"]
     
+    # Format numerical columns
     summary_table["$ Gross Sales (TTM)"] = summary_table["$ Gross Sales (TTM)"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
     summary_table["$ Opp to Floor"] = summary_table["$ Opp to Floor"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
     
-    # Sort the tables 
+    # Sort the tables
     if category == "Attic":
         summary_table = summary_table.sort_values(by="$ Gross Sales LTM1", ascending=False).drop(columns=["$ Gross Sales LTM1", "$ Opp to Floor1"])
     else:
         summary_table = summary_table.sort_values(by="$ Opp to Floor1", ascending=False).drop(columns=["$ Gross Sales LTM1", "$ Opp to Floor1"])
+    
+    # Add totals row
+    totals = {
+        "Sales Rep Name": "Total",
+        "$ Gross Sales (TTM)": summary_table["$ Gross Sales (TTM)"].replace(",", "", regex=True).astype(float).sum(),
+        "$ Opp to Floor": summary_table["$ Opp to Floor"].replace(",", "", regex=True).astype(float).sum(),
+        "# Lines": summary_table["# Lines"].sum(),  # Count of lines for each sales rep
+        # "# Visible Items": summary_table["# Visible Items"].sum(),
+    }
+    totals["$ Gross Sales (TTM)"] = f"{int(totals['$ Gross Sales (TTM)']):,}"
+    totals["$ Opp to Floor"] = f"{int(totals['$ Opp to Floor']):,}"
+    summary_table = pd.concat([summary_table, pd.DataFrame([totals])], ignore_index=True)
     
     return summary_table
 
@@ -125,7 +144,8 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
             "$ Gross Sales (TTM)": "sum",
             "$ Opp to Floor": "sum",
             "$ Opp to Target": "sum",
-            "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum(),
+            "Manager Name": "count",
+            # "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum(),
         }
 
         # Process "Basement" table
@@ -133,7 +153,8 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
             data[data["Category"] == "Basement"]
             .groupby(["Sales Rep Name"])
             .agg(agg_funcs)
-            .rename(columns={"Item Visibility": "# Visible Items"})
+            .rename(columns={"Manager Name": "# Lines"})  # Rename "Manager Name" to "# Lines"
+            # .rename(columns={"Item Visibility": "# Visible Items"})
             .reset_index()
             .sort_values(by="$ Opp to Floor", ascending=False)  # Sort by '$ Opp to Floor'
         )
@@ -143,7 +164,8 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
             data[data["Category"] == "Attic"]
             .groupby(["Sales Rep Name"])
             .agg(agg_funcs)
-            .rename(columns={ "Item Visibility": "# Visible Items"})
+            .rename(columns={"Manager Name": "# Lines"})  # Rename "Manager Name" to "# Lines"
+            # .rename(columns={ "Item Visibility": "# Visible Items"})
             .reset_index()
             .drop(columns=["$ Opp to Floor","$ Opp to Target"])  # Remove $ Opp to Floor
             .sort_values(by="$ Gross Sales (TTM)", ascending=False)  # Sort by '$ Gross Sales (TTM)'
@@ -151,7 +173,7 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
 
         # Format numerical columns
         for df in [basement_df, attic_df]:
-            for col in ["$ Gross Sales (TTM)", "# Visible Items"]:
+            for col in ["$ Gross Sales (TTM)", "# Lines"]:
                 if col in df.columns:
                     df[col] = df[col].apply(lambda x: f"{x:,.0f}")
         # Format "$ Opp to Floor" column in basement_df
@@ -182,7 +204,7 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
         <h3>Attic Summary</h3>
         {attic_html}
         """
-        return pivot_html
+        raise Exception(f"Failed to generate pivot tables: {str(e)}")
 
     except Exception as e:
         logger.error(f"Failed to generate pivot tables: {str(e)}")
