@@ -241,3 +241,351 @@
 2025-03-20 10:59:32,736 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
 2025-03-20 16:27:11,317 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ahlers, Thomas M_Report.xlsx
 2025-03-20 16:27:11,746 - sales_rep_service - INFO - Successfully sent email to Ahlers, Thomas M
+2025-03-27 19:23:04,379 - sales_rep_service - ERROR - Failed to process sales rep Olivas, Michael D: No data found for sales rep: Olivas, Michael D
+2025-03-27 19:24:39,209 - sales_rep_service - ERROR - Failed to process sales rep Olivas, Michael D: No data found for sales rep: Olivas, Michael D
+2025-03-27 19:31:04,663 - sales_rep_service - ERROR - Failed to process sales rep aellis@veritivcorp.com: No data found for sales rep: aellis@veritivcorp.com
+2025-03-27 19:32:40,987 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ellis, Aimee_Report.xlsx
+2025-03-27 19:32:41,298 - sales_rep_service - INFO - Successfully sent email to Ellis, Aimee
+2025-03-27 19:32:41,310 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Geiger, Kimiko_Report.xlsx
+2025-03-27 19:32:41,674 - sales_rep_service - INFO - Successfully sent email to Geiger, Kimiko
+2025-03-27 19:32:41,681 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Alford, Dustin T_Report.xlsx
+2025-03-27 19:32:41,955 - sales_rep_service - INFO - Successfully sent email to Alford, Dustin T
+2025-03-27 19:32:41,961 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Bell, Nicole_Report.xlsx
+2025-03-27 19:32:42,206 - sales_rep_service - INFO - Successfully sent email to Bell, Nicole
+2025-03-27 19:32:42,214 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Montibon, Donna_Report.xlsx
+2025-03-27 19:32:42,470 - sales_rep_service - INFO - Successfully sent email to Montibon, Donna
+2025-03-27 19:32:42,477 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Reisinger, Jeremy_Report.xlsx
+2025-03-27 19:32:42,765 - sales_rep_service - INFO - Successfully sent email to Reisinger, Jeremy
+2025-03-27 19:47:06,497 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ellis, Aimee_Report.xlsx
+2025-03-27 19:47:06,831 - sales_rep_service - INFO - Successfully sent email to Ellis, Aimee
+2025-03-27 19:47:06,839 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Geiger, Kimiko_Report.xlsx
+2025-03-27 19:47:07,149 - sales_rep_service - INFO - Successfully sent email to Geiger, Kimiko
+2025-03-27 19:47:07,158 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Alford, Dustin T_Report.xlsx
+2025-03-27 19:47:07,411 - sales_rep_service - INFO - Successfully sent email to Alford, Dustin T
+2025-03-27 19:47:07,420 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Bell, Nicole_Report.xlsx
+2025-03-27 19:47:07,746 - sales_rep_service - INFO - Successfully sent email to Bell, Nicole
+2025-03-27 19:47:07,752 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Montibon, Donna_Report.xlsx
+2025-03-27 19:47:08,041 - sales_rep_service - INFO - Successfully sent email to Montibon, Donna
+2025-03-27 19:47:08,046 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Reisinger, Jeremy_Report.xlsx
+2025-03-27 19:47:08,283 - sales_rep_service - INFO - Successfully sent email to Reisinger, Jeremy
+2025-03-27 19:51:32,512 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ellis, Aimee_Report.xlsx
+2025-03-27 19:51:32,836 - sales_rep_service - INFO - Successfully sent email to Ellis, Aimee
+2025-03-27 19:51:32,845 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Geiger, Kimiko_Report.xlsx
+2025-03-27 19:51:33,122 - sales_rep_service - INFO - Successfully sent email to Geiger, Kimiko
+2025-03-27 19:51:33,131 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Alford, Dustin T_Report.xlsx
+2025-03-27 19:51:33,389 - sales_rep_service - INFO - Successfully sent email to Alford, Dustin T
+2025-03-27 19:51:33,397 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Bell, Nicole_Report.xlsx
+2025-03-27 19:51:33,686 - sales_rep_service - INFO - Successfully sent email to Bell, Nicole
+2025-03-27 19:51:33,692 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Montibon, Donna_Report.xlsx
+2025-03-27 19:51:33,956 - sales_rep_service - INFO - Successfully sent email to Montibon, Donna
+2025-03-27 19:51:33,964 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Reisinger, Jeremy_Report.xlsx
+2025-03-27 19:51:34,183 - sales_rep_service - INFO - Successfully sent email to Reisinger, Jeremy
+2025-03-27 20:04:53,664 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ellis, Aimee_Report.xlsx
+2025-03-27 20:04:53,935 - sales_rep_service - INFO - Successfully sent email to Ellis, Aimee
+2025-03-27 20:04:53,948 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Geiger, Kimiko_Report.xlsx
+2025-03-27 20:04:54,231 - sales_rep_service - INFO - Successfully sent email to Geiger, Kimiko
+2025-03-27 20:04:54,240 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Alford, Dustin T_Report.xlsx
+2025-03-27 20:04:54,490 - sales_rep_service - INFO - Successfully sent email to Alford, Dustin T
+2025-03-27 20:04:54,495 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Montibon, Donna_Report.xlsx
+2025-03-27 20:04:54,799 - sales_rep_service - INFO - Successfully sent email to Montibon, Donna
+2025-03-27 20:04:54,805 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Reisinger, Jeremy_Report.xlsx
+2025-03-27 20:04:55,149 - sales_rep_service - INFO - Successfully sent email to Reisinger, Jeremy
+2025-03-27 20:04:55,156 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Bell, Nicole_Report.xlsx
+2025-03-27 20:04:55,379 - sales_rep_service - INFO - Successfully sent email to Bell, Nicole
+2025-03-27 20:34:32,726 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ellis, Aimee_Report.xlsx
+2025-03-27 20:34:33,039 - sales_rep_service - INFO - Successfully sent email to Ellis, Aimee
+2025-03-27 20:34:33,048 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Geiger, Kimiko_Report.xlsx
+2025-03-27 20:34:33,359 - sales_rep_service - INFO - Successfully sent email to Geiger, Kimiko
+2025-03-27 20:34:33,367 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Alford, Dustin T_Report.xlsx
+2025-03-27 20:34:33,730 - sales_rep_service - INFO - Successfully sent email to Alford, Dustin T
+2025-03-27 20:34:33,736 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Montibon, Donna_Report.xlsx
+2025-03-27 20:34:34,003 - sales_rep_service - INFO - Successfully sent email to Montibon, Donna
+2025-03-27 20:34:34,011 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Reisinger, Jeremy_Report.xlsx
+2025-03-27 20:34:34,257 - sales_rep_service - INFO - Successfully sent email to Reisinger, Jeremy
+2025-03-27 20:34:34,263 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Bell, Nicole_Report.xlsx
+2025-03-27 20:34:34,534 - sales_rep_service - INFO - Successfully sent email to Bell, Nicole
+2025-03-27 20:40:42,170 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ellis, Aimee_Report.xlsx
+2025-03-27 20:40:42,471 - sales_rep_service - INFO - Successfully sent email to Ellis, Aimee
+2025-03-27 20:40:42,483 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Geiger, Kimiko_Report.xlsx
+2025-03-27 20:40:42,858 - sales_rep_service - INFO - Successfully sent email to Geiger, Kimiko
+2025-03-27 20:40:42,867 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Alford, Dustin T_Report.xlsx
+2025-03-27 20:40:43,211 - sales_rep_service - INFO - Successfully sent email to Alford, Dustin T
+2025-03-27 20:40:43,220 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Montibon, Donna_Report.xlsx
+2025-03-27 20:40:43,494 - sales_rep_service - INFO - Successfully sent email to Montibon, Donna
+2025-03-27 20:40:43,501 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Reisinger, Jeremy_Report.xlsx
+2025-03-27 20:40:43,795 - sales_rep_service - INFO - Successfully sent email to Reisinger, Jeremy
+2025-03-27 20:40:43,801 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Bell, Nicole_Report.xlsx
+2025-03-27 20:40:44,039 - sales_rep_service - INFO - Successfully sent email to Bell, Nicole
+2025-03-28 10:31:21,424 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ellis, Aimee_Report.xlsx
+2025-03-28 10:31:21,789 - sales_rep_service - INFO - Successfully sent email to Ellis, Aimee
+2025-03-28 10:31:21,797 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Geiger, Kimiko_Report.xlsx
+2025-03-28 10:31:22,147 - sales_rep_service - INFO - Successfully sent email to Geiger, Kimiko
+2025-03-28 10:31:22,155 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Alford, Dustin T_Report.xlsx
+2025-03-28 10:31:22,381 - sales_rep_service - INFO - Successfully sent email to Alford, Dustin T
+2025-03-28 10:31:22,388 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Montibon, Donna_Report.xlsx
+2025-03-28 10:31:22,710 - sales_rep_service - INFO - Successfully sent email to Montibon, Donna
+2025-03-28 10:31:22,716 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Reisinger, Jeremy_Report.xlsx
+2025-03-28 10:31:22,915 - sales_rep_service - INFO - Successfully sent email to Reisinger, Jeremy
+2025-03-28 10:31:22,924 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Bell, Nicole_Report.xlsx
+2025-03-28 10:31:23,162 - sales_rep_service - INFO - Successfully sent email to Bell, Nicole
+2025-03-28 10:40:20,229 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ellis, Aimee_Report.xlsx
+2025-03-28 10:40:20,761 - sales_rep_service - INFO - Successfully sent email to Ellis, Aimee
+2025-03-28 10:40:20,769 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Geiger, Kimiko_Report.xlsx
+2025-03-28 10:40:21,275 - sales_rep_service - INFO - Successfully sent email to Geiger, Kimiko
+2025-03-28 10:40:21,285 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Alford, Dustin T_Report.xlsx
+2025-03-28 10:40:21,659 - sales_rep_service - INFO - Successfully sent email to Alford, Dustin T
+2025-03-28 10:40:21,669 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Montibon, Donna_Report.xlsx
+2025-03-28 10:40:22,099 - sales_rep_service - INFO - Successfully sent email to Montibon, Donna
+2025-03-28 10:40:22,105 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Reisinger, Jeremy_Report.xlsx
+2025-03-28 10:40:22,634 - sales_rep_service - INFO - Successfully sent email to Reisinger, Jeremy
+2025-03-28 10:40:22,644 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Bell, Nicole_Report.xlsx
+2025-03-28 10:40:23,039 - sales_rep_service - INFO - Successfully sent email to Bell, Nicole
+2025-03-28 10:43:40,195 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ellis, Aimee_Report.xlsx
+2025-03-28 10:43:40,464 - sales_rep_service - INFO - Successfully sent email to Ellis, Aimee
+2025-03-28 10:43:40,477 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Geiger, Kimiko_Report.xlsx
+2025-03-28 10:43:40,751 - sales_rep_service - INFO - Successfully sent email to Geiger, Kimiko
+2025-03-28 10:43:40,757 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Alford, Dustin T_Report.xlsx
+2025-03-28 10:43:41,066 - sales_rep_service - INFO - Successfully sent email to Alford, Dustin T
+2025-03-28 10:43:41,072 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Montibon, Donna_Report.xlsx
+2025-03-28 10:43:41,276 - sales_rep_service - INFO - Successfully sent email to Montibon, Donna
+2025-03-28 10:43:41,286 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Reisinger, Jeremy_Report.xlsx
+2025-03-28 10:43:41,481 - sales_rep_service - INFO - Successfully sent email to Reisinger, Jeremy
+2025-03-28 10:43:41,493 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Bell, Nicole_Report.xlsx
+2025-03-28 10:43:41,781 - sales_rep_service - INFO - Successfully sent email to Bell, Nicole
+2025-03-28 14:37:52,781 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Ellis, Aimee_Report.xlsx
+2025-03-28 14:37:53,212 - sales_rep_service - INFO - Successfully sent email to Ellis, Aimee
+2025-03-28 14:37:53,224 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Geiger, Kimiko_Report.xlsx
+2025-03-28 14:37:53,572 - sales_rep_service - INFO - Successfully sent email to Geiger, Kimiko
+2025-03-28 14:37:53,582 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Alford, Dustin T_Report.xlsx
+2025-03-28 14:37:53,865 - sales_rep_service - INFO - Successfully sent email to Alford, Dustin T
+2025-03-28 14:37:53,876 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Montibon, Donna_Report.xlsx
+2025-03-28 14:37:54,192 - sales_rep_service - INFO - Successfully sent email to Montibon, Donna
+2025-03-28 14:37:54,200 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Reisinger, Jeremy_Report.xlsx
+2025-03-28 14:37:54,426 - sales_rep_service - INFO - Successfully sent email to Reisinger, Jeremy
+2025-03-28 14:37:54,434 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Bell, Nicole_Report.xlsx
+2025-03-28 14:37:54,747 - sales_rep_service - INFO - Successfully sent email to Bell, Nicole
+2025-04-03 16:23:00,195 - sales_rep_service - ERROR - Failed to process sales rep Shaw, Dean W: No data found for sales rep: Shaw, Dean W
+2025-04-03 16:26:23,971 - sales_rep_service - ERROR - Failed to process sales rep Shaw, Dean W: No data found for sales rep: Shaw, Dean W
+2025-04-03 18:09:46,828 - sales_rep_service - ERROR - Failed to process sales rep Shaw, Dean W: No data found for sales rep: Shaw, Dean W
+2025-04-03 18:14:59,652 - sales_rep_service - ERROR - Failed to process sales rep Shaw, Dean W: No data found for sales rep: Shaw, Dean W
+2025-04-03 18:17:38,037 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Shaw, Dean W_Report.xlsx
+2025-04-03 18:17:42,317 - sales_rep_service - INFO - Successfully sent email to Shaw, Dean W
+2025-04-03 18:17:42,329 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gebhart, Michael_Report.xlsx
+2025-04-03 18:17:42,583 - sales_rep_service - INFO - Successfully sent email to Gebhart, Michael
+2025-04-03 18:17:42,590 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Higgins, Gerard_Report.xlsx
+2025-04-03 18:17:42,861 - sales_rep_service - INFO - Successfully sent email to Higgins, Gerard
+2025-04-03 18:17:42,877 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Stephens, Robert Michael_Report.xlsx
+2025-04-03 18:17:43,174 - sales_rep_service - INFO - Successfully sent email to Stephens, Robert Michael
+2025-04-03 18:17:43,193 - sales_rep_service - ERROR - Failed to process sales rep Roberts, Jason: No data found for sales rep: Roberts, Jason
+2025-04-03 18:24:52,624 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Shaw, Dean W_Report.xlsx
+2025-04-03 18:24:52,933 - sales_rep_service - INFO - Successfully sent email to Shaw, Dean W
+2025-04-03 18:24:52,946 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gebhart, Michael_Report.xlsx
+2025-04-03 18:24:53,263 - sales_rep_service - INFO - Successfully sent email to Gebhart, Michael
+2025-04-03 18:24:53,270 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Higgins, Gerard_Report.xlsx
+2025-04-03 18:24:53,531 - sales_rep_service - INFO - Successfully sent email to Higgins, Gerard
+2025-04-03 18:24:53,542 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Stephens, Robert Michael_Report.xlsx
+2025-04-03 18:24:53,800 - sales_rep_service - INFO - Successfully sent email to Stephens, Robert Michael
+2025-04-03 18:24:53,811 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gurley, Slade_Report.xlsx
+2025-04-03 18:24:54,070 - sales_rep_service - INFO - Successfully sent email to Gurley, Slade
+2025-04-03 18:24:54,079 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Clarke, Colston Snead_Report.xlsx
+2025-04-03 18:24:54,394 - sales_rep_service - INFO - Successfully sent email to Clarke, Colston Snead
+2025-04-03 18:24:54,404 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Corwin, Karen H_Report.xlsx
+2025-04-03 18:24:54,713 - sales_rep_service - INFO - Successfully sent email to Corwin, Karen H
+2025-04-03 18:24:54,721 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Strickland, Jeanine A_Report.xlsx
+2025-04-03 18:24:54,989 - sales_rep_service - INFO - Successfully sent email to Strickland, Jeanine A
+2025-04-03 18:24:55,000 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Swogger, Marcie_Report.xlsx
+2025-04-03 18:24:55,294 - sales_rep_service - INFO - Successfully sent email to Swogger, Marcie
+2025-04-03 18:24:55,299 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Wilkinson, Shawn_Report.xlsx
+2025-04-03 18:24:55,567 - sales_rep_service - INFO - Successfully sent email to Wilkinson, Shawn
+2025-04-03 18:24:55,580 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Winters, Alzedrick_Report.xlsx
+2025-04-03 18:24:55,821 - sales_rep_service - INFO - Successfully sent email to Winters, Alzedrick
+2025-04-03 18:24:55,835 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Faris, Ross_Report.xlsx
+2025-04-03 18:24:56,067 - sales_rep_service - INFO - Successfully sent email to Faris, Ross
+2025-04-18 18:40:17,040 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Shaw, Dean W_Report.xlsx
+2025-04-18 18:40:18,583 - sales_rep_service - INFO - Successfully sent email to Shaw, Dean W
+2025-04-18 18:40:18,596 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gebhart, Michael_Report.xlsx
+2025-04-18 18:40:18,944 - sales_rep_service - INFO - Successfully sent email to Gebhart, Michael
+2025-04-18 18:40:18,957 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Higgins, Gerard_Report.xlsx
+2025-04-18 18:40:19,269 - sales_rep_service - INFO - Successfully sent email to Higgins, Gerard
+2025-04-18 18:40:19,283 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Stephens, Robert Michael_Report.xlsx
+2025-04-18 18:40:19,613 - sales_rep_service - INFO - Successfully sent email to Stephens, Robert Michael
+2025-04-18 18:40:19,626 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gurley, Slade_Report.xlsx
+2025-04-18 18:40:19,894 - sales_rep_service - INFO - Successfully sent email to Gurley, Slade
+2025-04-18 18:40:19,900 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Clarke, Colston Snead_Report.xlsx
+2025-04-18 18:40:20,152 - sales_rep_service - INFO - Successfully sent email to Clarke, Colston Snead
+2025-04-18 18:40:20,158 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Corwin, Karen H_Report.xlsx
+2025-04-18 18:40:20,560 - sales_rep_service - INFO - Successfully sent email to Corwin, Karen H
+2025-04-18 18:40:20,573 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Strickland, Jeanine A_Report.xlsx
+2025-04-18 18:40:20,836 - sales_rep_service - INFO - Successfully sent email to Strickland, Jeanine A
+2025-04-18 18:40:20,851 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Swogger, Marcie_Report.xlsx
+2025-04-18 18:40:21,101 - sales_rep_service - INFO - Successfully sent email to Swogger, Marcie
+2025-04-18 18:40:21,112 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Wilkinson, Shawn_Report.xlsx
+2025-04-18 18:40:21,477 - sales_rep_service - INFO - Successfully sent email to Wilkinson, Shawn
+2025-04-18 18:40:21,490 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Winters, Alzedrick_Report.xlsx
+2025-04-18 18:40:21,778 - sales_rep_service - INFO - Successfully sent email to Winters, Alzedrick
+2025-04-18 18:40:21,783 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Faris, Ross_Report.xlsx
+2025-04-18 18:40:22,015 - sales_rep_service - INFO - Successfully sent email to Faris, Ross
+2025-04-25 09:17:25,736 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Shaw, Dean W_Report.xlsx
+2025-04-25 09:17:26,234 - sales_rep_service - INFO - Successfully sent email to Shaw, Dean W
+2025-04-25 09:17:26,243 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gebhart, Michael_Report.xlsx
+2025-04-25 09:17:26,497 - sales_rep_service - INFO - Successfully sent email to Gebhart, Michael
+2025-04-25 09:17:26,506 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Higgins, Gerard_Report.xlsx
+2025-04-25 09:17:26,881 - sales_rep_service - INFO - Successfully sent email to Higgins, Gerard
+2025-04-25 09:17:26,890 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Stephens, Robert Michael_Report.xlsx
+2025-04-25 09:17:27,184 - sales_rep_service - INFO - Successfully sent email to Stephens, Robert Michael
+2025-04-25 09:17:27,196 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gurley, Slade_Report.xlsx
+2025-04-25 09:17:27,603 - sales_rep_service - INFO - Successfully sent email to Gurley, Slade
+2025-04-25 09:17:27,611 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Clarke, Colston Snead_Report.xlsx
+2025-04-25 09:17:28,051 - sales_rep_service - INFO - Successfully sent email to Clarke, Colston Snead
+2025-04-25 09:17:28,059 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Corwin, Karen H_Report.xlsx
+2025-04-25 09:17:28,329 - sales_rep_service - INFO - Successfully sent email to Corwin, Karen H
+2025-04-25 09:17:28,335 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Strickland, Jeanine A_Report.xlsx
+2025-04-25 09:17:28,578 - sales_rep_service - INFO - Successfully sent email to Strickland, Jeanine A
+2025-04-25 09:17:28,585 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Swogger, Marcie_Report.xlsx
+2025-04-25 09:17:28,935 - sales_rep_service - INFO - Successfully sent email to Swogger, Marcie
+2025-04-25 09:17:28,951 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Wilkinson, Shawn_Report.xlsx
+2025-04-25 09:17:29,227 - sales_rep_service - INFO - Successfully sent email to Wilkinson, Shawn
+2025-04-25 09:17:29,248 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Winters, Alzedrick_Report.xlsx
+2025-04-25 09:17:29,518 - sales_rep_service - INFO - Successfully sent email to Winters, Alzedrick
+2025-04-25 09:17:29,528 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Faris, Ross_Report.xlsx
+2025-04-25 09:17:29,890 - sales_rep_service - INFO - Successfully sent email to Faris, Ross
+2025-04-25 09:26:27,389 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Shaw, Dean W_Report.xlsx
+2025-04-25 09:26:27,470 - sales_rep_service - ERROR - Unexpected error processing sales rep Shaw, Dean W: '# Lines'
+2025-04-25 09:56:38,449 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Shaw, Dean W_Report.xlsx
+2025-04-25 09:56:38,524 - sales_rep_service - ERROR - Unexpected error processing sales rep Shaw, Dean W: '# Lines'
+2025-04-25 09:57:44,844 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Shaw, Dean W_Report.xlsx
+2025-04-25 09:57:45,228 - sales_rep_service - INFO - Successfully sent email to Shaw, Dean W
+2025-04-25 09:57:45,241 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gebhart, Michael_Report.xlsx
+2025-04-25 09:57:45,489 - sales_rep_service - INFO - Successfully sent email to Gebhart, Michael
+2025-04-25 09:57:45,496 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Higgins, Gerard_Report.xlsx
+2025-04-25 09:57:45,838 - sales_rep_service - INFO - Successfully sent email to Higgins, Gerard
+2025-04-25 09:57:45,845 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Stephens, Robert Michael_Report.xlsx
+2025-04-25 09:57:46,094 - sales_rep_service - INFO - Successfully sent email to Stephens, Robert Michael
+2025-04-25 09:57:46,100 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gurley, Slade_Report.xlsx
+2025-04-25 09:57:46,386 - sales_rep_service - INFO - Successfully sent email to Gurley, Slade
+2025-04-25 09:57:46,397 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Clarke, Colston Snead_Report.xlsx
+2025-04-25 09:57:46,625 - sales_rep_service - INFO - Successfully sent email to Clarke, Colston Snead
+2025-04-25 09:57:46,633 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Corwin, Karen H_Report.xlsx
+2025-04-25 09:57:46,977 - sales_rep_service - INFO - Successfully sent email to Corwin, Karen H
+2025-04-25 09:57:46,983 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Strickland, Jeanine A_Report.xlsx
+2025-04-25 09:57:47,207 - sales_rep_service - INFO - Successfully sent email to Strickland, Jeanine A
+2025-04-25 09:57:47,213 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Swogger, Marcie_Report.xlsx
+2025-04-25 09:57:47,452 - sales_rep_service - INFO - Successfully sent email to Swogger, Marcie
+2025-04-25 09:57:47,459 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Wilkinson, Shawn_Report.xlsx
+2025-04-25 09:57:47,752 - sales_rep_service - INFO - Successfully sent email to Wilkinson, Shawn
+2025-04-25 09:57:47,758 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Winters, Alzedrick_Report.xlsx
+2025-04-25 09:57:48,140 - sales_rep_service - INFO - Successfully sent email to Winters, Alzedrick
+2025-04-25 09:57:48,147 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Faris, Ross_Report.xlsx
+2025-04-25 09:57:48,368 - sales_rep_service - INFO - Successfully sent email to Faris, Ross
+2025-04-25 10:36:06,308 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Shaw, Dean W_Report.xlsx
+2025-04-25 10:36:07,082 - sales_rep_service - INFO - Successfully sent email to Shaw, Dean W
+2025-04-25 10:36:07,089 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gebhart, Michael_Report.xlsx
+2025-04-25 10:36:07,398 - sales_rep_service - INFO - Successfully sent email to Gebhart, Michael
+2025-04-25 10:36:07,404 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Higgins, Gerard_Report.xlsx
+2025-04-25 10:36:07,706 - sales_rep_service - INFO - Successfully sent email to Higgins, Gerard
+2025-04-25 10:36:07,713 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Stephens, Robert Michael_Report.xlsx
+2025-04-25 10:36:08,112 - sales_rep_service - INFO - Successfully sent email to Stephens, Robert Michael
+2025-04-25 10:36:08,121 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gurley, Slade_Report.xlsx
+2025-04-25 10:36:08,466 - sales_rep_service - INFO - Successfully sent email to Gurley, Slade
+2025-04-25 10:36:08,472 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Clarke, Colston Snead_Report.xlsx
+2025-04-25 10:36:08,717 - sales_rep_service - INFO - Successfully sent email to Clarke, Colston Snead
+2025-04-25 10:36:08,723 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Corwin, Karen H_Report.xlsx
+2025-04-25 10:36:09,038 - sales_rep_service - INFO - Successfully sent email to Corwin, Karen H
+2025-04-25 10:36:09,044 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Strickland, Jeanine A_Report.xlsx
+2025-04-25 10:36:09,298 - sales_rep_service - INFO - Successfully sent email to Strickland, Jeanine A
+2025-04-25 10:36:09,306 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Swogger, Marcie_Report.xlsx
+2025-04-25 10:36:09,527 - sales_rep_service - INFO - Successfully sent email to Swogger, Marcie
+2025-04-25 10:36:09,533 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Wilkinson, Shawn_Report.xlsx
+2025-04-25 10:36:09,873 - sales_rep_service - INFO - Successfully sent email to Wilkinson, Shawn
+2025-04-25 10:36:09,880 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Winters, Alzedrick_Report.xlsx
+2025-04-25 10:36:10,100 - sales_rep_service - INFO - Successfully sent email to Winters, Alzedrick
+2025-04-25 10:36:10,105 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Faris, Ross_Report.xlsx
+2025-04-25 10:36:10,301 - sales_rep_service - INFO - Successfully sent email to Faris, Ross
+2025-04-25 12:10:10,519 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Shaw, Dean W_Report.xlsx
+2025-04-25 12:10:11,055 - sales_rep_service - INFO - Successfully sent email to Shaw, Dean W
+2025-04-25 12:10:11,064 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gebhart, Michael_Report.xlsx
+2025-04-25 12:10:11,333 - sales_rep_service - INFO - Successfully sent email to Gebhart, Michael
+2025-04-25 12:10:11,343 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Higgins, Gerard_Report.xlsx
+2025-04-25 12:10:11,616 - sales_rep_service - INFO - Successfully sent email to Higgins, Gerard
+2025-04-25 12:10:11,623 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Stephens, Robert Michael_Report.xlsx
+2025-04-25 12:10:12,062 - sales_rep_service - INFO - Successfully sent email to Stephens, Robert Michael
+2025-04-25 12:10:12,072 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gurley, Slade_Report.xlsx
+2025-04-25 12:10:12,318 - sales_rep_service - INFO - Successfully sent email to Gurley, Slade
+2025-04-25 12:10:12,327 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Clarke, Colston Snead_Report.xlsx
+2025-04-25 12:10:12,551 - sales_rep_service - INFO - Successfully sent email to Clarke, Colston Snead
+2025-04-25 12:10:12,558 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Corwin, Karen H_Report.xlsx
+2025-04-25 12:10:12,845 - sales_rep_service - INFO - Successfully sent email to Corwin, Karen H
+2025-04-25 12:10:12,855 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Strickland, Jeanine A_Report.xlsx
+2025-04-25 12:10:13,187 - sales_rep_service - INFO - Successfully sent email to Strickland, Jeanine A
+2025-04-25 12:10:13,194 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Swogger, Marcie_Report.xlsx
+2025-04-25 12:10:13,419 - sales_rep_service - INFO - Successfully sent email to Swogger, Marcie
+2025-04-25 12:10:13,425 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Wilkinson, Shawn_Report.xlsx
+2025-04-25 12:10:13,670 - sales_rep_service - INFO - Successfully sent email to Wilkinson, Shawn
+2025-04-25 12:10:13,682 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Winters, Alzedrick_Report.xlsx
+2025-04-25 12:10:13,910 - sales_rep_service - INFO - Successfully sent email to Winters, Alzedrick
+2025-04-25 12:10:13,918 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Faris, Ross_Report.xlsx
+2025-04-25 12:10:14,166 - sales_rep_service - INFO - Successfully sent email to Faris, Ross
+2025-04-28 08:32:48,176 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Shaw, Dean W_Report.xlsx
+2025-04-28 08:32:48,635 - sales_rep_service - INFO - Successfully sent email to Shaw, Dean W
+2025-04-28 08:32:48,644 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gebhart, Michael_Report.xlsx
+2025-04-28 08:32:48,992 - sales_rep_service - INFO - Successfully sent email to Gebhart, Michael
+2025-04-28 08:32:48,999 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Higgins, Gerard_Report.xlsx
+2025-04-28 08:32:49,286 - sales_rep_service - INFO - Successfully sent email to Higgins, Gerard
+2025-04-28 08:32:49,298 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Stephens, Robert Michael_Report.xlsx
+2025-04-28 08:32:49,556 - sales_rep_service - INFO - Successfully sent email to Stephens, Robert Michael
+2025-04-28 08:32:49,566 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gurley, Slade_Report.xlsx
+2025-04-28 08:32:49,927 - sales_rep_service - INFO - Successfully sent email to Gurley, Slade
+2025-04-28 08:32:49,933 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Clarke, Colston Snead_Report.xlsx
+2025-04-28 08:32:50,155 - sales_rep_service - INFO - Successfully sent email to Clarke, Colston Snead
+2025-04-28 08:32:50,162 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Corwin, Karen H_Report.xlsx
+2025-04-28 08:32:50,426 - sales_rep_service - INFO - Successfully sent email to Corwin, Karen H
+2025-04-28 08:32:50,440 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Strickland, Jeanine A_Report.xlsx
+2025-04-28 08:32:50,675 - sales_rep_service - INFO - Successfully sent email to Strickland, Jeanine A
+2025-04-28 08:32:50,690 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Swogger, Marcie_Report.xlsx
+2025-04-28 08:32:51,004 - sales_rep_service - INFO - Successfully sent email to Swogger, Marcie
+2025-04-28 08:32:51,010 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Wilkinson, Shawn_Report.xlsx
+2025-04-28 08:32:51,257 - sales_rep_service - INFO - Successfully sent email to Wilkinson, Shawn
+2025-04-28 08:32:51,273 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Winters, Alzedrick_Report.xlsx
+2025-04-28 08:32:51,538 - sales_rep_service - INFO - Successfully sent email to Winters, Alzedrick
+2025-04-28 08:32:51,554 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Faris, Ross_Report.xlsx
+2025-04-28 08:32:51,858 - sales_rep_service - INFO - Successfully sent email to Faris, Ross
+2025-04-28 08:37:53,087 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Shaw, Dean W_Report.xlsx
+2025-04-28 08:37:53,491 - sales_rep_service - INFO - Successfully sent email to Shaw, Dean W
+2025-04-28 08:37:53,504 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gebhart, Michael_Report.xlsx
+2025-04-28 08:37:53,756 - sales_rep_service - INFO - Successfully sent email to Gebhart, Michael
+2025-04-28 08:37:53,763 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Higgins, Gerard_Report.xlsx
+2025-04-28 08:37:54,019 - sales_rep_service - INFO - Successfully sent email to Higgins, Gerard
+2025-04-28 08:37:54,025 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Stephens, Robert Michael_Report.xlsx
+2025-04-28 08:37:54,350 - sales_rep_service - INFO - Successfully sent email to Stephens, Robert Michael
+2025-04-28 08:37:54,358 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gurley, Slade_Report.xlsx
+2025-04-28 08:37:54,621 - sales_rep_service - INFO - Successfully sent email to Gurley, Slade
+2025-04-28 08:37:54,628 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Clarke, Colston Snead_Report.xlsx
+2025-04-28 08:37:54,977 - sales_rep_service - INFO - Successfully sent email to Clarke, Colston Snead
+2025-04-28 08:37:54,983 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Corwin, Karen H_Report.xlsx
+2025-04-28 08:37:55,223 - sales_rep_service - INFO - Successfully sent email to Corwin, Karen H
+2025-04-28 08:37:55,231 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Strickland, Jeanine A_Report.xlsx
+2025-04-28 08:37:55,498 - sales_rep_service - INFO - Successfully sent email to Strickland, Jeanine A
+2025-04-28 08:37:55,504 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Swogger, Marcie_Report.xlsx
+2025-04-28 08:37:56,058 - sales_rep_service - INFO - Successfully sent email to Swogger, Marcie
+2025-04-28 08:37:56,066 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Wilkinson, Shawn_Report.xlsx
+2025-04-28 08:37:56,582 - sales_rep_service - INFO - Successfully sent email to Wilkinson, Shawn
+2025-04-28 08:37:56,588 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Winters, Alzedrick_Report.xlsx
+2025-04-28 08:37:57,067 - sales_rep_service - INFO - Successfully sent email to Winters, Alzedrick
+2025-04-28 08:37:57,074 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Faris, Ross_Report.xlsx
+2025-04-28 08:37:57,490 - sales_rep_service - INFO - Successfully sent email to Faris, Ross
+2025-04-28 10:05:57,113 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Shaw, Dean W_Report.xlsx
+2025-04-28 10:05:57,440 - sales_rep_service - INFO - Successfully sent email to Shaw, Dean W
+2025-04-28 10:05:57,448 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gebhart, Michael_Report.xlsx
+2025-04-28 10:05:57,682 - sales_rep_service - INFO - Successfully sent email to Gebhart, Michael
+2025-04-28 10:17:25,037 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Shaw, Dean W_Report.xlsx
+2025-04-28 10:17:25,433 - sales_rep_service - INFO - Successfully sent email to Shaw, Dean W
+2025-04-28 10:17:25,447 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gebhart, Michael_Report.xlsx
+2025-04-28 10:17:25,681 - sales_rep_service - INFO - Successfully sent email to Gebhart, Michael
+2025-04-28 10:18:19,411 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Shaw, Dean W_Report.xlsx
+2025-04-28 10:18:19,692 - sales_rep_service - INFO - Successfully sent email to Shaw, Dean W
+2025-04-28 10:18:19,700 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gebhart, Michael_Report.xlsx
+2025-04-28 10:18:19,949 - sales_rep_service - INFO - Successfully sent email to Gebhart, Michael
+2025-04-28 10:43:22,545 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Shaw, Dean W_Report.xlsx
+2025-04-28 10:43:22,857 - sales_rep_service - INFO - Successfully sent email to Shaw, Dean W
+2025-04-28 10:43:22,864 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gebhart, Michael_Report.xlsx
+2025-04-28 10:43:23,103 - sales_rep_service - INFO - Successfully sent email to Gebhart, Michael

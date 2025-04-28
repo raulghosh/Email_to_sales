@@ -82,9 +82,9 @@ def _create_summary_table(data: pd.DataFrame, category: str) -> pd.DataFrame:
     summary_table = data.groupby("Sales Rep Name").agg({
         "$ Gross Sales (TTM)": "sum",
         "$ Opp to Floor": "sum",
-        "Manager Name": "count",  # Count of lines for each sales rep
+        # "Manager Name": "count",  # Count of lines for each sales rep
         # "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum(),
-    }).rename(columns={"Manager Name": "# Lines"}).reset_index()
+    }).reset_index()
     
     # Create two columns for sorting
     summary_table["$ Gross Sales LTM1"] = summary_table["$ Gross Sales (TTM)"]
@@ -105,7 +105,7 @@ def _create_summary_table(data: pd.DataFrame, category: str) -> pd.DataFrame:
         "Sales Rep Name": "Total",
         "$ Gross Sales (TTM)": summary_table["$ Gross Sales (TTM)"].replace(",", "", regex=True).astype(float).sum(),
         "$ Opp to Floor": summary_table["$ Opp to Floor"].replace(",", "", regex=True).astype(float).sum(),
-        "# Lines": summary_table["# Lines"].sum(),  # Count of lines for each sales rep
+        # "# Lines": summary_table["# Lines"].sum(),  # Count of lines for each sales rep
         # "# Visible Items": summary_table["# Visible Items"].sum(),
     }
     totals["$ Gross Sales (TTM)"] = f"{int(totals['$ Gross Sales (TTM)']):,}"
@@ -144,7 +144,7 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
             "$ Gross Sales (TTM)": "sum",
             "$ Opp to Floor": "sum",
             "$ Opp to Target": "sum",
-            "Manager Name": "count",
+            # "Manager Name": "count",
             # "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum(),
         }
 
@@ -153,7 +153,7 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
             data[data["Category"] == "Basement"]
             .groupby(["Sales Rep Name"])
             .agg(agg_funcs)
-            .rename(columns={"Manager Name": "# Lines"})  # Rename "Manager Name" to "# Lines"
+            # .rename(columns={"Manager Name": "# Lines"})  # Rename "Manager Name" to "# Lines"
             # .rename(columns={"Item Visibility": "# Visible Items"})
             .reset_index()
             .sort_values(by="$ Opp to Floor", ascending=False)  # Sort by '$ Opp to Floor'
@@ -164,7 +164,7 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
             data[data["Category"] == "Attic"]
             .groupby(["Sales Rep Name"])
             .agg(agg_funcs)
-            .rename(columns={"Manager Name": "# Lines"})  # Rename "Manager Name" to "# Lines"
+            # .rename(columns={"Manager Name": "# Lines"})  # Rename "Manager Name" to "# Lines"
             # .rename(columns={ "Item Visibility": "# Visible Items"})
             .reset_index()
             .drop(columns=["$ Opp to Floor","$ Opp to Target"])  # Remove $ Opp to Floor
@@ -173,7 +173,7 @@ def generate_manager_pivot_html(data: pd.DataFrame, manager_name: str) -> str:
 
         # Format numerical columns
         for df in [basement_df, attic_df]:
-            for col in ["$ Gross Sales (TTM)", "# Lines"]:
+            for col in ["$ Gross Sales (TTM)"]:
                 if col in df.columns:
                     df[col] = df[col].apply(lambda x: f"{x:,.0f}")
         # Format "$ Opp to Floor" column in basement_df

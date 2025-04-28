@@ -174,3 +174,4 @@
 2025-02-27 13:42:02,154 - pivot_table_generator - ERROR - Error generating HTML table: Unknown format code 'f' for object of type 'str'
 2025-03-05 13:51:02,019 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['Opp to Floor', 'Opp to Target'] not found in axis"
 2025-03-14 14:00:28,517 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "Column(s) ['$ $ $ Opp to Floor'] do not exist"
+2025-04-28 10:17:25,968 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['# Lines'] not found in axis"

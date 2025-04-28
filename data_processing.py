@@ -51,7 +51,7 @@ def clean_data(data: pd.DataFrame) -> pd.DataFrame:
     if dropped_rows > 0:
         logger.warning(f"Dropped {dropped_rows} rows with missing emails")
     
-    cleaned_data=cleaned_data[cleaned_data["Category"]!='Market']
+    cleaned_data=cleaned_data[cleaned_data["Category"]!='Others']
     
     dropped_rows = initial_rows - len(cleaned_data)
     
@@ -120,7 +120,7 @@ def format_columns(data: pd.DataFrame) -> pd.DataFrame:
             data.rename(columns={col: col.replace("Opp", "$ Opp")}, inplace=True)
         
         logger.debug(f"Data after formatting all columns:\n{data.head()}")        
-        return data
+        return data[data['Manager Email']=='rfaris@veritivcorp.com'] # Filter to only include rows with the specified manager email for testing purposes
         
     except Exception as e:
         logger.error(f"Error formatting columns: {str(e)}")
@@ -154,7 +154,7 @@ def get_sales_reps(data: pd.DataFrame, limit: Optional[int] = None) -> Dict[str,
         logger.error(f"Error getting sales reps: {str(e)}")
         raise DataProcessingError(f"Failed to get sales reps: {str(e)}")
 
-def get_managers(data: pd.DataFrame, start: int = 5, end: int = 7) -> Dict[str, str]:
+def get_managers(data: pd.DataFrame, start: Optional[int] = None, end: Optional[int] = None) -> Dict[str, str]:
     """
     Get a dictionary of managers (email: name) from the specified range.
     

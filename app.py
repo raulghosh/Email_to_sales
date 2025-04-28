@@ -21,9 +21,18 @@ def main():
     logger.debug(f"Formatted data:\n{formatted_data.head()}")
     
     # Get sales reps and managers
-    sales_reps = get_sales_reps(data, limit=1)
-    managers = get_managers(data, start=5, end=6)
-    
+    sales_reps = get_sales_reps(data,limit =2)  # For testing, limit to 2 sales reps
+    print(sales_reps)  # For debugging purposes, to see the sales reps dictionary
+    # sales_reps={
+    # 'Ellis, Aimee': 'aellis@veritivcorp.com',
+    # 'Geiger, Kimiko': 'kgeiger@veritivcorp.com',
+    # 'Alford, Dustin T': 'dalford@veritivcorp.com',
+    # 'Bell, Nicole': 'nbell@veritivcorp.com',
+    # 'Montibon, Donna': 'dmontib@veritivcorp.com',
+    # 'Reisinger, Jeremy': 'jreisin@veritivcorp.com'}
+    managers = get_managers(data)
+    print(managers)  # For debugging purposes, to see the managers dictionary
+    # managers={'Reisinger, Jeremy': 'jreisin@veritivcorp.com'}
     # Create output folder
     os.makedirs(CONFIG.output_folder, exist_ok=True)
     

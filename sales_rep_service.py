@@ -159,15 +159,15 @@ def calculate_metrics(data: pd.DataFrame) -> Dict[str, Any]:
         "$ Gross Sales (TTM)": "sum",
         "$ Opp to Floor": "sum",
         "$ Opp to Target": "sum",
-        "Sales Rep Name": "count",  # Count of lines (items) for each category
+        # "Sales Rep Name": "count",  # Count of lines (items) for each category
         # "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum()
-    }).rename(columns={
-        "Sales Rep Name": "# Lines",
+    # }).rename(columns={
+        # "Sales Rep Name": "# Lines",
         # "Item Visibility": "# Visible Items"
     }).reset_index()
     
     # Format numerical values
-    for col in ["$ Gross Sales (TTM)", "$ Opp to Floor", "$ Opp to Target", "# Lines"]:
+    for col in ["$ Gross Sales (TTM)", "$ Opp to Floor", "$ Opp to Target"]:
         summary_table[col] = summary_table[col].apply(lambda x: f"{x:,.0f}")
     
     metrics["summary_html"] = _format_summary_table_html(summary_table)
@@ -281,7 +281,7 @@ def generate_sales_rep_pivot_html(data: pd.DataFrame, sales_rep_name: str) -> st
             "$ Gross Sales (TTM)": "sum",
             "$ Opp to Floor": "sum",
             "$ Opp to Target": "sum",
-            "Sales Rep Name": "count",
+            # "Sales Rep Name": "count",
             # "Item Visibility": lambda x: ((x == "Medium") | (x == "High")).sum(),
         }
 
@@ -290,7 +290,7 @@ def generate_sales_rep_pivot_html(data: pd.DataFrame, sales_rep_name: str) -> st
             data[data["Category"] == "Basement"]
             .groupby(["Item Name"])
             .agg(agg_funcs)
-            .rename(columns={"Sales Rep Name": "# Lines"})  # Change to "# Lines" for clarity
+            # .rename(columns={"Sales Rep Name": "# Lines"})  # Change to "# Lines" for clarity
             # .rename(columns={"Item Visibility": "# Visible Items"})
             .reset_index()
             .sort_values(by="$ Opp to Floor", ascending=False)  # Sort by '$ Opp to Floor'
@@ -301,7 +301,7 @@ def generate_sales_rep_pivot_html(data: pd.DataFrame, sales_rep_name: str) -> st
             data[data["Category"] == "Attic"]
             .groupby(["Item Name"])
             .agg(agg_funcs)
-            .rename(columns={"Sales Rep Name": "# Lines"})  # Change to "# Lines" for clarity
+            # .rename(columns={"Sales Rep Name": "# Lines"})  # Change to "# Lines" for clarity
             # .rename(columns={"Item Visibility": "# Visible Items"})
             .reset_index()
             .drop(columns=["$ Opp to Floor", "$ Opp to Target"])  # Remove $ Opp to Floor
@@ -318,8 +318,8 @@ def generate_sales_rep_pivot_html(data: pd.DataFrame, sales_rep_name: str) -> st
                     df[col] = df[col].apply(lambda x: f"{x:,.0f}" if pd.notna(x) else "")
             return df
 
-        basement_df = add_totals_row(basement_df, ["$ Gross Sales (TTM)", "$ Opp to Floor", "# Lines"])
-        attic_df = add_totals_row(attic_df, ["$ Gross Sales (TTM)", "# Lines"])
+        basement_df = add_totals_row(basement_df, ["$ Gross Sales (TTM)", "$ Opp to Floor"])
+        attic_df = add_totals_row(attic_df, ["$ Gross Sales (TTM)"])
 
         # Convert to HTML (Align Item Name & Category to left)
         def df_to_html(df, title):
