@@ -61,7 +61,8 @@ def clean_data(data: pd.DataFrame) -> pd.DataFrame:
         
     logger.debug(f"Data after cleaning:\n{cleaned_data.head()}")
     
-    return cleaned_data
+    # Just for FS
+    return cleaned_data[cleaned_data['RVP Name'].str.lower()=='macpherson, scott']
 
 def format_columns(data: pd.DataFrame) -> pd.DataFrame:
     """
@@ -119,7 +120,7 @@ def format_columns(data: pd.DataFrame) -> pd.DataFrame:
         #     data.rename(columns={col: col.replace("Opp", "$ Opp")}, inplace=True)
         
         logger.debug(f"Data after formatting all columns:\n{data.head()}")       
-        return data[data['Manager Email']=='psummer@veritivcorp.com'] # Filter to only include rows with the specified manager email for testing purposes
+        return data # Filter to only include rows with the specified manager email for testing purposes
         
     except Exception as e:
         logger.error(f"Error formatting columns: {str(e)}")
