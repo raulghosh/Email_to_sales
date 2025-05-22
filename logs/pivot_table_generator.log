@@ -175,3 +175,525 @@
 2025-03-05 13:51:02,019 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['Opp to Floor', 'Opp to Target'] not found in axis"
 2025-03-14 14:00:28,517 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "Column(s) ['$ $ $ Opp to Floor'] do not exist"
 2025-04-28 10:17:25,968 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['# Lines'] not found in axis"
+2025-05-22 10:57:35,176 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:52:45,207 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:30,501 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:30,903 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:31,085 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:31,273 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:31,453 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:31,703 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:31,887 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:32,073 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:32,268 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:32,453 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:32,737 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:32,913 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:33,056 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:33,239 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:33,430 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:33,657 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:33,852 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:34,013 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:34,186 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:34,372 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:34,551 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:34,819 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:35,012 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:35,178 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:35,354 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:35,569 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:35,830 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:36,019 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:36,207 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:36,392 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:36,574 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:36,807 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:37,004 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:37,185 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:37,360 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:37,540 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:37,804 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:37,985 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:38,167 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:38,337 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:38,525 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:38,791 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:38,971 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:39,158 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:39,356 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:39,530 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:39,799 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:39,967 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:40,166 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:40,346 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:40,521 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:40,783 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:40,957 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:41,136 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:41,344 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:41,514 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:41,756 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:41,952 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:42,151 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:42,337 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:42,518 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:42,770 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:42,957 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:43,150 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:43,317 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:43,496 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:43,753 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:43,937 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:44,117 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:44,301 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:44,482 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:44,760 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:44,964 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 11:56:45,173 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:28:32,963 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:28:33,255 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:28:33,505 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:31:59,318 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:31:59,535 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:31:59,844 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:00,023 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:00,193 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:00,381 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:00,568 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:00,878 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:01,062 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:01,228 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:01,412 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:01,744 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:01,923 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:02,109 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:02,317 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:02,508 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:02,811 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:02,990 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:03,156 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:03,336 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:03,501 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:03,790 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:03,967 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:04,153 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:04,356 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:04,559 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:04,895 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:05,100 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:05,313 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:05,527 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:05,864 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:06,071 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:06,320 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:06,531 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:06,859 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:07,031 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:07,232 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:07,441 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:07,798 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:08,015 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:08,215 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:08,407 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:08,727 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:08,962 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:09,174 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:09,376 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:09,564 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:09,910 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:10,119 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:10,324 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:10,523 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:10,862 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:11,130 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:11,364 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:11,735 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:11,946 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:12,174 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:12,397 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:12,727 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:12,949 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:13,150 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:13,372 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:13,667 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:13,878 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:14,084 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:14,281 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:14,482 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:14,807 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:15,013 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:15,223 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:15,450 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:15,811 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:16,016 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:32:16,231 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:39,733 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:39,963 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:40,147 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:40,331 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:40,526 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:40,879 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:41,082 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:41,265 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:41,738 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:42,064 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:42,456 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:42,870 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:43,162 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:43,503 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:43,980 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:44,481 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:44,789 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:44,962 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:45,155 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:45,339 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:45,532 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:45,843 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:46,019 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:46,217 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:46,412 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:46,730 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:46,924 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:47,114 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:47,299 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:47,478 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:47,789 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:47,973 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:48,150 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:48,330 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:48,523 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:48,851 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:49,061 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:49,244 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:49,434 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:49,763 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:49,950 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:50,132 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:50,312 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:50,495 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:50,802 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:50,989 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:51,178 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:51,361 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:51,566 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:51,865 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:52,074 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:52,260 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:52,465 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:52,785 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:52,975 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:53,209 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:53,382 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:53,665 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:53,879 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:54,061 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:54,248 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:54,433 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:54,742 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:54,932 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:55,127 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:55,311 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:55,495 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:55,798 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:55,975 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:56,165 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:56,363 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:56,554 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:56,859 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:37:57,035 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['RVP Name', 'RVP Email', 'VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:40,213 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:40,524 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:40,805 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:40,982 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:41,153 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:41,307 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:41,492 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:41,798 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:41,981 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:42,162 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:42,340 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:42,521 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:42,829 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:43,022 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:43,231 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:43,403 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:43,668 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:43,867 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:44,054 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:44,235 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:44,409 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:44,706 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:44,886 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:45,073 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:45,255 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:45,432 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:45,752 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:46,112 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:46,452 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:46,951 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:47,236 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:47,497 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:47,870 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:48,230 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:48,675 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:49,067 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:49,241 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:49,417 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:49,711 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:49,878 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:50,052 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:50,226 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:50,408 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:50,728 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:50,902 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:51,078 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:51,263 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:51,451 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:51,807 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:51,986 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:52,156 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:52,326 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:52,513 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:52,810 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:52,980 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:53,172 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:53,353 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:53,534 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:53,834 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:53,984 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:54,140 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:54,318 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:54,515 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:54,786 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:54,969 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:55,140 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:55,319 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:55,505 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:55,786 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:55,959 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:56,142 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:56,329 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:56,491 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:39:56,775 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['VP Name', 'VP Email'] not found in axis"
+2025-05-22 12:42:20,065 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:20,299 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:20,482 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:20,784 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:20,990 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:21,173 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:21,330 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:21,545 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:21,848 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:22,033 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:22,216 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:22,391 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:22,567 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:22,841 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:23,016 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:23,184 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:23,357 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:23,538 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:23,854 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:24,038 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:24,221 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:24,436 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:24,763 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:24,954 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:25,115 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:25,316 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:25,514 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:25,841 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:26,014 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:26,187 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:26,375 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:26,562 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:26,864 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:27,048 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:27,212 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:27,399 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:27,702 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:27,872 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:28,063 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:28,245 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:28,427 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:28,763 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:28,952 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:29,132 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:29,327 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:29,516 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:29,802 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:29,975 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:30,159 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:30,348 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:30,543 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:30,865 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:31,053 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:31,233 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:31,414 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:31,716 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:31,900 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:32,080 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:32,271 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:32,471 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:32,795 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:32,980 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:33,190 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:33,381 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:33,567 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:33,856 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:34,032 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:34,197 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:34,376 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:34,563 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:34,863 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:35,030 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:35,196 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 12:42:35,394 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:04,281 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:04,513 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:04,839 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:05,065 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:05,240 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:05,440 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:05,621 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:05,953 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:06,166 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:06,362 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:06,549 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:06,920 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:07,095 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:07,289 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:07,471 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:07,661 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:07,995 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:08,182 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:08,391 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:08,591 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:08,931 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:09,116 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:09,314 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:09,502 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:09,818 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:10,009 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:10,207 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:10,379 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:10,587 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:10,949 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:11,159 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:11,331 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:11,512 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:11,815 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:11,998 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:12,207 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:12,410 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:12,602 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:12,922 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:13,109 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:13,305 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:13,508 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:13,832 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:14,012 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:14,191 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:14,375 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:14,561 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:14,863 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:15,055 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:15,203 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:15,386 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:15,569 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:15,903 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:16,075 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:16,278 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:16,479 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:16,807 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:16,989 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:17,193 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:17,383 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:17,579 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:17,867 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:18,045 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:18,221 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:18,407 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:18,603 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:18,920 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:19,150 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:19,325 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:19,508 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:19,791 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:19,971 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:20,166 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:00:20,371 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: 'Legacy Item #'
+2025-05-22 13:04:18,896 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:19,133 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:19,317 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:19,530 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:19,860 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:20,061 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:20,259 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:20,452 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:20,782 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:20,990 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:21,198 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:21,409 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:21,748 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:22,863 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:23,074 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:23,274 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:23,474 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:23,812 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:24,006 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:24,222 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:24,423 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:24,753 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:24,968 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:25,166 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:25,359 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:25,568 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:25,894 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:26,135 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:26,330 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:26,539 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:26,880 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:27,081 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:27,295 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:27,496 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:27,842 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:28,062 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:28,273 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:28,500 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:28,826 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:29,026 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:29,236 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:29,441 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:29,760 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:29,996 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:30,198 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:30,418 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:30,733 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:30,927 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:31,140 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:31,355 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:31,554 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:31,883 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:32,092 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:32,294 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:32,485 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:32,782 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:32,979 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:33,170 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:33,430 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:33,739 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:33,936 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:34,140 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:34,346 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:34,541 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:34,866 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:35,066 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:35,265 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:35,477 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:35,827 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:36,025 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:36,232 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:36,436 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"
+2025-05-22 13:04:36,744 - pivot_table_generator - ERROR - Unexpected error in generate_manager_report: "['$ Opp to Floor'] not found in axis"

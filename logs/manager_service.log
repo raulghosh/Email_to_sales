@@ -405,3 +405,1351 @@
 2025-04-28 10:18:20,507 - manager_service - INFO - Successfully sent email to manager: Faris, Ross
 2025-04-28 10:43:23,104 - manager_service - INFO - Processing manager email for: Faris, Ross
 2025-04-28 10:43:23,670 - manager_service - INFO - Successfully sent email to manager: Faris, Ross
+2025-05-22 10:57:35,173 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-05-22 10:57:35,178 - manager_service - ERROR - Failed to generate pivot tables: "Column(s) ['$ Opp to Floor', '$ Opp to Target'] do not exist"
+2025-05-22 10:57:35,178 - manager_service - ERROR - Unexpected error processing manager Tungate, William Baylor: Failed to generate pivot tables: "Column(s) ['$ Opp to Floor', '$ Opp to Target'] do not exist"
+2025-05-22 11:52:45,204 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-05-22 11:52:45,209 - manager_service - ERROR - Failed to generate pivot tables: "Column(s) ['$ Opp to Floor', '$ Opp to Target'] do not exist"
+2025-05-22 11:52:45,209 - manager_service - ERROR - Unexpected error processing manager Tungate, William Baylor: Failed to generate pivot tables: "Column(s) ['$ Opp to Floor', '$ Opp to Target'] do not exist"
+2025-05-22 11:56:30,499 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-05-22 11:56:30,901 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-05-22 11:56:30,902 - manager_service - INFO - Processing manager email for: Seymour, Kristine
+2025-05-22 11:56:31,082 - manager_service - INFO - Successfully sent email to manager: Seymour, Kristine
+2025-05-22 11:56:31,083 - manager_service - INFO - Processing manager email for: Pinon-Grillo, Ghislaine F
+2025-05-22 11:56:31,266 - manager_service - INFO - Successfully sent email to manager: Pinon-Grillo, Ghislaine F
+2025-05-22 11:56:31,268 - manager_service - INFO - Processing manager email for: Keeter, Matthew
+2025-05-22 11:56:31,450 - manager_service - INFO - Successfully sent email to manager: Keeter, Matthew
+2025-05-22 11:56:31,451 - manager_service - INFO - Processing manager email for: Mcneil, Helen
+2025-05-22 11:56:31,698 - manager_service - INFO - Successfully sent email to manager: Mcneil, Helen
+2025-05-22 11:56:31,699 - manager_service - INFO - Processing manager email for: Blunt, Laurel
+2025-05-22 11:56:31,884 - manager_service - INFO - Successfully sent email to manager: Blunt, Laurel
+2025-05-22 11:56:31,885 - manager_service - INFO - Processing manager email for: Fosheim, Todd R
+2025-05-22 11:56:32,068 - manager_service - INFO - Successfully sent email to manager: Fosheim, Todd R
+2025-05-22 11:56:32,070 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-05-22 11:56:32,263 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-05-22 11:56:32,265 - manager_service - INFO - Processing manager email for: Boone, Michael Robert
+2025-05-22 11:56:32,450 - manager_service - INFO - Successfully sent email to manager: Boone, Michael Robert
+2025-05-22 11:56:32,451 - manager_service - INFO - Processing manager email for: Allen, Marley B
+2025-05-22 11:56:32,734 - manager_service - INFO - Successfully sent email to manager: Allen, Marley B
+2025-05-22 11:56:32,734 - manager_service - INFO - Processing manager email for: Vicha, Nicole B
+2025-05-22 11:56:32,910 - manager_service - INFO - Successfully sent email to manager: Vicha, Nicole B
+2025-05-22 11:56:32,911 - manager_service - INFO - Processing manager email for: Senuta, Colin
+2025-05-22 11:56:33,053 - manager_service - INFO - Successfully sent email to manager: Senuta, Colin
+2025-05-22 11:56:33,053 - manager_service - INFO - Processing manager email for: Paianini, Craig
+2025-05-22 11:56:33,233 - manager_service - INFO - Successfully sent email to manager: Paianini, Craig
+2025-05-22 11:56:33,233 - manager_service - INFO - Processing manager email for: Faris, Ross
+2025-05-22 11:56:33,426 - manager_service - INFO - Successfully sent email to manager: Faris, Ross
+2025-05-22 11:56:33,427 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-05-22 11:56:33,654 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-05-22 11:56:33,655 - manager_service - INFO - Processing manager email for: Pleva, Joseph C
+2025-05-22 11:56:33,848 - manager_service - INFO - Successfully sent email to manager: Pleva, Joseph C
+2025-05-22 11:56:33,849 - manager_service - INFO - Processing manager email for: Stone, Tom
+2025-05-22 11:56:34,009 - manager_service - INFO - Successfully sent email to manager: Stone, Tom
+2025-05-22 11:56:34,010 - manager_service - INFO - Processing manager email for: Benedict, William Robert
+2025-05-22 11:56:34,183 - manager_service - INFO - Successfully sent email to manager: Benedict, William Robert
+2025-05-22 11:56:34,183 - manager_service - INFO - Processing manager email for: Tighe, Donald K
+2025-05-22 11:56:34,369 - manager_service - INFO - Successfully sent email to manager: Tighe, Donald K
+2025-05-22 11:56:34,370 - manager_service - INFO - Processing manager email for: Kromer, Lauren
+2025-05-22 11:56:34,548 - manager_service - INFO - Successfully sent email to manager: Kromer, Lauren
+2025-05-22 11:56:34,549 - manager_service - INFO - Processing manager email for: Reisinger, Jeremy
+2025-05-22 11:56:34,815 - manager_service - INFO - Successfully sent email to manager: Reisinger, Jeremy
+2025-05-22 11:56:34,816 - manager_service - INFO - Processing manager email for: Waclawek, Anna
+2025-05-22 11:56:35,009 - manager_service - INFO - Successfully sent email to manager: Waclawek, Anna
+2025-05-22 11:56:35,010 - manager_service - INFO - Processing manager email for: Dunton, Stanley Charles
+2025-05-22 11:56:35,176 - manager_service - INFO - Successfully sent email to manager: Dunton, Stanley Charles
+2025-05-22 11:56:35,177 - manager_service - INFO - Processing manager email for: Hutson, Anthony
+2025-05-22 11:56:35,352 - manager_service - INFO - Successfully sent email to manager: Hutson, Anthony
+2025-05-22 11:56:35,352 - manager_service - INFO - Processing manager email for: Gardner, Stephon
+2025-05-22 11:56:35,565 - manager_service - INFO - Successfully sent email to manager: Gardner, Stephon
+2025-05-22 11:56:35,566 - manager_service - INFO - Processing manager email for: Burkhead, Matthew
+2025-05-22 11:56:35,827 - manager_service - INFO - Successfully sent email to manager: Burkhead, Matthew
+2025-05-22 11:56:35,828 - manager_service - INFO - Processing manager email for: Rogers, Robert
+2025-05-22 11:56:36,015 - manager_service - INFO - Successfully sent email to manager: Rogers, Robert
+2025-05-22 11:56:36,016 - manager_service - INFO - Processing manager email for: Spencer, Robert B
+2025-05-22 11:56:36,204 - manager_service - INFO - Successfully sent email to manager: Spencer, Robert B
+2025-05-22 11:56:36,205 - manager_service - INFO - Processing manager email for: Napolitano, Nicholas
+2025-05-22 11:56:36,389 - manager_service - INFO - Successfully sent email to manager: Napolitano, Nicholas
+2025-05-22 11:56:36,390 - manager_service - INFO - Processing manager email for: Peters, Mike
+2025-05-22 11:56:36,571 - manager_service - INFO - Successfully sent email to manager: Peters, Mike
+2025-05-22 11:56:36,571 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-05-22 11:56:36,803 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-05-22 11:56:36,804 - manager_service - INFO - Processing manager email for: Renfro, Trevor
+2025-05-22 11:56:37,000 - manager_service - INFO - Successfully sent email to manager: Renfro, Trevor
+2025-05-22 11:56:37,001 - manager_service - INFO - Processing manager email for: Karhoff, Jeff
+2025-05-22 11:56:37,181 - manager_service - INFO - Successfully sent email to manager: Karhoff, Jeff
+2025-05-22 11:56:37,182 - manager_service - INFO - Processing manager email for: Mengeu, Sean C
+2025-05-22 11:56:37,358 - manager_service - INFO - Successfully sent email to manager: Mengeu, Sean C
+2025-05-22 11:56:37,359 - manager_service - INFO - Processing manager email for: Hutchison, Daniel
+2025-05-22 11:56:37,538 - manager_service - INFO - Successfully sent email to manager: Hutchison, Daniel
+2025-05-22 11:56:37,539 - manager_service - INFO - Processing manager email for: Harris Jr., Marvin
+2025-05-22 11:56:37,800 - manager_service - INFO - Successfully sent email to manager: Harris Jr., Marvin
+2025-05-22 11:56:37,800 - manager_service - INFO - Processing manager email for: Leudesdorff, Joanne
+2025-05-22 11:56:37,982 - manager_service - INFO - Successfully sent email to manager: Leudesdorff, Joanne
+2025-05-22 11:56:37,982 - manager_service - INFO - Processing manager email for: Robben, Anita
+2025-05-22 11:56:38,165 - manager_service - INFO - Successfully sent email to manager: Robben, Anita
+2025-05-22 11:56:38,166 - manager_service - INFO - Processing manager email for: Gergen, Maria
+2025-05-22 11:56:38,334 - manager_service - INFO - Successfully sent email to manager: Gergen, Maria
+2025-05-22 11:56:38,335 - manager_service - INFO - Processing manager email for: Thongsinthusak, Kevin
+2025-05-22 11:56:38,523 - manager_service - INFO - Successfully sent email to manager: Thongsinthusak, Kevin
+2025-05-22 11:56:38,523 - manager_service - INFO - Processing manager email for: Buckley, Wesley
+2025-05-22 11:56:38,787 - manager_service - INFO - Successfully sent email to manager: Buckley, Wesley
+2025-05-22 11:56:38,788 - manager_service - INFO - Processing manager email for: Chow, Vanny
+2025-05-22 11:56:38,968 - manager_service - INFO - Successfully sent email to manager: Chow, Vanny
+2025-05-22 11:56:38,969 - manager_service - INFO - Processing manager email for: Robb, Jeremy
+2025-05-22 11:56:39,153 - manager_service - INFO - Successfully sent email to manager: Robb, Jeremy
+2025-05-22 11:56:39,154 - manager_service - INFO - Processing manager email for: Jaramillo, Charles
+2025-05-22 11:56:39,353 - manager_service - INFO - Successfully sent email to manager: Jaramillo, Charles
+2025-05-22 11:56:39,354 - manager_service - INFO - Processing manager email for: Fromm, David
+2025-05-22 11:56:39,527 - manager_service - INFO - Successfully sent email to manager: Fromm, David
+2025-05-22 11:56:39,528 - manager_service - INFO - Processing manager email for: Todd, Mathew
+2025-05-22 11:56:39,796 - manager_service - INFO - Successfully sent email to manager: Todd, Mathew
+2025-05-22 11:56:39,796 - manager_service - INFO - Processing manager email for: Miller, Sonja
+2025-05-22 11:56:39,964 - manager_service - INFO - Successfully sent email to manager: Miller, Sonja
+2025-05-22 11:56:39,965 - manager_service - INFO - Processing manager email for: Hausman, Aaron
+2025-05-22 11:56:40,163 - manager_service - INFO - Successfully sent email to manager: Hausman, Aaron
+2025-05-22 11:56:40,164 - manager_service - INFO - Processing manager email for: Breon, Benjamin
+2025-05-22 11:56:40,343 - manager_service - INFO - Successfully sent email to manager: Breon, Benjamin
+2025-05-22 11:56:40,343 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-05-22 11:56:40,517 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-05-22 11:56:40,517 - manager_service - INFO - Processing manager email for: Peterson, Eric
+2025-05-22 11:56:40,781 - manager_service - INFO - Successfully sent email to manager: Peterson, Eric
+2025-05-22 11:56:40,781 - manager_service - INFO - Processing manager email for: Fergusson, Keith E
+2025-05-22 11:56:40,954 - manager_service - INFO - Successfully sent email to manager: Fergusson, Keith E
+2025-05-22 11:56:40,955 - manager_service - INFO - Processing manager email for: Mccain, Alan V
+2025-05-22 11:56:41,132 - manager_service - INFO - Successfully sent email to manager: Mccain, Alan V
+2025-05-22 11:56:41,133 - manager_service - INFO - Processing manager email for: Basilii, Mark W
+2025-05-22 11:56:41,340 - manager_service - INFO - Successfully sent email to manager: Basilii, Mark W
+2025-05-22 11:56:41,341 - manager_service - INFO - Processing manager email for: Corff, Daniel
+2025-05-22 11:56:41,511 - manager_service - INFO - Successfully sent email to manager: Corff, Daniel
+2025-05-22 11:56:41,512 - manager_service - INFO - Processing manager email for: Richie-Zehr, Jenna
+2025-05-22 11:56:41,753 - manager_service - INFO - Successfully sent email to manager: Richie-Zehr, Jenna
+2025-05-22 11:56:41,753 - manager_service - INFO - Processing manager email for: Haghighi, Farid
+2025-05-22 11:56:41,950 - manager_service - INFO - Successfully sent email to manager: Haghighi, Farid
+2025-05-22 11:56:41,950 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-05-22 11:56:42,147 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-05-22 11:56:42,148 - manager_service - INFO - Processing manager email for: Turner, Travis B
+2025-05-22 11:56:42,333 - manager_service - INFO - Successfully sent email to manager: Turner, Travis B
+2025-05-22 11:56:42,335 - manager_service - INFO - Processing manager email for: Erramouspe, James A
+2025-05-22 11:56:42,516 - manager_service - INFO - Successfully sent email to manager: Erramouspe, James A
+2025-05-22 11:56:42,516 - manager_service - INFO - Processing manager email for: Sedlacek, Bradley J
+2025-05-22 11:56:42,766 - manager_service - INFO - Successfully sent email to manager: Sedlacek, Bradley J
+2025-05-22 11:56:42,767 - manager_service - INFO - Processing manager email for: Sellers, Aaron
+2025-05-22 11:56:42,954 - manager_service - INFO - Successfully sent email to manager: Sellers, Aaron
+2025-05-22 11:56:42,955 - manager_service - INFO - Processing manager email for: Hespe, Lucas A
+2025-05-22 11:56:43,147 - manager_service - INFO - Successfully sent email to manager: Hespe, Lucas A
+2025-05-22 11:56:43,148 - manager_service - INFO - Processing manager email for: Roehm, Brandon
+2025-05-22 11:56:43,313 - manager_service - INFO - Successfully sent email to manager: Roehm, Brandon
+2025-05-22 11:56:43,314 - manager_service - INFO - Processing manager email for: Chantarapan, Erik
+2025-05-22 11:56:43,492 - manager_service - INFO - Successfully sent email to manager: Chantarapan, Erik
+2025-05-22 11:56:43,493 - manager_service - INFO - Processing manager email for: Johnson Iii, David
+2025-05-22 11:56:43,750 - manager_service - INFO - Successfully sent email to manager: Johnson Iii, David
+2025-05-22 11:56:43,751 - manager_service - INFO - Processing manager email for: Summers, Paul
+2025-05-22 11:56:43,933 - manager_service - INFO - Successfully sent email to manager: Summers, Paul
+2025-05-22 11:56:43,934 - manager_service - INFO - Processing manager email for: Johannsen, Travis
+2025-05-22 11:56:44,113 - manager_service - INFO - Successfully sent email to manager: Johannsen, Travis
+2025-05-22 11:56:44,114 - manager_service - INFO - Processing manager email for: Doane, Dawn D
+2025-05-22 11:56:44,297 - manager_service - INFO - Successfully sent email to manager: Doane, Dawn D
+2025-05-22 11:56:44,298 - manager_service - INFO - Processing manager email for: Bennett, Teall
+2025-05-22 11:56:44,478 - manager_service - INFO - Successfully sent email to manager: Bennett, Teall
+2025-05-22 11:56:44,479 - manager_service - INFO - Processing manager email for: Kelly, Veronica
+2025-05-22 11:56:44,757 - manager_service - INFO - Successfully sent email to manager: Kelly, Veronica
+2025-05-22 11:56:44,758 - manager_service - INFO - Processing manager email for: Derner, Jules
+2025-05-22 11:56:44,955 - manager_service - INFO - Successfully sent email to manager: Derner, Jules
+2025-05-22 11:56:44,957 - manager_service - INFO - Processing manager email for: Weber, Deryk J
+2025-05-22 11:56:45,171 - manager_service - INFO - Successfully sent email to manager: Weber, Deryk J
+2025-05-22 11:56:45,171 - manager_service - INFO - Processing manager email for: Sciarra, Anthony
+2025-05-22 11:56:45,363 - manager_service - INFO - Successfully sent email to manager: Sciarra, Anthony
+2025-05-22 12:28:32,955 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-05-22 12:28:33,242 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-05-22 12:28:33,244 - manager_service - INFO - Processing manager email for: Seymour, Kristine
+2025-05-22 12:28:33,494 - manager_service - INFO - Successfully sent email to manager: Seymour, Kristine
+2025-05-22 12:28:33,496 - manager_service - INFO - Processing manager email for: Pinon-Grillo, Ghislaine F
+2025-05-22 12:28:37,552 - manager_service - ERROR - Failed to process manager Pinon-Grillo, Ghislaine F: Failed to send email: Connection unexpectedly closed: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-22 12:31:59,316 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-05-22 12:31:59,532 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-05-22 12:31:59,533 - manager_service - INFO - Processing manager email for: Seymour, Kristine
+2025-05-22 12:31:59,838 - manager_service - INFO - Successfully sent email to manager: Seymour, Kristine
+2025-05-22 12:31:59,839 - manager_service - INFO - Processing manager email for: Pinon-Grillo, Ghislaine F
+2025-05-22 12:32:00,019 - manager_service - INFO - Successfully sent email to manager: Pinon-Grillo, Ghislaine F
+2025-05-22 12:32:00,020 - manager_service - INFO - Processing manager email for: Keeter, Matthew
+2025-05-22 12:32:00,189 - manager_service - INFO - Successfully sent email to manager: Keeter, Matthew
+2025-05-22 12:32:00,191 - manager_service - INFO - Processing manager email for: Mcneil, Helen
+2025-05-22 12:32:00,374 - manager_service - INFO - Successfully sent email to manager: Mcneil, Helen
+2025-05-22 12:32:00,376 - manager_service - INFO - Processing manager email for: Blunt, Laurel
+2025-05-22 12:32:00,564 - manager_service - INFO - Successfully sent email to manager: Blunt, Laurel
+2025-05-22 12:32:00,565 - manager_service - INFO - Processing manager email for: Fosheim, Todd R
+2025-05-22 12:32:00,875 - manager_service - INFO - Successfully sent email to manager: Fosheim, Todd R
+2025-05-22 12:32:00,875 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-05-22 12:32:01,059 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-05-22 12:32:01,060 - manager_service - INFO - Processing manager email for: Boone, Michael Robert
+2025-05-22 12:32:01,225 - manager_service - INFO - Successfully sent email to manager: Boone, Michael Robert
+2025-05-22 12:32:01,226 - manager_service - INFO - Processing manager email for: Allen, Marley B
+2025-05-22 12:32:01,408 - manager_service - INFO - Successfully sent email to manager: Allen, Marley B
+2025-05-22 12:32:01,409 - manager_service - INFO - Processing manager email for: Vicha, Nicole B
+2025-05-22 12:32:01,741 - manager_service - INFO - Successfully sent email to manager: Vicha, Nicole B
+2025-05-22 12:32:01,742 - manager_service - INFO - Processing manager email for: Senuta, Colin
+2025-05-22 12:32:01,920 - manager_service - INFO - Successfully sent email to manager: Senuta, Colin
+2025-05-22 12:32:01,921 - manager_service - INFO - Processing manager email for: Paianini, Craig
+2025-05-22 12:32:02,104 - manager_service - INFO - Successfully sent email to manager: Paianini, Craig
+2025-05-22 12:32:02,105 - manager_service - INFO - Processing manager email for: Faris, Ross
+2025-05-22 12:32:02,314 - manager_service - INFO - Successfully sent email to manager: Faris, Ross
+2025-05-22 12:32:02,315 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-05-22 12:32:02,503 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-05-22 12:32:02,504 - manager_service - INFO - Processing manager email for: Pleva, Joseph C
+2025-05-22 12:32:02,809 - manager_service - INFO - Successfully sent email to manager: Pleva, Joseph C
+2025-05-22 12:32:02,809 - manager_service - INFO - Processing manager email for: Stone, Tom
+2025-05-22 12:32:02,988 - manager_service - INFO - Successfully sent email to manager: Stone, Tom
+2025-05-22 12:32:02,988 - manager_service - INFO - Processing manager email for: Benedict, William Robert
+2025-05-22 12:32:03,153 - manager_service - INFO - Successfully sent email to manager: Benedict, William Robert
+2025-05-22 12:32:03,154 - manager_service - INFO - Processing manager email for: Tighe, Donald K
+2025-05-22 12:32:03,333 - manager_service - INFO - Successfully sent email to manager: Tighe, Donald K
+2025-05-22 12:32:03,334 - manager_service - INFO - Processing manager email for: Kromer, Lauren
+2025-05-22 12:32:03,498 - manager_service - INFO - Successfully sent email to manager: Kromer, Lauren
+2025-05-22 12:32:03,499 - manager_service - INFO - Processing manager email for: Reisinger, Jeremy
+2025-05-22 12:32:03,787 - manager_service - INFO - Successfully sent email to manager: Reisinger, Jeremy
+2025-05-22 12:32:03,788 - manager_service - INFO - Processing manager email for: Waclawek, Anna
+2025-05-22 12:32:03,964 - manager_service - INFO - Successfully sent email to manager: Waclawek, Anna
+2025-05-22 12:32:03,965 - manager_service - INFO - Processing manager email for: Dunton, Stanley Charles
+2025-05-22 12:32:04,147 - manager_service - INFO - Successfully sent email to manager: Dunton, Stanley Charles
+2025-05-22 12:32:04,148 - manager_service - INFO - Processing manager email for: Hutson, Anthony
+2025-05-22 12:32:04,350 - manager_service - INFO - Successfully sent email to manager: Hutson, Anthony
+2025-05-22 12:32:04,351 - manager_service - INFO - Processing manager email for: Gardner, Stephon
+2025-05-22 12:32:04,551 - manager_service - INFO - Successfully sent email to manager: Gardner, Stephon
+2025-05-22 12:32:04,552 - manager_service - INFO - Processing manager email for: Burkhead, Matthew
+2025-05-22 12:32:04,888 - manager_service - INFO - Successfully sent email to manager: Burkhead, Matthew
+2025-05-22 12:32:04,889 - manager_service - INFO - Processing manager email for: Rogers, Robert
+2025-05-22 12:32:05,096 - manager_service - INFO - Successfully sent email to manager: Rogers, Robert
+2025-05-22 12:32:05,096 - manager_service - INFO - Processing manager email for: Spencer, Robert B
+2025-05-22 12:32:05,305 - manager_service - INFO - Successfully sent email to manager: Spencer, Robert B
+2025-05-22 12:32:05,306 - manager_service - INFO - Processing manager email for: Napolitano, Nicholas
+2025-05-22 12:32:05,521 - manager_service - INFO - Successfully sent email to manager: Napolitano, Nicholas
+2025-05-22 12:32:05,522 - manager_service - INFO - Processing manager email for: Peters, Mike
+2025-05-22 12:32:05,858 - manager_service - INFO - Successfully sent email to manager: Peters, Mike
+2025-05-22 12:32:05,861 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-05-22 12:32:06,047 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-05-22 12:32:06,048 - manager_service - INFO - Processing manager email for: Renfro, Trevor
+2025-05-22 12:32:06,311 - manager_service - INFO - Successfully sent email to manager: Renfro, Trevor
+2025-05-22 12:32:06,312 - manager_service - INFO - Processing manager email for: Karhoff, Jeff
+2025-05-22 12:32:06,525 - manager_service - INFO - Successfully sent email to manager: Karhoff, Jeff
+2025-05-22 12:32:06,526 - manager_service - INFO - Processing manager email for: Mengeu, Sean C
+2025-05-22 12:32:06,854 - manager_service - INFO - Successfully sent email to manager: Mengeu, Sean C
+2025-05-22 12:32:06,855 - manager_service - INFO - Processing manager email for: Hutchison, Daniel
+2025-05-22 12:32:07,026 - manager_service - INFO - Successfully sent email to manager: Hutchison, Daniel
+2025-05-22 12:32:07,027 - manager_service - INFO - Processing manager email for: Harris Jr., Marvin
+2025-05-22 12:32:07,228 - manager_service - INFO - Successfully sent email to manager: Harris Jr., Marvin
+2025-05-22 12:32:07,229 - manager_service - INFO - Processing manager email for: Leudesdorff, Joanne
+2025-05-22 12:32:07,432 - manager_service - INFO - Successfully sent email to manager: Leudesdorff, Joanne
+2025-05-22 12:32:07,433 - manager_service - INFO - Processing manager email for: Robben, Anita
+2025-05-22 12:32:07,791 - manager_service - INFO - Successfully sent email to manager: Robben, Anita
+2025-05-22 12:32:07,792 - manager_service - INFO - Processing manager email for: Gergen, Maria
+2025-05-22 12:32:08,010 - manager_service - INFO - Successfully sent email to manager: Gergen, Maria
+2025-05-22 12:32:08,011 - manager_service - INFO - Processing manager email for: Thongsinthusak, Kevin
+2025-05-22 12:32:08,210 - manager_service - INFO - Successfully sent email to manager: Thongsinthusak, Kevin
+2025-05-22 12:32:08,211 - manager_service - INFO - Processing manager email for: Buckley, Wesley
+2025-05-22 12:32:08,401 - manager_service - INFO - Successfully sent email to manager: Buckley, Wesley
+2025-05-22 12:32:08,403 - manager_service - INFO - Processing manager email for: Chow, Vanny
+2025-05-22 12:32:08,722 - manager_service - INFO - Successfully sent email to manager: Chow, Vanny
+2025-05-22 12:32:08,723 - manager_service - INFO - Processing manager email for: Robb, Jeremy
+2025-05-22 12:32:08,954 - manager_service - INFO - Successfully sent email to manager: Robb, Jeremy
+2025-05-22 12:32:08,955 - manager_service - INFO - Processing manager email for: Jaramillo, Charles
+2025-05-22 12:32:09,170 - manager_service - INFO - Successfully sent email to manager: Jaramillo, Charles
+2025-05-22 12:32:09,171 - manager_service - INFO - Processing manager email for: Fromm, David
+2025-05-22 12:32:09,373 - manager_service - INFO - Successfully sent email to manager: Fromm, David
+2025-05-22 12:32:09,373 - manager_service - INFO - Processing manager email for: Todd, Mathew
+2025-05-22 12:32:09,559 - manager_service - INFO - Successfully sent email to manager: Todd, Mathew
+2025-05-22 12:32:09,559 - manager_service - INFO - Processing manager email for: Miller, Sonja
+2025-05-22 12:32:09,906 - manager_service - INFO - Successfully sent email to manager: Miller, Sonja
+2025-05-22 12:32:09,907 - manager_service - INFO - Processing manager email for: Hausman, Aaron
+2025-05-22 12:32:10,115 - manager_service - INFO - Successfully sent email to manager: Hausman, Aaron
+2025-05-22 12:32:10,115 - manager_service - INFO - Processing manager email for: Breon, Benjamin
+2025-05-22 12:32:10,320 - manager_service - INFO - Successfully sent email to manager: Breon, Benjamin
+2025-05-22 12:32:10,321 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-05-22 12:32:10,513 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-05-22 12:32:10,514 - manager_service - INFO - Processing manager email for: Peterson, Eric
+2025-05-22 12:32:10,854 - manager_service - INFO - Successfully sent email to manager: Peterson, Eric
+2025-05-22 12:32:10,856 - manager_service - INFO - Processing manager email for: Fergusson, Keith E
+2025-05-22 12:32:11,123 - manager_service - INFO - Successfully sent email to manager: Fergusson, Keith E
+2025-05-22 12:32:11,124 - manager_service - INFO - Processing manager email for: Mccain, Alan V
+2025-05-22 12:32:11,355 - manager_service - INFO - Successfully sent email to manager: Mccain, Alan V
+2025-05-22 12:32:11,356 - manager_service - INFO - Processing manager email for: Basilii, Mark W
+2025-05-22 12:32:11,731 - manager_service - INFO - Successfully sent email to manager: Basilii, Mark W
+2025-05-22 12:32:11,732 - manager_service - INFO - Processing manager email for: Corff, Daniel
+2025-05-22 12:32:11,938 - manager_service - INFO - Successfully sent email to manager: Corff, Daniel
+2025-05-22 12:32:11,939 - manager_service - INFO - Processing manager email for: Richie-Zehr, Jenna
+2025-05-22 12:32:12,163 - manager_service - INFO - Successfully sent email to manager: Richie-Zehr, Jenna
+2025-05-22 12:32:12,164 - manager_service - INFO - Processing manager email for: Haghighi, Farid
+2025-05-22 12:32:12,393 - manager_service - INFO - Successfully sent email to manager: Haghighi, Farid
+2025-05-22 12:32:12,394 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-05-22 12:32:12,720 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-05-22 12:32:12,721 - manager_service - INFO - Processing manager email for: Turner, Travis B
+2025-05-22 12:32:12,946 - manager_service - INFO - Successfully sent email to manager: Turner, Travis B
+2025-05-22 12:32:12,946 - manager_service - INFO - Processing manager email for: Erramouspe, James A
+2025-05-22 12:32:13,144 - manager_service - INFO - Successfully sent email to manager: Erramouspe, James A
+2025-05-22 12:32:13,145 - manager_service - INFO - Processing manager email for: Sedlacek, Bradley J
+2025-05-22 12:32:13,364 - manager_service - INFO - Successfully sent email to manager: Sedlacek, Bradley J
+2025-05-22 12:32:13,365 - manager_service - INFO - Processing manager email for: Sellers, Aaron
+2025-05-22 12:32:13,664 - manager_service - INFO - Successfully sent email to manager: Sellers, Aaron
+2025-05-22 12:32:13,664 - manager_service - INFO - Processing manager email for: Hespe, Lucas A
+2025-05-22 12:32:13,871 - manager_service - INFO - Successfully sent email to manager: Hespe, Lucas A
+2025-05-22 12:32:13,872 - manager_service - INFO - Processing manager email for: Roehm, Brandon
+2025-05-22 12:32:14,077 - manager_service - INFO - Successfully sent email to manager: Roehm, Brandon
+2025-05-22 12:32:14,078 - manager_service - INFO - Processing manager email for: Chantarapan, Erik
+2025-05-22 12:32:14,275 - manager_service - INFO - Successfully sent email to manager: Chantarapan, Erik
+2025-05-22 12:32:14,276 - manager_service - INFO - Processing manager email for: Johnson Iii, David
+2025-05-22 12:32:14,475 - manager_service - INFO - Successfully sent email to manager: Johnson Iii, David
+2025-05-22 12:32:14,476 - manager_service - INFO - Processing manager email for: Summers, Paul
+2025-05-22 12:32:14,803 - manager_service - INFO - Successfully sent email to manager: Summers, Paul
+2025-05-22 12:32:14,804 - manager_service - INFO - Processing manager email for: Johannsen, Travis
+2025-05-22 12:32:15,004 - manager_service - INFO - Successfully sent email to manager: Johannsen, Travis
+2025-05-22 12:32:15,006 - manager_service - INFO - Processing manager email for: Doane, Dawn D
+2025-05-22 12:32:15,213 - manager_service - INFO - Successfully sent email to manager: Doane, Dawn D
+2025-05-22 12:32:15,214 - manager_service - INFO - Processing manager email for: Bennett, Teall
+2025-05-22 12:32:15,441 - manager_service - INFO - Successfully sent email to manager: Bennett, Teall
+2025-05-22 12:32:15,443 - manager_service - INFO - Processing manager email for: Kelly, Veronica
+2025-05-22 12:32:15,806 - manager_service - INFO - Successfully sent email to manager: Kelly, Veronica
+2025-05-22 12:32:15,807 - manager_service - INFO - Processing manager email for: Derner, Jules
+2025-05-22 12:32:16,011 - manager_service - INFO - Successfully sent email to manager: Derner, Jules
+2025-05-22 12:32:16,012 - manager_service - INFO - Processing manager email for: Weber, Deryk J
+2025-05-22 12:32:16,228 - manager_service - INFO - Successfully sent email to manager: Weber, Deryk J
+2025-05-22 12:32:16,229 - manager_service - INFO - Processing manager email for: Sciarra, Anthony
+2025-05-22 12:32:16,472 - manager_service - INFO - Successfully sent email to manager: Sciarra, Anthony
+2025-05-22 12:37:39,731 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-05-22 12:37:39,958 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-05-22 12:37:39,958 - manager_service - INFO - Processing manager email for: Seymour, Kristine
+2025-05-22 12:37:40,141 - manager_service - INFO - Successfully sent email to manager: Seymour, Kristine
+2025-05-22 12:37:40,142 - manager_service - INFO - Processing manager email for: Pinon-Grillo, Ghislaine F
+2025-05-22 12:37:40,327 - manager_service - INFO - Successfully sent email to manager: Pinon-Grillo, Ghislaine F
+2025-05-22 12:37:40,328 - manager_service - INFO - Processing manager email for: Keeter, Matthew
+2025-05-22 12:37:40,521 - manager_service - INFO - Successfully sent email to manager: Keeter, Matthew
+2025-05-22 12:37:40,522 - manager_service - INFO - Processing manager email for: Mcneil, Helen
+2025-05-22 12:37:40,874 - manager_service - INFO - Successfully sent email to manager: Mcneil, Helen
+2025-05-22 12:37:40,876 - manager_service - INFO - Processing manager email for: Blunt, Laurel
+2025-05-22 12:37:41,074 - manager_service - INFO - Successfully sent email to manager: Blunt, Laurel
+2025-05-22 12:37:41,075 - manager_service - INFO - Processing manager email for: Fosheim, Todd R
+2025-05-22 12:37:41,261 - manager_service - INFO - Successfully sent email to manager: Fosheim, Todd R
+2025-05-22 12:37:41,262 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-05-22 12:37:41,732 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-05-22 12:37:41,733 - manager_service - INFO - Processing manager email for: Boone, Michael Robert
+2025-05-22 12:37:42,058 - manager_service - INFO - Successfully sent email to manager: Boone, Michael Robert
+2025-05-22 12:37:42,059 - manager_service - INFO - Processing manager email for: Allen, Marley B
+2025-05-22 12:37:42,451 - manager_service - INFO - Successfully sent email to manager: Allen, Marley B
+2025-05-22 12:37:42,453 - manager_service - INFO - Processing manager email for: Vicha, Nicole B
+2025-05-22 12:37:42,864 - manager_service - INFO - Successfully sent email to manager: Vicha, Nicole B
+2025-05-22 12:37:42,867 - manager_service - INFO - Processing manager email for: Senuta, Colin
+2025-05-22 12:37:43,159 - manager_service - INFO - Successfully sent email to manager: Senuta, Colin
+2025-05-22 12:37:43,160 - manager_service - INFO - Processing manager email for: Paianini, Craig
+2025-05-22 12:37:43,499 - manager_service - INFO - Successfully sent email to manager: Paianini, Craig
+2025-05-22 12:37:43,500 - manager_service - INFO - Processing manager email for: Faris, Ross
+2025-05-22 12:37:43,977 - manager_service - INFO - Successfully sent email to manager: Faris, Ross
+2025-05-22 12:37:43,978 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-05-22 12:37:44,478 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-05-22 12:37:44,479 - manager_service - INFO - Processing manager email for: Pleva, Joseph C
+2025-05-22 12:37:44,785 - manager_service - INFO - Successfully sent email to manager: Pleva, Joseph C
+2025-05-22 12:37:44,786 - manager_service - INFO - Processing manager email for: Stone, Tom
+2025-05-22 12:37:44,957 - manager_service - INFO - Successfully sent email to manager: Stone, Tom
+2025-05-22 12:37:44,958 - manager_service - INFO - Processing manager email for: Benedict, William Robert
+2025-05-22 12:37:45,151 - manager_service - INFO - Successfully sent email to manager: Benedict, William Robert
+2025-05-22 12:37:45,152 - manager_service - INFO - Processing manager email for: Tighe, Donald K
+2025-05-22 12:37:45,336 - manager_service - INFO - Successfully sent email to manager: Tighe, Donald K
+2025-05-22 12:37:45,336 - manager_service - INFO - Processing manager email for: Kromer, Lauren
+2025-05-22 12:37:45,530 - manager_service - INFO - Successfully sent email to manager: Kromer, Lauren
+2025-05-22 12:37:45,530 - manager_service - INFO - Processing manager email for: Reisinger, Jeremy
+2025-05-22 12:37:45,839 - manager_service - INFO - Successfully sent email to manager: Reisinger, Jeremy
+2025-05-22 12:37:45,840 - manager_service - INFO - Processing manager email for: Waclawek, Anna
+2025-05-22 12:37:46,015 - manager_service - INFO - Successfully sent email to manager: Waclawek, Anna
+2025-05-22 12:37:46,016 - manager_service - INFO - Processing manager email for: Dunton, Stanley Charles
+2025-05-22 12:37:46,213 - manager_service - INFO - Successfully sent email to manager: Dunton, Stanley Charles
+2025-05-22 12:37:46,214 - manager_service - INFO - Processing manager email for: Hutson, Anthony
+2025-05-22 12:37:46,409 - manager_service - INFO - Successfully sent email to manager: Hutson, Anthony
+2025-05-22 12:37:46,410 - manager_service - INFO - Processing manager email for: Gardner, Stephon
+2025-05-22 12:37:46,726 - manager_service - INFO - Successfully sent email to manager: Gardner, Stephon
+2025-05-22 12:37:46,727 - manager_service - INFO - Processing manager email for: Burkhead, Matthew
+2025-05-22 12:37:46,922 - manager_service - INFO - Successfully sent email to manager: Burkhead, Matthew
+2025-05-22 12:37:46,922 - manager_service - INFO - Processing manager email for: Rogers, Robert
+2025-05-22 12:37:47,111 - manager_service - INFO - Successfully sent email to manager: Rogers, Robert
+2025-05-22 12:37:47,112 - manager_service - INFO - Processing manager email for: Spencer, Robert B
+2025-05-22 12:37:47,295 - manager_service - INFO - Successfully sent email to manager: Spencer, Robert B
+2025-05-22 12:37:47,296 - manager_service - INFO - Processing manager email for: Napolitano, Nicholas
+2025-05-22 12:37:47,474 - manager_service - INFO - Successfully sent email to manager: Napolitano, Nicholas
+2025-05-22 12:37:47,475 - manager_service - INFO - Processing manager email for: Peters, Mike
+2025-05-22 12:37:47,786 - manager_service - INFO - Successfully sent email to manager: Peters, Mike
+2025-05-22 12:37:47,787 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-05-22 12:37:47,969 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-05-22 12:37:47,970 - manager_service - INFO - Processing manager email for: Renfro, Trevor
+2025-05-22 12:37:48,147 - manager_service - INFO - Successfully sent email to manager: Renfro, Trevor
+2025-05-22 12:37:48,148 - manager_service - INFO - Processing manager email for: Karhoff, Jeff
+2025-05-22 12:37:48,328 - manager_service - INFO - Successfully sent email to manager: Karhoff, Jeff
+2025-05-22 12:37:48,328 - manager_service - INFO - Processing manager email for: Mengeu, Sean C
+2025-05-22 12:37:48,519 - manager_service - INFO - Successfully sent email to manager: Mengeu, Sean C
+2025-05-22 12:37:48,520 - manager_service - INFO - Processing manager email for: Hutchison, Daniel
+2025-05-22 12:37:48,848 - manager_service - INFO - Successfully sent email to manager: Hutchison, Daniel
+2025-05-22 12:37:48,849 - manager_service - INFO - Processing manager email for: Harris Jr., Marvin
+2025-05-22 12:37:49,058 - manager_service - INFO - Successfully sent email to manager: Harris Jr., Marvin
+2025-05-22 12:37:49,059 - manager_service - INFO - Processing manager email for: Leudesdorff, Joanne
+2025-05-22 12:37:49,241 - manager_service - INFO - Successfully sent email to manager: Leudesdorff, Joanne
+2025-05-22 12:37:49,241 - manager_service - INFO - Processing manager email for: Robben, Anita
+2025-05-22 12:37:49,431 - manager_service - INFO - Successfully sent email to manager: Robben, Anita
+2025-05-22 12:37:49,432 - manager_service - INFO - Processing manager email for: Gergen, Maria
+2025-05-22 12:37:49,760 - manager_service - INFO - Successfully sent email to manager: Gergen, Maria
+2025-05-22 12:37:49,761 - manager_service - INFO - Processing manager email for: Thongsinthusak, Kevin
+2025-05-22 12:37:49,948 - manager_service - INFO - Successfully sent email to manager: Thongsinthusak, Kevin
+2025-05-22 12:37:49,948 - manager_service - INFO - Processing manager email for: Buckley, Wesley
+2025-05-22 12:37:50,128 - manager_service - INFO - Successfully sent email to manager: Buckley, Wesley
+2025-05-22 12:37:50,128 - manager_service - INFO - Processing manager email for: Chow, Vanny
+2025-05-22 12:37:50,309 - manager_service - INFO - Successfully sent email to manager: Chow, Vanny
+2025-05-22 12:37:50,309 - manager_service - INFO - Processing manager email for: Robb, Jeremy
+2025-05-22 12:37:50,493 - manager_service - INFO - Successfully sent email to manager: Robb, Jeremy
+2025-05-22 12:37:50,494 - manager_service - INFO - Processing manager email for: Jaramillo, Charles
+2025-05-22 12:37:50,799 - manager_service - INFO - Successfully sent email to manager: Jaramillo, Charles
+2025-05-22 12:37:50,799 - manager_service - INFO - Processing manager email for: Fromm, David
+2025-05-22 12:37:50,985 - manager_service - INFO - Successfully sent email to manager: Fromm, David
+2025-05-22 12:37:50,986 - manager_service - INFO - Processing manager email for: Todd, Mathew
+2025-05-22 12:37:51,172 - manager_service - INFO - Successfully sent email to manager: Todd, Mathew
+2025-05-22 12:37:51,173 - manager_service - INFO - Processing manager email for: Miller, Sonja
+2025-05-22 12:37:51,358 - manager_service - INFO - Successfully sent email to manager: Miller, Sonja
+2025-05-22 12:37:51,359 - manager_service - INFO - Processing manager email for: Hausman, Aaron
+2025-05-22 12:37:51,563 - manager_service - INFO - Successfully sent email to manager: Hausman, Aaron
+2025-05-22 12:37:51,564 - manager_service - INFO - Processing manager email for: Breon, Benjamin
+2025-05-22 12:37:51,861 - manager_service - INFO - Successfully sent email to manager: Breon, Benjamin
+2025-05-22 12:37:51,862 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-05-22 12:37:52,067 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-05-22 12:37:52,068 - manager_service - INFO - Processing manager email for: Peterson, Eric
+2025-05-22 12:37:52,255 - manager_service - INFO - Successfully sent email to manager: Peterson, Eric
+2025-05-22 12:37:52,256 - manager_service - INFO - Processing manager email for: Fergusson, Keith E
+2025-05-22 12:37:52,460 - manager_service - INFO - Successfully sent email to manager: Fergusson, Keith E
+2025-05-22 12:37:52,461 - manager_service - INFO - Processing manager email for: Mccain, Alan V
+2025-05-22 12:37:52,780 - manager_service - INFO - Successfully sent email to manager: Mccain, Alan V
+2025-05-22 12:37:52,781 - manager_service - INFO - Processing manager email for: Basilii, Mark W
+2025-05-22 12:37:52,972 - manager_service - INFO - Successfully sent email to manager: Basilii, Mark W
+2025-05-22 12:37:52,972 - manager_service - INFO - Processing manager email for: Corff, Daniel
+2025-05-22 12:37:53,207 - manager_service - INFO - Successfully sent email to manager: Corff, Daniel
+2025-05-22 12:37:53,208 - manager_service - INFO - Processing manager email for: Richie-Zehr, Jenna
+2025-05-22 12:37:53,378 - manager_service - INFO - Successfully sent email to manager: Richie-Zehr, Jenna
+2025-05-22 12:37:53,378 - manager_service - INFO - Processing manager email for: Haghighi, Farid
+2025-05-22 12:37:53,661 - manager_service - INFO - Successfully sent email to manager: Haghighi, Farid
+2025-05-22 12:37:53,662 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-05-22 12:37:53,875 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-05-22 12:37:53,877 - manager_service - INFO - Processing manager email for: Turner, Travis B
+2025-05-22 12:37:54,057 - manager_service - INFO - Successfully sent email to manager: Turner, Travis B
+2025-05-22 12:37:54,057 - manager_service - INFO - Processing manager email for: Erramouspe, James A
+2025-05-22 12:37:54,244 - manager_service - INFO - Successfully sent email to manager: Erramouspe, James A
+2025-05-22 12:37:54,245 - manager_service - INFO - Processing manager email for: Sedlacek, Bradley J
+2025-05-22 12:37:54,429 - manager_service - INFO - Successfully sent email to manager: Sedlacek, Bradley J
+2025-05-22 12:37:54,430 - manager_service - INFO - Processing manager email for: Sellers, Aaron
+2025-05-22 12:37:54,739 - manager_service - INFO - Successfully sent email to manager: Sellers, Aaron
+2025-05-22 12:37:54,740 - manager_service - INFO - Processing manager email for: Hespe, Lucas A
+2025-05-22 12:37:54,928 - manager_service - INFO - Successfully sent email to manager: Hespe, Lucas A
+2025-05-22 12:37:54,929 - manager_service - INFO - Processing manager email for: Roehm, Brandon
+2025-05-22 12:37:55,123 - manager_service - INFO - Successfully sent email to manager: Roehm, Brandon
+2025-05-22 12:37:55,123 - manager_service - INFO - Processing manager email for: Chantarapan, Erik
+2025-05-22 12:37:55,308 - manager_service - INFO - Successfully sent email to manager: Chantarapan, Erik
+2025-05-22 12:37:55,309 - manager_service - INFO - Processing manager email for: Johnson Iii, David
+2025-05-22 12:37:55,492 - manager_service - INFO - Successfully sent email to manager: Johnson Iii, David
+2025-05-22 12:37:55,493 - manager_service - INFO - Processing manager email for: Summers, Paul
+2025-05-22 12:37:55,794 - manager_service - INFO - Successfully sent email to manager: Summers, Paul
+2025-05-22 12:37:55,795 - manager_service - INFO - Processing manager email for: Johannsen, Travis
+2025-05-22 12:37:55,972 - manager_service - INFO - Successfully sent email to manager: Johannsen, Travis
+2025-05-22 12:37:55,973 - manager_service - INFO - Processing manager email for: Doane, Dawn D
+2025-05-22 12:37:56,161 - manager_service - INFO - Successfully sent email to manager: Doane, Dawn D
+2025-05-22 12:37:56,162 - manager_service - INFO - Processing manager email for: Bennett, Teall
+2025-05-22 12:37:56,360 - manager_service - INFO - Successfully sent email to manager: Bennett, Teall
+2025-05-22 12:37:56,361 - manager_service - INFO - Processing manager email for: Kelly, Veronica
+2025-05-22 12:37:56,550 - manager_service - INFO - Successfully sent email to manager: Kelly, Veronica
+2025-05-22 12:37:56,551 - manager_service - INFO - Processing manager email for: Derner, Jules
+2025-05-22 12:37:56,856 - manager_service - INFO - Successfully sent email to manager: Derner, Jules
+2025-05-22 12:37:56,857 - manager_service - INFO - Processing manager email for: Weber, Deryk J
+2025-05-22 12:37:57,031 - manager_service - INFO - Successfully sent email to manager: Weber, Deryk J
+2025-05-22 12:37:57,032 - manager_service - INFO - Processing manager email for: Sciarra, Anthony
+2025-05-22 12:37:57,223 - manager_service - INFO - Successfully sent email to manager: Sciarra, Anthony
+2025-05-22 12:39:40,211 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-05-22 12:39:40,521 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-05-22 12:39:40,522 - manager_service - INFO - Processing manager email for: Seymour, Kristine
+2025-05-22 12:39:40,800 - manager_service - INFO - Successfully sent email to manager: Seymour, Kristine
+2025-05-22 12:39:40,801 - manager_service - INFO - Processing manager email for: Pinon-Grillo, Ghislaine F
+2025-05-22 12:39:40,979 - manager_service - INFO - Successfully sent email to manager: Pinon-Grillo, Ghislaine F
+2025-05-22 12:39:40,980 - manager_service - INFO - Processing manager email for: Keeter, Matthew
+2025-05-22 12:39:41,151 - manager_service - INFO - Successfully sent email to manager: Keeter, Matthew
+2025-05-22 12:39:41,151 - manager_service - INFO - Processing manager email for: Mcneil, Helen
+2025-05-22 12:39:41,303 - manager_service - INFO - Successfully sent email to manager: Mcneil, Helen
+2025-05-22 12:39:41,304 - manager_service - INFO - Processing manager email for: Blunt, Laurel
+2025-05-22 12:39:41,489 - manager_service - INFO - Successfully sent email to manager: Blunt, Laurel
+2025-05-22 12:39:41,490 - manager_service - INFO - Processing manager email for: Fosheim, Todd R
+2025-05-22 12:39:41,794 - manager_service - INFO - Successfully sent email to manager: Fosheim, Todd R
+2025-05-22 12:39:41,795 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-05-22 12:39:41,976 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-05-22 12:39:41,977 - manager_service - INFO - Processing manager email for: Boone, Michael Robert
+2025-05-22 12:39:42,158 - manager_service - INFO - Successfully sent email to manager: Boone, Michael Robert
+2025-05-22 12:39:42,159 - manager_service - INFO - Processing manager email for: Allen, Marley B
+2025-05-22 12:39:42,336 - manager_service - INFO - Successfully sent email to manager: Allen, Marley B
+2025-05-22 12:39:42,337 - manager_service - INFO - Processing manager email for: Vicha, Nicole B
+2025-05-22 12:39:42,517 - manager_service - INFO - Successfully sent email to manager: Vicha, Nicole B
+2025-05-22 12:39:42,518 - manager_service - INFO - Processing manager email for: Senuta, Colin
+2025-05-22 12:39:42,823 - manager_service - INFO - Successfully sent email to manager: Senuta, Colin
+2025-05-22 12:39:42,824 - manager_service - INFO - Processing manager email for: Paianini, Craig
+2025-05-22 12:39:43,015 - manager_service - INFO - Successfully sent email to manager: Paianini, Craig
+2025-05-22 12:39:43,016 - manager_service - INFO - Processing manager email for: Faris, Ross
+2025-05-22 12:39:43,227 - manager_service - INFO - Successfully sent email to manager: Faris, Ross
+2025-05-22 12:39:43,227 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-05-22 12:39:43,400 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-05-22 12:39:43,400 - manager_service - INFO - Processing manager email for: Pleva, Joseph C
+2025-05-22 12:39:43,661 - manager_service - INFO - Successfully sent email to manager: Pleva, Joseph C
+2025-05-22 12:39:43,663 - manager_service - INFO - Processing manager email for: Stone, Tom
+2025-05-22 12:39:43,862 - manager_service - INFO - Successfully sent email to manager: Stone, Tom
+2025-05-22 12:39:43,863 - manager_service - INFO - Processing manager email for: Benedict, William Robert
+2025-05-22 12:39:44,050 - manager_service - INFO - Successfully sent email to manager: Benedict, William Robert
+2025-05-22 12:39:44,051 - manager_service - INFO - Processing manager email for: Tighe, Donald K
+2025-05-22 12:39:44,231 - manager_service - INFO - Successfully sent email to manager: Tighe, Donald K
+2025-05-22 12:39:44,232 - manager_service - INFO - Processing manager email for: Kromer, Lauren
+2025-05-22 12:39:44,406 - manager_service - INFO - Successfully sent email to manager: Kromer, Lauren
+2025-05-22 12:39:44,407 - manager_service - INFO - Processing manager email for: Reisinger, Jeremy
+2025-05-22 12:39:44,702 - manager_service - INFO - Successfully sent email to manager: Reisinger, Jeremy
+2025-05-22 12:39:44,703 - manager_service - INFO - Processing manager email for: Waclawek, Anna
+2025-05-22 12:39:44,882 - manager_service - INFO - Successfully sent email to manager: Waclawek, Anna
+2025-05-22 12:39:44,883 - manager_service - INFO - Processing manager email for: Dunton, Stanley Charles
+2025-05-22 12:39:45,070 - manager_service - INFO - Successfully sent email to manager: Dunton, Stanley Charles
+2025-05-22 12:39:45,071 - manager_service - INFO - Processing manager email for: Hutson, Anthony
+2025-05-22 12:39:45,249 - manager_service - INFO - Successfully sent email to manager: Hutson, Anthony
+2025-05-22 12:39:45,250 - manager_service - INFO - Processing manager email for: Gardner, Stephon
+2025-05-22 12:39:45,428 - manager_service - INFO - Successfully sent email to manager: Gardner, Stephon
+2025-05-22 12:39:45,429 - manager_service - INFO - Processing manager email for: Burkhead, Matthew
+2025-05-22 12:39:45,748 - manager_service - INFO - Successfully sent email to manager: Burkhead, Matthew
+2025-05-22 12:39:45,749 - manager_service - INFO - Processing manager email for: Rogers, Robert
+2025-05-22 12:39:46,108 - manager_service - INFO - Successfully sent email to manager: Rogers, Robert
+2025-05-22 12:39:46,109 - manager_service - INFO - Processing manager email for: Spencer, Robert B
+2025-05-22 12:39:46,449 - manager_service - INFO - Successfully sent email to manager: Spencer, Robert B
+2025-05-22 12:39:46,450 - manager_service - INFO - Processing manager email for: Napolitano, Nicholas
+2025-05-22 12:39:46,947 - manager_service - INFO - Successfully sent email to manager: Napolitano, Nicholas
+2025-05-22 12:39:46,948 - manager_service - INFO - Processing manager email for: Peters, Mike
+2025-05-22 12:39:47,233 - manager_service - INFO - Successfully sent email to manager: Peters, Mike
+2025-05-22 12:39:47,234 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-05-22 12:39:47,493 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-05-22 12:39:47,494 - manager_service - INFO - Processing manager email for: Renfro, Trevor
+2025-05-22 12:39:47,866 - manager_service - INFO - Successfully sent email to manager: Renfro, Trevor
+2025-05-22 12:39:47,867 - manager_service - INFO - Processing manager email for: Karhoff, Jeff
+2025-05-22 12:39:48,227 - manager_service - INFO - Successfully sent email to manager: Karhoff, Jeff
+2025-05-22 12:39:48,228 - manager_service - INFO - Processing manager email for: Mengeu, Sean C
+2025-05-22 12:39:48,672 - manager_service - INFO - Successfully sent email to manager: Mengeu, Sean C
+2025-05-22 12:39:48,672 - manager_service - INFO - Processing manager email for: Hutchison, Daniel
+2025-05-22 12:39:49,064 - manager_service - INFO - Successfully sent email to manager: Hutchison, Daniel
+2025-05-22 12:39:49,064 - manager_service - INFO - Processing manager email for: Harris Jr., Marvin
+2025-05-22 12:39:49,238 - manager_service - INFO - Successfully sent email to manager: Harris Jr., Marvin
+2025-05-22 12:39:49,238 - manager_service - INFO - Processing manager email for: Leudesdorff, Joanne
+2025-05-22 12:39:49,414 - manager_service - INFO - Successfully sent email to manager: Leudesdorff, Joanne
+2025-05-22 12:39:49,414 - manager_service - INFO - Processing manager email for: Robben, Anita
+2025-05-22 12:39:49,709 - manager_service - INFO - Successfully sent email to manager: Robben, Anita
+2025-05-22 12:39:49,709 - manager_service - INFO - Processing manager email for: Gergen, Maria
+2025-05-22 12:39:49,874 - manager_service - INFO - Successfully sent email to manager: Gergen, Maria
+2025-05-22 12:39:49,875 - manager_service - INFO - Processing manager email for: Thongsinthusak, Kevin
+2025-05-22 12:39:50,049 - manager_service - INFO - Successfully sent email to manager: Thongsinthusak, Kevin
+2025-05-22 12:39:50,049 - manager_service - INFO - Processing manager email for: Buckley, Wesley
+2025-05-22 12:39:50,224 - manager_service - INFO - Successfully sent email to manager: Buckley, Wesley
+2025-05-22 12:39:50,224 - manager_service - INFO - Processing manager email for: Chow, Vanny
+2025-05-22 12:39:50,404 - manager_service - INFO - Successfully sent email to manager: Chow, Vanny
+2025-05-22 12:39:50,405 - manager_service - INFO - Processing manager email for: Robb, Jeremy
+2025-05-22 12:39:50,726 - manager_service - INFO - Successfully sent email to manager: Robb, Jeremy
+2025-05-22 12:39:50,727 - manager_service - INFO - Processing manager email for: Jaramillo, Charles
+2025-05-22 12:39:50,898 - manager_service - INFO - Successfully sent email to manager: Jaramillo, Charles
+2025-05-22 12:39:50,899 - manager_service - INFO - Processing manager email for: Fromm, David
+2025-05-22 12:39:51,073 - manager_service - INFO - Successfully sent email to manager: Fromm, David
+2025-05-22 12:39:51,074 - manager_service - INFO - Processing manager email for: Todd, Mathew
+2025-05-22 12:39:51,260 - manager_service - INFO - Successfully sent email to manager: Todd, Mathew
+2025-05-22 12:39:51,261 - manager_service - INFO - Processing manager email for: Miller, Sonja
+2025-05-22 12:39:51,448 - manager_service - INFO - Successfully sent email to manager: Miller, Sonja
+2025-05-22 12:39:51,449 - manager_service - INFO - Processing manager email for: Hausman, Aaron
+2025-05-22 12:39:51,803 - manager_service - INFO - Successfully sent email to manager: Hausman, Aaron
+2025-05-22 12:39:51,804 - manager_service - INFO - Processing manager email for: Breon, Benjamin
+2025-05-22 12:39:51,982 - manager_service - INFO - Successfully sent email to manager: Breon, Benjamin
+2025-05-22 12:39:51,983 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-05-22 12:39:52,154 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-05-22 12:39:52,155 - manager_service - INFO - Processing manager email for: Peterson, Eric
+2025-05-22 12:39:52,323 - manager_service - INFO - Successfully sent email to manager: Peterson, Eric
+2025-05-22 12:39:52,324 - manager_service - INFO - Processing manager email for: Fergusson, Keith E
+2025-05-22 12:39:52,510 - manager_service - INFO - Successfully sent email to manager: Fergusson, Keith E
+2025-05-22 12:39:52,510 - manager_service - INFO - Processing manager email for: Mccain, Alan V
+2025-05-22 12:39:52,807 - manager_service - INFO - Successfully sent email to manager: Mccain, Alan V
+2025-05-22 12:39:52,808 - manager_service - INFO - Processing manager email for: Basilii, Mark W
+2025-05-22 12:39:52,976 - manager_service - INFO - Successfully sent email to manager: Basilii, Mark W
+2025-05-22 12:39:52,977 - manager_service - INFO - Processing manager email for: Corff, Daniel
+2025-05-22 12:39:53,171 - manager_service - INFO - Successfully sent email to manager: Corff, Daniel
+2025-05-22 12:39:53,171 - manager_service - INFO - Processing manager email for: Richie-Zehr, Jenna
+2025-05-22 12:39:53,349 - manager_service - INFO - Successfully sent email to manager: Richie-Zehr, Jenna
+2025-05-22 12:39:53,350 - manager_service - INFO - Processing manager email for: Haghighi, Farid
+2025-05-22 12:39:53,532 - manager_service - INFO - Successfully sent email to manager: Haghighi, Farid
+2025-05-22 12:39:53,532 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-05-22 12:39:53,831 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-05-22 12:39:53,831 - manager_service - INFO - Processing manager email for: Turner, Travis B
+2025-05-22 12:39:53,981 - manager_service - INFO - Successfully sent email to manager: Turner, Travis B
+2025-05-22 12:39:53,981 - manager_service - INFO - Processing manager email for: Erramouspe, James A
+2025-05-22 12:39:54,137 - manager_service - INFO - Successfully sent email to manager: Erramouspe, James A
+2025-05-22 12:39:54,138 - manager_service - INFO - Processing manager email for: Sedlacek, Bradley J
+2025-05-22 12:39:54,314 - manager_service - INFO - Successfully sent email to manager: Sedlacek, Bradley J
+2025-05-22 12:39:54,315 - manager_service - INFO - Processing manager email for: Sellers, Aaron
+2025-05-22 12:39:54,512 - manager_service - INFO - Successfully sent email to manager: Sellers, Aaron
+2025-05-22 12:39:54,513 - manager_service - INFO - Processing manager email for: Hespe, Lucas A
+2025-05-22 12:39:54,783 - manager_service - INFO - Successfully sent email to manager: Hespe, Lucas A
+2025-05-22 12:39:54,783 - manager_service - INFO - Processing manager email for: Roehm, Brandon
+2025-05-22 12:39:54,967 - manager_service - INFO - Successfully sent email to manager: Roehm, Brandon
+2025-05-22 12:39:54,967 - manager_service - INFO - Processing manager email for: Chantarapan, Erik
+2025-05-22 12:39:55,137 - manager_service - INFO - Successfully sent email to manager: Chantarapan, Erik
+2025-05-22 12:39:55,138 - manager_service - INFO - Processing manager email for: Johnson Iii, David
+2025-05-22 12:39:55,317 - manager_service - INFO - Successfully sent email to manager: Johnson Iii, David
+2025-05-22 12:39:55,317 - manager_service - INFO - Processing manager email for: Summers, Paul
+2025-05-22 12:39:55,502 - manager_service - INFO - Successfully sent email to manager: Summers, Paul
+2025-05-22 12:39:55,502 - manager_service - INFO - Processing manager email for: Johannsen, Travis
+2025-05-22 12:39:55,783 - manager_service - INFO - Successfully sent email to manager: Johannsen, Travis
+2025-05-22 12:39:55,784 - manager_service - INFO - Processing manager email for: Doane, Dawn D
+2025-05-22 12:39:55,957 - manager_service - INFO - Successfully sent email to manager: Doane, Dawn D
+2025-05-22 12:39:55,957 - manager_service - INFO - Processing manager email for: Bennett, Teall
+2025-05-22 12:39:56,139 - manager_service - INFO - Successfully sent email to manager: Bennett, Teall
+2025-05-22 12:39:56,140 - manager_service - INFO - Processing manager email for: Kelly, Veronica
+2025-05-22 12:39:56,326 - manager_service - INFO - Successfully sent email to manager: Kelly, Veronica
+2025-05-22 12:39:56,327 - manager_service - INFO - Processing manager email for: Derner, Jules
+2025-05-22 12:39:56,489 - manager_service - INFO - Successfully sent email to manager: Derner, Jules
+2025-05-22 12:39:56,489 - manager_service - INFO - Processing manager email for: Weber, Deryk J
+2025-05-22 12:39:56,772 - manager_service - INFO - Successfully sent email to manager: Weber, Deryk J
+2025-05-22 12:39:56,772 - manager_service - INFO - Processing manager email for: Sciarra, Anthony
+2025-05-22 12:39:56,942 - manager_service - INFO - Successfully sent email to manager: Sciarra, Anthony
+2025-05-22 12:42:20,059 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-05-22 12:42:20,295 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-05-22 12:42:20,296 - manager_service - INFO - Processing manager email for: Seymour, Kristine
+2025-05-22 12:42:20,475 - manager_service - INFO - Successfully sent email to manager: Seymour, Kristine
+2025-05-22 12:42:20,476 - manager_service - INFO - Processing manager email for: Pinon-Grillo, Ghislaine F
+2025-05-22 12:42:20,780 - manager_service - INFO - Successfully sent email to manager: Pinon-Grillo, Ghislaine F
+2025-05-22 12:42:20,781 - manager_service - INFO - Processing manager email for: Keeter, Matthew
+2025-05-22 12:42:20,986 - manager_service - INFO - Successfully sent email to manager: Keeter, Matthew
+2025-05-22 12:42:20,987 - manager_service - INFO - Processing manager email for: Mcneil, Helen
+2025-05-22 12:42:21,168 - manager_service - INFO - Successfully sent email to manager: Mcneil, Helen
+2025-05-22 12:42:21,169 - manager_service - INFO - Processing manager email for: Blunt, Laurel
+2025-05-22 12:42:21,323 - manager_service - INFO - Successfully sent email to manager: Blunt, Laurel
+2025-05-22 12:42:21,324 - manager_service - INFO - Processing manager email for: Fosheim, Todd R
+2025-05-22 12:42:21,540 - manager_service - INFO - Successfully sent email to manager: Fosheim, Todd R
+2025-05-22 12:42:21,541 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-05-22 12:42:21,841 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-05-22 12:42:21,842 - manager_service - INFO - Processing manager email for: Boone, Michael Robert
+2025-05-22 12:42:22,027 - manager_service - INFO - Successfully sent email to manager: Boone, Michael Robert
+2025-05-22 12:42:22,028 - manager_service - INFO - Processing manager email for: Allen, Marley B
+2025-05-22 12:42:22,207 - manager_service - INFO - Successfully sent email to manager: Allen, Marley B
+2025-05-22 12:42:22,208 - manager_service - INFO - Processing manager email for: Vicha, Nicole B
+2025-05-22 12:42:22,386 - manager_service - INFO - Successfully sent email to manager: Vicha, Nicole B
+2025-05-22 12:42:22,386 - manager_service - INFO - Processing manager email for: Senuta, Colin
+2025-05-22 12:42:22,561 - manager_service - INFO - Successfully sent email to manager: Senuta, Colin
+2025-05-22 12:42:22,562 - manager_service - INFO - Processing manager email for: Paianini, Craig
+2025-05-22 12:42:22,835 - manager_service - INFO - Successfully sent email to manager: Paianini, Craig
+2025-05-22 12:42:22,836 - manager_service - INFO - Processing manager email for: Faris, Ross
+2025-05-22 12:42:23,008 - manager_service - INFO - Successfully sent email to manager: Faris, Ross
+2025-05-22 12:42:23,009 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-05-22 12:42:23,177 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-05-22 12:42:23,178 - manager_service - INFO - Processing manager email for: Pleva, Joseph C
+2025-05-22 12:42:23,352 - manager_service - INFO - Successfully sent email to manager: Pleva, Joseph C
+2025-05-22 12:42:23,352 - manager_service - INFO - Processing manager email for: Stone, Tom
+2025-05-22 12:42:23,532 - manager_service - INFO - Successfully sent email to manager: Stone, Tom
+2025-05-22 12:42:23,532 - manager_service - INFO - Processing manager email for: Benedict, William Robert
+2025-05-22 12:42:23,846 - manager_service - INFO - Successfully sent email to manager: Benedict, William Robert
+2025-05-22 12:42:23,846 - manager_service - INFO - Processing manager email for: Tighe, Donald K
+2025-05-22 12:42:24,032 - manager_service - INFO - Successfully sent email to manager: Tighe, Donald K
+2025-05-22 12:42:24,033 - manager_service - INFO - Processing manager email for: Kromer, Lauren
+2025-05-22 12:42:24,218 - manager_service - INFO - Successfully sent email to manager: Kromer, Lauren
+2025-05-22 12:42:24,218 - manager_service - INFO - Processing manager email for: Reisinger, Jeremy
+2025-05-22 12:42:24,433 - manager_service - INFO - Successfully sent email to manager: Reisinger, Jeremy
+2025-05-22 12:42:24,433 - manager_service - INFO - Processing manager email for: Waclawek, Anna
+2025-05-22 12:42:24,756 - manager_service - INFO - Successfully sent email to manager: Waclawek, Anna
+2025-05-22 12:42:24,757 - manager_service - INFO - Processing manager email for: Dunton, Stanley Charles
+2025-05-22 12:42:24,950 - manager_service - INFO - Successfully sent email to manager: Dunton, Stanley Charles
+2025-05-22 12:42:24,951 - manager_service - INFO - Processing manager email for: Hutson, Anthony
+2025-05-22 12:42:25,109 - manager_service - INFO - Successfully sent email to manager: Hutson, Anthony
+2025-05-22 12:42:25,110 - manager_service - INFO - Processing manager email for: Gardner, Stephon
+2025-05-22 12:42:25,310 - manager_service - INFO - Successfully sent email to manager: Gardner, Stephon
+2025-05-22 12:42:25,311 - manager_service - INFO - Processing manager email for: Burkhead, Matthew
+2025-05-22 12:42:25,508 - manager_service - INFO - Successfully sent email to manager: Burkhead, Matthew
+2025-05-22 12:42:25,509 - manager_service - INFO - Processing manager email for: Rogers, Robert
+2025-05-22 12:42:25,836 - manager_service - INFO - Successfully sent email to manager: Rogers, Robert
+2025-05-22 12:42:25,837 - manager_service - INFO - Processing manager email for: Spencer, Robert B
+2025-05-22 12:42:26,009 - manager_service - INFO - Successfully sent email to manager: Spencer, Robert B
+2025-05-22 12:42:26,009 - manager_service - INFO - Processing manager email for: Napolitano, Nicholas
+2025-05-22 12:42:26,183 - manager_service - INFO - Successfully sent email to manager: Napolitano, Nicholas
+2025-05-22 12:42:26,183 - manager_service - INFO - Processing manager email for: Peters, Mike
+2025-05-22 12:42:26,370 - manager_service - INFO - Successfully sent email to manager: Peters, Mike
+2025-05-22 12:42:26,371 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-05-22 12:42:26,551 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-05-22 12:42:26,552 - manager_service - INFO - Processing manager email for: Renfro, Trevor
+2025-05-22 12:42:26,856 - manager_service - INFO - Successfully sent email to manager: Renfro, Trevor
+2025-05-22 12:42:26,857 - manager_service - INFO - Processing manager email for: Karhoff, Jeff
+2025-05-22 12:42:27,041 - manager_service - INFO - Successfully sent email to manager: Karhoff, Jeff
+2025-05-22 12:42:27,042 - manager_service - INFO - Processing manager email for: Mengeu, Sean C
+2025-05-22 12:42:27,207 - manager_service - INFO - Successfully sent email to manager: Mengeu, Sean C
+2025-05-22 12:42:27,208 - manager_service - INFO - Processing manager email for: Hutchison, Daniel
+2025-05-22 12:42:27,394 - manager_service - INFO - Successfully sent email to manager: Hutchison, Daniel
+2025-05-22 12:42:27,395 - manager_service - INFO - Processing manager email for: Harris Jr., Marvin
+2025-05-22 12:42:27,699 - manager_service - INFO - Successfully sent email to manager: Harris Jr., Marvin
+2025-05-22 12:42:27,699 - manager_service - INFO - Processing manager email for: Leudesdorff, Joanne
+2025-05-22 12:42:27,867 - manager_service - INFO - Successfully sent email to manager: Leudesdorff, Joanne
+2025-05-22 12:42:27,868 - manager_service - INFO - Processing manager email for: Robben, Anita
+2025-05-22 12:42:28,059 - manager_service - INFO - Successfully sent email to manager: Robben, Anita
+2025-05-22 12:42:28,060 - manager_service - INFO - Processing manager email for: Gergen, Maria
+2025-05-22 12:42:28,239 - manager_service - INFO - Successfully sent email to manager: Gergen, Maria
+2025-05-22 12:42:28,240 - manager_service - INFO - Processing manager email for: Thongsinthusak, Kevin
+2025-05-22 12:42:28,416 - manager_service - INFO - Successfully sent email to manager: Thongsinthusak, Kevin
+2025-05-22 12:42:28,417 - manager_service - INFO - Processing manager email for: Buckley, Wesley
+2025-05-22 12:42:28,758 - manager_service - INFO - Successfully sent email to manager: Buckley, Wesley
+2025-05-22 12:42:28,759 - manager_service - INFO - Processing manager email for: Chow, Vanny
+2025-05-22 12:42:28,947 - manager_service - INFO - Successfully sent email to manager: Chow, Vanny
+2025-05-22 12:42:28,948 - manager_service - INFO - Processing manager email for: Robb, Jeremy
+2025-05-22 12:42:29,128 - manager_service - INFO - Successfully sent email to manager: Robb, Jeremy
+2025-05-22 12:42:29,129 - manager_service - INFO - Processing manager email for: Jaramillo, Charles
+2025-05-22 12:42:29,322 - manager_service - INFO - Successfully sent email to manager: Jaramillo, Charles
+2025-05-22 12:42:29,323 - manager_service - INFO - Processing manager email for: Fromm, David
+2025-05-22 12:42:29,511 - manager_service - INFO - Successfully sent email to manager: Fromm, David
+2025-05-22 12:42:29,512 - manager_service - INFO - Processing manager email for: Todd, Mathew
+2025-05-22 12:42:29,797 - manager_service - INFO - Successfully sent email to manager: Todd, Mathew
+2025-05-22 12:42:29,798 - manager_service - INFO - Processing manager email for: Miller, Sonja
+2025-05-22 12:42:29,970 - manager_service - INFO - Successfully sent email to manager: Miller, Sonja
+2025-05-22 12:42:29,971 - manager_service - INFO - Processing manager email for: Hausman, Aaron
+2025-05-22 12:42:30,153 - manager_service - INFO - Successfully sent email to manager: Hausman, Aaron
+2025-05-22 12:42:30,154 - manager_service - INFO - Processing manager email for: Breon, Benjamin
+2025-05-22 12:42:30,344 - manager_service - INFO - Successfully sent email to manager: Breon, Benjamin
+2025-05-22 12:42:30,345 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-05-22 12:42:30,536 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-05-22 12:42:30,537 - manager_service - INFO - Processing manager email for: Peterson, Eric
+2025-05-22 12:42:30,861 - manager_service - INFO - Successfully sent email to manager: Peterson, Eric
+2025-05-22 12:42:30,861 - manager_service - INFO - Processing manager email for: Fergusson, Keith E
+2025-05-22 12:42:31,049 - manager_service - INFO - Successfully sent email to manager: Fergusson, Keith E
+2025-05-22 12:42:31,050 - manager_service - INFO - Processing manager email for: Mccain, Alan V
+2025-05-22 12:42:31,230 - manager_service - INFO - Successfully sent email to manager: Mccain, Alan V
+2025-05-22 12:42:31,230 - manager_service - INFO - Processing manager email for: Basilii, Mark W
+2025-05-22 12:42:31,404 - manager_service - INFO - Successfully sent email to manager: Basilii, Mark W
+2025-05-22 12:42:31,405 - manager_service - INFO - Processing manager email for: Corff, Daniel
+2025-05-22 12:42:31,709 - manager_service - INFO - Successfully sent email to manager: Corff, Daniel
+2025-05-22 12:42:31,709 - manager_service - INFO - Processing manager email for: Richie-Zehr, Jenna
+2025-05-22 12:42:31,894 - manager_service - INFO - Successfully sent email to manager: Richie-Zehr, Jenna
+2025-05-22 12:42:31,895 - manager_service - INFO - Processing manager email for: Haghighi, Farid
+2025-05-22 12:42:32,074 - manager_service - INFO - Successfully sent email to manager: Haghighi, Farid
+2025-05-22 12:42:32,075 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-05-22 12:42:32,266 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-05-22 12:42:32,267 - manager_service - INFO - Processing manager email for: Turner, Travis B
+2025-05-22 12:42:32,464 - manager_service - INFO - Successfully sent email to manager: Turner, Travis B
+2025-05-22 12:42:32,465 - manager_service - INFO - Processing manager email for: Erramouspe, James A
+2025-05-22 12:42:32,786 - manager_service - INFO - Successfully sent email to manager: Erramouspe, James A
+2025-05-22 12:42:32,787 - manager_service - INFO - Processing manager email for: Sedlacek, Bradley J
+2025-05-22 12:42:32,973 - manager_service - INFO - Successfully sent email to manager: Sedlacek, Bradley J
+2025-05-22 12:42:32,973 - manager_service - INFO - Processing manager email for: Sellers, Aaron
+2025-05-22 12:42:33,182 - manager_service - INFO - Successfully sent email to manager: Sellers, Aaron
+2025-05-22 12:42:33,183 - manager_service - INFO - Processing manager email for: Hespe, Lucas A
+2025-05-22 12:42:33,376 - manager_service - INFO - Successfully sent email to manager: Hespe, Lucas A
+2025-05-22 12:42:33,377 - manager_service - INFO - Processing manager email for: Roehm, Brandon
+2025-05-22 12:42:33,563 - manager_service - INFO - Successfully sent email to manager: Roehm, Brandon
+2025-05-22 12:42:33,564 - manager_service - INFO - Processing manager email for: Chantarapan, Erik
+2025-05-22 12:42:33,849 - manager_service - INFO - Successfully sent email to manager: Chantarapan, Erik
+2025-05-22 12:42:33,850 - manager_service - INFO - Processing manager email for: Johnson Iii, David
+2025-05-22 12:42:34,028 - manager_service - INFO - Successfully sent email to manager: Johnson Iii, David
+2025-05-22 12:42:34,028 - manager_service - INFO - Processing manager email for: Summers, Paul
+2025-05-22 12:42:34,193 - manager_service - INFO - Successfully sent email to manager: Summers, Paul
+2025-05-22 12:42:34,193 - manager_service - INFO - Processing manager email for: Johannsen, Travis
+2025-05-22 12:42:34,371 - manager_service - INFO - Successfully sent email to manager: Johannsen, Travis
+2025-05-22 12:42:34,371 - manager_service - INFO - Processing manager email for: Doane, Dawn D
+2025-05-22 12:42:34,556 - manager_service - INFO - Successfully sent email to manager: Doane, Dawn D
+2025-05-22 12:42:34,557 - manager_service - INFO - Processing manager email for: Bennett, Teall
+2025-05-22 12:42:34,859 - manager_service - INFO - Successfully sent email to manager: Bennett, Teall
+2025-05-22 12:42:34,860 - manager_service - INFO - Processing manager email for: Kelly, Veronica
+2025-05-22 12:42:35,025 - manager_service - INFO - Successfully sent email to manager: Kelly, Veronica
+2025-05-22 12:42:35,026 - manager_service - INFO - Processing manager email for: Derner, Jules
+2025-05-22 12:42:35,191 - manager_service - INFO - Successfully sent email to manager: Derner, Jules
+2025-05-22 12:42:35,192 - manager_service - INFO - Processing manager email for: Weber, Deryk J
+2025-05-22 12:42:35,385 - manager_service - INFO - Successfully sent email to manager: Weber, Deryk J
+2025-05-22 12:42:35,386 - manager_service - INFO - Processing manager email for: Sciarra, Anthony
+2025-05-22 12:42:35,655 - manager_service - INFO - Successfully sent email to manager: Sciarra, Anthony
+2025-05-22 13:00:04,276 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-05-22 13:00:04,509 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-05-22 13:00:04,509 - manager_service - INFO - Processing manager email for: Seymour, Kristine
+2025-05-22 13:00:04,834 - manager_service - INFO - Successfully sent email to manager: Seymour, Kristine
+2025-05-22 13:00:04,835 - manager_service - INFO - Processing manager email for: Pinon-Grillo, Ghislaine F
+2025-05-22 13:00:05,059 - manager_service - INFO - Successfully sent email to manager: Pinon-Grillo, Ghislaine F
+2025-05-22 13:00:05,061 - manager_service - INFO - Processing manager email for: Keeter, Matthew
+2025-05-22 13:00:05,235 - manager_service - INFO - Successfully sent email to manager: Keeter, Matthew
+2025-05-22 13:00:05,235 - manager_service - INFO - Processing manager email for: Mcneil, Helen
+2025-05-22 13:00:05,434 - manager_service - INFO - Successfully sent email to manager: Mcneil, Helen
+2025-05-22 13:00:05,435 - manager_service - INFO - Processing manager email for: Blunt, Laurel
+2025-05-22 13:00:05,615 - manager_service - INFO - Successfully sent email to manager: Blunt, Laurel
+2025-05-22 13:00:05,616 - manager_service - INFO - Processing manager email for: Fosheim, Todd R
+2025-05-22 13:00:05,941 - manager_service - INFO - Successfully sent email to manager: Fosheim, Todd R
+2025-05-22 13:00:05,942 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-05-22 13:00:06,155 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-05-22 13:00:06,157 - manager_service - INFO - Processing manager email for: Boone, Michael Robert
+2025-05-22 13:00:06,355 - manager_service - INFO - Successfully sent email to manager: Boone, Michael Robert
+2025-05-22 13:00:06,356 - manager_service - INFO - Processing manager email for: Allen, Marley B
+2025-05-22 13:00:06,543 - manager_service - INFO - Successfully sent email to manager: Allen, Marley B
+2025-05-22 13:00:06,544 - manager_service - INFO - Processing manager email for: Vicha, Nicole B
+2025-05-22 13:00:06,912 - manager_service - INFO - Successfully sent email to manager: Vicha, Nicole B
+2025-05-22 13:00:06,913 - manager_service - INFO - Processing manager email for: Senuta, Colin
+2025-05-22 13:00:07,086 - manager_service - INFO - Successfully sent email to manager: Senuta, Colin
+2025-05-22 13:00:07,087 - manager_service - INFO - Processing manager email for: Paianini, Craig
+2025-05-22 13:00:07,276 - manager_service - INFO - Successfully sent email to manager: Paianini, Craig
+2025-05-22 13:00:07,277 - manager_service - INFO - Processing manager email for: Faris, Ross
+2025-05-22 13:00:07,462 - manager_service - INFO - Successfully sent email to manager: Faris, Ross
+2025-05-22 13:00:07,463 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-05-22 13:00:07,654 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-05-22 13:00:07,655 - manager_service - INFO - Processing manager email for: Pleva, Joseph C
+2025-05-22 13:00:07,988 - manager_service - INFO - Successfully sent email to manager: Pleva, Joseph C
+2025-05-22 13:00:07,989 - manager_service - INFO - Processing manager email for: Stone, Tom
+2025-05-22 13:00:08,174 - manager_service - INFO - Successfully sent email to manager: Stone, Tom
+2025-05-22 13:00:08,175 - manager_service - INFO - Processing manager email for: Benedict, William Robert
+2025-05-22 13:00:08,381 - manager_service - INFO - Successfully sent email to manager: Benedict, William Robert
+2025-05-22 13:00:08,381 - manager_service - INFO - Processing manager email for: Tighe, Donald K
+2025-05-22 13:00:08,583 - manager_service - INFO - Successfully sent email to manager: Tighe, Donald K
+2025-05-22 13:00:08,583 - manager_service - INFO - Processing manager email for: Kromer, Lauren
+2025-05-22 13:00:08,924 - manager_service - INFO - Successfully sent email to manager: Kromer, Lauren
+2025-05-22 13:00:08,925 - manager_service - INFO - Processing manager email for: Reisinger, Jeremy
+2025-05-22 13:00:09,109 - manager_service - INFO - Successfully sent email to manager: Reisinger, Jeremy
+2025-05-22 13:00:09,110 - manager_service - INFO - Processing manager email for: Waclawek, Anna
+2025-05-22 13:00:09,304 - manager_service - INFO - Successfully sent email to manager: Waclawek, Anna
+2025-05-22 13:00:09,305 - manager_service - INFO - Processing manager email for: Dunton, Stanley Charles
+2025-05-22 13:00:09,494 - manager_service - INFO - Successfully sent email to manager: Dunton, Stanley Charles
+2025-05-22 13:00:09,495 - manager_service - INFO - Processing manager email for: Hutson, Anthony
+2025-05-22 13:00:09,810 - manager_service - INFO - Successfully sent email to manager: Hutson, Anthony
+2025-05-22 13:00:09,811 - manager_service - INFO - Processing manager email for: Gardner, Stephon
+2025-05-22 13:00:10,001 - manager_service - INFO - Successfully sent email to manager: Gardner, Stephon
+2025-05-22 13:00:10,001 - manager_service - INFO - Processing manager email for: Burkhead, Matthew
+2025-05-22 13:00:10,199 - manager_service - INFO - Successfully sent email to manager: Burkhead, Matthew
+2025-05-22 13:00:10,199 - manager_service - INFO - Processing manager email for: Rogers, Robert
+2025-05-22 13:00:10,374 - manager_service - INFO - Successfully sent email to manager: Rogers, Robert
+2025-05-22 13:00:10,375 - manager_service - INFO - Processing manager email for: Spencer, Robert B
+2025-05-22 13:00:10,580 - manager_service - INFO - Successfully sent email to manager: Spencer, Robert B
+2025-05-22 13:00:10,581 - manager_service - INFO - Processing manager email for: Napolitano, Nicholas
+2025-05-22 13:00:10,941 - manager_service - INFO - Successfully sent email to manager: Napolitano, Nicholas
+2025-05-22 13:00:10,941 - manager_service - INFO - Processing manager email for: Peters, Mike
+2025-05-22 13:00:11,151 - manager_service - INFO - Successfully sent email to manager: Peters, Mike
+2025-05-22 13:00:11,152 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-05-22 13:00:11,323 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-05-22 13:00:11,324 - manager_service - INFO - Processing manager email for: Renfro, Trevor
+2025-05-22 13:00:11,505 - manager_service - INFO - Successfully sent email to manager: Renfro, Trevor
+2025-05-22 13:00:11,505 - manager_service - INFO - Processing manager email for: Karhoff, Jeff
+2025-05-22 13:00:11,807 - manager_service - INFO - Successfully sent email to manager: Karhoff, Jeff
+2025-05-22 13:00:11,808 - manager_service - INFO - Processing manager email for: Mengeu, Sean C
+2025-05-22 13:00:11,988 - manager_service - INFO - Successfully sent email to manager: Mengeu, Sean C
+2025-05-22 13:00:11,989 - manager_service - INFO - Processing manager email for: Hutchison, Daniel
+2025-05-22 13:00:12,196 - manager_service - INFO - Successfully sent email to manager: Hutchison, Daniel
+2025-05-22 13:00:12,196 - manager_service - INFO - Processing manager email for: Harris Jr., Marvin
+2025-05-22 13:00:12,397 - manager_service - INFO - Successfully sent email to manager: Harris Jr., Marvin
+2025-05-22 13:00:12,398 - manager_service - INFO - Processing manager email for: Leudesdorff, Joanne
+2025-05-22 13:00:12,595 - manager_service - INFO - Successfully sent email to manager: Leudesdorff, Joanne
+2025-05-22 13:00:12,596 - manager_service - INFO - Processing manager email for: Robben, Anita
+2025-05-22 13:00:12,917 - manager_service - INFO - Successfully sent email to manager: Robben, Anita
+2025-05-22 13:00:12,918 - manager_service - INFO - Processing manager email for: Gergen, Maria
+2025-05-22 13:00:13,102 - manager_service - INFO - Successfully sent email to manager: Gergen, Maria
+2025-05-22 13:00:13,103 - manager_service - INFO - Processing manager email for: Thongsinthusak, Kevin
+2025-05-22 13:00:13,298 - manager_service - INFO - Successfully sent email to manager: Thongsinthusak, Kevin
+2025-05-22 13:00:13,299 - manager_service - INFO - Processing manager email for: Buckley, Wesley
+2025-05-22 13:00:13,492 - manager_service - INFO - Successfully sent email to manager: Buckley, Wesley
+2025-05-22 13:00:13,494 - manager_service - INFO - Processing manager email for: Chow, Vanny
+2025-05-22 13:00:13,827 - manager_service - INFO - Successfully sent email to manager: Chow, Vanny
+2025-05-22 13:00:13,828 - manager_service - INFO - Processing manager email for: Robb, Jeremy
+2025-05-22 13:00:14,005 - manager_service - INFO - Successfully sent email to manager: Robb, Jeremy
+2025-05-22 13:00:14,006 - manager_service - INFO - Processing manager email for: Jaramillo, Charles
+2025-05-22 13:00:14,187 - manager_service - INFO - Successfully sent email to manager: Jaramillo, Charles
+2025-05-22 13:00:14,187 - manager_service - INFO - Processing manager email for: Fromm, David
+2025-05-22 13:00:14,371 - manager_service - INFO - Successfully sent email to manager: Fromm, David
+2025-05-22 13:00:14,372 - manager_service - INFO - Processing manager email for: Todd, Mathew
+2025-05-22 13:00:14,553 - manager_service - INFO - Successfully sent email to manager: Todd, Mathew
+2025-05-22 13:00:14,554 - manager_service - INFO - Processing manager email for: Miller, Sonja
+2025-05-22 13:00:14,857 - manager_service - INFO - Successfully sent email to manager: Miller, Sonja
+2025-05-22 13:00:14,857 - manager_service - INFO - Processing manager email for: Hausman, Aaron
+2025-05-22 13:00:15,049 - manager_service - INFO - Successfully sent email to manager: Hausman, Aaron
+2025-05-22 13:00:15,050 - manager_service - INFO - Processing manager email for: Breon, Benjamin
+2025-05-22 13:00:15,198 - manager_service - INFO - Successfully sent email to manager: Breon, Benjamin
+2025-05-22 13:00:15,199 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-05-22 13:00:15,381 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-05-22 13:00:15,381 - manager_service - INFO - Processing manager email for: Peterson, Eric
+2025-05-22 13:00:15,562 - manager_service - INFO - Successfully sent email to manager: Peterson, Eric
+2025-05-22 13:00:15,563 - manager_service - INFO - Processing manager email for: Fergusson, Keith E
+2025-05-22 13:00:15,894 - manager_service - INFO - Successfully sent email to manager: Fergusson, Keith E
+2025-05-22 13:00:15,894 - manager_service - INFO - Processing manager email for: Mccain, Alan V
+2025-05-22 13:00:16,068 - manager_service - INFO - Successfully sent email to manager: Mccain, Alan V
+2025-05-22 13:00:16,069 - manager_service - INFO - Processing manager email for: Basilii, Mark W
+2025-05-22 13:00:16,269 - manager_service - INFO - Successfully sent email to manager: Basilii, Mark W
+2025-05-22 13:00:16,270 - manager_service - INFO - Processing manager email for: Corff, Daniel
+2025-05-22 13:00:16,474 - manager_service - INFO - Successfully sent email to manager: Corff, Daniel
+2025-05-22 13:00:16,475 - manager_service - INFO - Processing manager email for: Richie-Zehr, Jenna
+2025-05-22 13:00:16,801 - manager_service - INFO - Successfully sent email to manager: Richie-Zehr, Jenna
+2025-05-22 13:00:16,802 - manager_service - INFO - Processing manager email for: Haghighi, Farid
+2025-05-22 13:00:16,983 - manager_service - INFO - Successfully sent email to manager: Haghighi, Farid
+2025-05-22 13:00:16,984 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-05-22 13:00:17,187 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-05-22 13:00:17,188 - manager_service - INFO - Processing manager email for: Turner, Travis B
+2025-05-22 13:00:17,373 - manager_service - INFO - Successfully sent email to manager: Turner, Travis B
+2025-05-22 13:00:17,374 - manager_service - INFO - Processing manager email for: Erramouspe, James A
+2025-05-22 13:00:17,573 - manager_service - INFO - Successfully sent email to manager: Erramouspe, James A
+2025-05-22 13:00:17,574 - manager_service - INFO - Processing manager email for: Sedlacek, Bradley J
+2025-05-22 13:00:17,860 - manager_service - INFO - Successfully sent email to manager: Sedlacek, Bradley J
+2025-05-22 13:00:17,861 - manager_service - INFO - Processing manager email for: Sellers, Aaron
+2025-05-22 13:00:18,033 - manager_service - INFO - Successfully sent email to manager: Sellers, Aaron
+2025-05-22 13:00:18,034 - manager_service - INFO - Processing manager email for: Hespe, Lucas A
+2025-05-22 13:00:18,216 - manager_service - INFO - Successfully sent email to manager: Hespe, Lucas A
+2025-05-22 13:00:18,217 - manager_service - INFO - Processing manager email for: Roehm, Brandon
+2025-05-22 13:00:18,403 - manager_service - INFO - Successfully sent email to manager: Roehm, Brandon
+2025-05-22 13:00:18,403 - manager_service - INFO - Processing manager email for: Chantarapan, Erik
+2025-05-22 13:00:18,591 - manager_service - INFO - Successfully sent email to manager: Chantarapan, Erik
+2025-05-22 13:00:18,593 - manager_service - INFO - Processing manager email for: Johnson Iii, David
+2025-05-22 13:00:18,915 - manager_service - INFO - Successfully sent email to manager: Johnson Iii, David
+2025-05-22 13:00:18,915 - manager_service - INFO - Processing manager email for: Summers, Paul
+2025-05-22 13:00:19,144 - manager_service - INFO - Successfully sent email to manager: Summers, Paul
+2025-05-22 13:00:19,145 - manager_service - INFO - Processing manager email for: Johannsen, Travis
+2025-05-22 13:00:19,321 - manager_service - INFO - Successfully sent email to manager: Johannsen, Travis
+2025-05-22 13:00:19,322 - manager_service - INFO - Processing manager email for: Doane, Dawn D
+2025-05-22 13:00:19,500 - manager_service - INFO - Successfully sent email to manager: Doane, Dawn D
+2025-05-22 13:00:19,500 - manager_service - INFO - Processing manager email for: Bennett, Teall
+2025-05-22 13:00:19,783 - manager_service - INFO - Successfully sent email to manager: Bennett, Teall
+2025-05-22 13:00:19,784 - manager_service - INFO - Processing manager email for: Kelly, Veronica
+2025-05-22 13:00:19,965 - manager_service - INFO - Successfully sent email to manager: Kelly, Veronica
+2025-05-22 13:00:19,966 - manager_service - INFO - Processing manager email for: Derner, Jules
+2025-05-22 13:00:20,161 - manager_service - INFO - Successfully sent email to manager: Derner, Jules
+2025-05-22 13:00:20,162 - manager_service - INFO - Processing manager email for: Weber, Deryk J
+2025-05-22 13:00:20,362 - manager_service - INFO - Successfully sent email to manager: Weber, Deryk J
+2025-05-22 13:00:20,363 - manager_service - INFO - Processing manager email for: Sciarra, Anthony
+2025-05-22 13:00:20,556 - manager_service - INFO - Successfully sent email to manager: Sciarra, Anthony
+2025-05-22 13:04:18,873 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-05-22 13:04:19,114 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-05-22 13:04:19,115 - manager_service - INFO - Processing manager email for: Seymour, Kristine
+2025-05-22 13:04:19,297 - manager_service - INFO - Successfully sent email to manager: Seymour, Kristine
+2025-05-22 13:04:19,297 - manager_service - INFO - Processing manager email for: Pinon-Grillo, Ghislaine F
+2025-05-22 13:04:19,495 - manager_service - INFO - Successfully sent email to manager: Pinon-Grillo, Ghislaine F
+2025-05-22 13:04:19,497 - manager_service - INFO - Processing manager email for: Keeter, Matthew
+2025-05-22 13:04:19,825 - manager_service - INFO - Successfully sent email to manager: Keeter, Matthew
+2025-05-22 13:04:19,827 - manager_service - INFO - Processing manager email for: Mcneil, Helen
+2025-05-22 13:04:20,039 - manager_service - INFO - Successfully sent email to manager: Mcneil, Helen
+2025-05-22 13:04:20,040 - manager_service - INFO - Processing manager email for: Blunt, Laurel
+2025-05-22 13:04:20,238 - manager_service - INFO - Successfully sent email to manager: Blunt, Laurel
+2025-05-22 13:04:20,239 - manager_service - INFO - Processing manager email for: Fosheim, Todd R
+2025-05-22 13:04:20,434 - manager_service - INFO - Successfully sent email to manager: Fosheim, Todd R
+2025-05-22 13:04:20,434 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-05-22 13:04:20,759 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-05-22 13:04:20,760 - manager_service - INFO - Processing manager email for: Boone, Michael Robert
+2025-05-22 13:04:20,968 - manager_service - INFO - Successfully sent email to manager: Boone, Michael Robert
+2025-05-22 13:04:20,969 - manager_service - INFO - Processing manager email for: Allen, Marley B
+2025-05-22 13:04:21,181 - manager_service - INFO - Successfully sent email to manager: Allen, Marley B
+2025-05-22 13:04:21,181 - manager_service - INFO - Processing manager email for: Vicha, Nicole B
+2025-05-22 13:04:21,383 - manager_service - INFO - Successfully sent email to manager: Vicha, Nicole B
+2025-05-22 13:04:21,384 - manager_service - INFO - Processing manager email for: Senuta, Colin
+2025-05-22 13:04:21,724 - manager_service - INFO - Successfully sent email to manager: Senuta, Colin
+2025-05-22 13:04:21,724 - manager_service - INFO - Processing manager email for: Paianini, Craig
+2025-05-22 13:04:21,913 - manager_service - INFO - Successfully sent email to manager: Paianini, Craig
+2025-05-22 13:04:21,914 - manager_service - INFO - Processing manager email for: Faris, Ross
+2025-05-22 13:04:22,846 - manager_service - INFO - Successfully sent email to manager: Faris, Ross
+2025-05-22 13:04:22,847 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-05-22 13:04:23,048 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-05-22 13:04:23,049 - manager_service - INFO - Processing manager email for: Pleva, Joseph C
+2025-05-22 13:04:23,252 - manager_service - INFO - Successfully sent email to manager: Pleva, Joseph C
+2025-05-22 13:04:23,253 - manager_service - INFO - Processing manager email for: Stone, Tom
+2025-05-22 13:04:23,451 - manager_service - INFO - Successfully sent email to manager: Stone, Tom
+2025-05-22 13:04:23,451 - manager_service - INFO - Processing manager email for: Benedict, William Robert
+2025-05-22 13:04:23,787 - manager_service - INFO - Successfully sent email to manager: Benedict, William Robert
+2025-05-22 13:04:23,788 - manager_service - INFO - Processing manager email for: Tighe, Donald K
+2025-05-22 13:04:23,983 - manager_service - INFO - Successfully sent email to manager: Tighe, Donald K
+2025-05-22 13:04:23,984 - manager_service - INFO - Processing manager email for: Kromer, Lauren
+2025-05-22 13:04:24,198 - manager_service - INFO - Successfully sent email to manager: Kromer, Lauren
+2025-05-22 13:04:24,199 - manager_service - INFO - Processing manager email for: Reisinger, Jeremy
+2025-05-22 13:04:24,406 - manager_service - INFO - Successfully sent email to manager: Reisinger, Jeremy
+2025-05-22 13:04:24,407 - manager_service - INFO - Processing manager email for: Waclawek, Anna
+2025-05-22 13:04:24,732 - manager_service - INFO - Successfully sent email to manager: Waclawek, Anna
+2025-05-22 13:04:24,732 - manager_service - INFO - Processing manager email for: Dunton, Stanley Charles
+2025-05-22 13:04:24,942 - manager_service - INFO - Successfully sent email to manager: Dunton, Stanley Charles
+2025-05-22 13:04:24,943 - manager_service - INFO - Processing manager email for: Hutson, Anthony
+2025-05-22 13:04:25,140 - manager_service - INFO - Successfully sent email to manager: Hutson, Anthony
+2025-05-22 13:04:25,141 - manager_service - INFO - Processing manager email for: Gardner, Stephon
+2025-05-22 13:04:25,340 - manager_service - INFO - Successfully sent email to manager: Gardner, Stephon
+2025-05-22 13:04:25,340 - manager_service - INFO - Processing manager email for: Burkhead, Matthew
+2025-05-22 13:04:25,538 - manager_service - INFO - Successfully sent email to manager: Burkhead, Matthew
+2025-05-22 13:04:25,539 - manager_service - INFO - Processing manager email for: Rogers, Robert
+2025-05-22 13:04:25,860 - manager_service - INFO - Successfully sent email to manager: Rogers, Robert
+2025-05-22 13:04:25,862 - manager_service - INFO - Processing manager email for: Spencer, Robert B
+2025-05-22 13:04:26,112 - manager_service - INFO - Successfully sent email to manager: Spencer, Robert B
+2025-05-22 13:04:26,113 - manager_service - INFO - Processing manager email for: Napolitano, Nicholas
+2025-05-22 13:04:26,309 - manager_service - INFO - Successfully sent email to manager: Napolitano, Nicholas
+2025-05-22 13:04:26,310 - manager_service - INFO - Processing manager email for: Peters, Mike
+2025-05-22 13:04:26,500 - manager_service - INFO - Successfully sent email to manager: Peters, Mike
+2025-05-22 13:04:26,501 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-05-22 13:04:26,846 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-05-22 13:04:26,848 - manager_service - INFO - Processing manager email for: Renfro, Trevor
+2025-05-22 13:04:27,061 - manager_service - INFO - Successfully sent email to manager: Renfro, Trevor
+2025-05-22 13:04:27,062 - manager_service - INFO - Processing manager email for: Karhoff, Jeff
+2025-05-22 13:04:27,268 - manager_service - INFO - Successfully sent email to manager: Karhoff, Jeff
+2025-05-22 13:04:27,269 - manager_service - INFO - Processing manager email for: Mengeu, Sean C
+2025-05-22 13:04:27,478 - manager_service - INFO - Successfully sent email to manager: Mengeu, Sean C
+2025-05-22 13:04:27,479 - manager_service - INFO - Processing manager email for: Hutchison, Daniel
+2025-05-22 13:04:27,818 - manager_service - INFO - Successfully sent email to manager: Hutchison, Daniel
+2025-05-22 13:04:27,818 - manager_service - INFO - Processing manager email for: Harris Jr., Marvin
+2025-05-22 13:04:28,034 - manager_service - INFO - Successfully sent email to manager: Harris Jr., Marvin
+2025-05-22 13:04:28,035 - manager_service - INFO - Processing manager email for: Leudesdorff, Joanne
+2025-05-22 13:04:28,247 - manager_service - INFO - Successfully sent email to manager: Leudesdorff, Joanne
+2025-05-22 13:04:28,249 - manager_service - INFO - Processing manager email for: Robben, Anita
+2025-05-22 13:04:28,473 - manager_service - INFO - Successfully sent email to manager: Robben, Anita
+2025-05-22 13:04:28,474 - manager_service - INFO - Processing manager email for: Gergen, Maria
+2025-05-22 13:04:28,800 - manager_service - INFO - Successfully sent email to manager: Gergen, Maria
+2025-05-22 13:04:28,801 - manager_service - INFO - Processing manager email for: Thongsinthusak, Kevin
+2025-05-22 13:04:29,005 - manager_service - INFO - Successfully sent email to manager: Thongsinthusak, Kevin
+2025-05-22 13:04:29,006 - manager_service - INFO - Processing manager email for: Buckley, Wesley
+2025-05-22 13:04:29,215 - manager_service - INFO - Successfully sent email to manager: Buckley, Wesley
+2025-05-22 13:04:29,216 - manager_service - INFO - Processing manager email for: Chow, Vanny
+2025-05-22 13:04:29,419 - manager_service - INFO - Successfully sent email to manager: Chow, Vanny
+2025-05-22 13:04:29,419 - manager_service - INFO - Processing manager email for: Robb, Jeremy
+2025-05-22 13:04:29,740 - manager_service - INFO - Successfully sent email to manager: Robb, Jeremy
+2025-05-22 13:04:29,741 - manager_service - INFO - Processing manager email for: Jaramillo, Charles
+2025-05-22 13:04:29,969 - manager_service - INFO - Successfully sent email to manager: Jaramillo, Charles
+2025-05-22 13:04:29,970 - manager_service - INFO - Processing manager email for: Fromm, David
+2025-05-22 13:04:30,176 - manager_service - INFO - Successfully sent email to manager: Fromm, David
+2025-05-22 13:04:30,176 - manager_service - INFO - Processing manager email for: Todd, Mathew
+2025-05-22 13:04:30,396 - manager_service - INFO - Successfully sent email to manager: Todd, Mathew
+2025-05-22 13:04:30,397 - manager_service - INFO - Processing manager email for: Miller, Sonja
+2025-05-22 13:04:30,707 - manager_service - INFO - Successfully sent email to manager: Miller, Sonja
+2025-05-22 13:04:30,708 - manager_service - INFO - Processing manager email for: Hausman, Aaron
+2025-05-22 13:04:30,907 - manager_service - INFO - Successfully sent email to manager: Hausman, Aaron
+2025-05-22 13:04:30,908 - manager_service - INFO - Processing manager email for: Breon, Benjamin
+2025-05-22 13:04:31,116 - manager_service - INFO - Successfully sent email to manager: Breon, Benjamin
+2025-05-22 13:04:31,117 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-05-22 13:04:31,330 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-05-22 13:04:31,330 - manager_service - INFO - Processing manager email for: Peterson, Eric
+2025-05-22 13:04:31,533 - manager_service - INFO - Successfully sent email to manager: Peterson, Eric
+2025-05-22 13:04:31,534 - manager_service - INFO - Processing manager email for: Fergusson, Keith E
+2025-05-22 13:04:31,865 - manager_service - INFO - Successfully sent email to manager: Fergusson, Keith E
+2025-05-22 13:04:31,865 - manager_service - INFO - Processing manager email for: Mccain, Alan V
+2025-05-22 13:04:32,065 - manager_service - INFO - Successfully sent email to manager: Mccain, Alan V
+2025-05-22 13:04:32,066 - manager_service - INFO - Processing manager email for: Basilii, Mark W
+2025-05-22 13:04:32,274 - manager_service - INFO - Successfully sent email to manager: Basilii, Mark W
+2025-05-22 13:04:32,275 - manager_service - INFO - Processing manager email for: Corff, Daniel
+2025-05-22 13:04:32,463 - manager_service - INFO - Successfully sent email to manager: Corff, Daniel
+2025-05-22 13:04:32,464 - manager_service - INFO - Processing manager email for: Richie-Zehr, Jenna
+2025-05-22 13:04:32,757 - manager_service - INFO - Successfully sent email to manager: Richie-Zehr, Jenna
+2025-05-22 13:04:32,758 - manager_service - INFO - Processing manager email for: Haghighi, Farid
+2025-05-22 13:04:32,958 - manager_service - INFO - Successfully sent email to manager: Haghighi, Farid
+2025-05-22 13:04:32,959 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-05-22 13:04:33,147 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-05-22 13:04:33,147 - manager_service - INFO - Processing manager email for: Turner, Travis B
+2025-05-22 13:04:33,392 - manager_service - INFO - Successfully sent email to manager: Turner, Travis B
+2025-05-22 13:04:33,393 - manager_service - INFO - Processing manager email for: Erramouspe, James A
+2025-05-22 13:04:33,717 - manager_service - INFO - Successfully sent email to manager: Erramouspe, James A
+2025-05-22 13:04:33,718 - manager_service - INFO - Processing manager email for: Sedlacek, Bradley J
+2025-05-22 13:04:33,907 - manager_service - INFO - Successfully sent email to manager: Sedlacek, Bradley J
+2025-05-22 13:04:33,908 - manager_service - INFO - Processing manager email for: Sellers, Aaron
+2025-05-22 13:04:34,116 - manager_service - INFO - Successfully sent email to manager: Sellers, Aaron
+2025-05-22 13:04:34,117 - manager_service - INFO - Processing manager email for: Hespe, Lucas A
+2025-05-22 13:04:34,324 - manager_service - INFO - Successfully sent email to manager: Hespe, Lucas A
+2025-05-22 13:04:34,325 - manager_service - INFO - Processing manager email for: Roehm, Brandon
+2025-05-22 13:04:34,514 - manager_service - INFO - Successfully sent email to manager: Roehm, Brandon
+2025-05-22 13:04:34,515 - manager_service - INFO - Processing manager email for: Chantarapan, Erik
+2025-05-22 13:04:34,844 - manager_service - INFO - Successfully sent email to manager: Chantarapan, Erik
+2025-05-22 13:04:34,845 - manager_service - INFO - Processing manager email for: Johnson Iii, David
+2025-05-22 13:04:35,040 - manager_service - INFO - Successfully sent email to manager: Johnson Iii, David
+2025-05-22 13:04:35,041 - manager_service - INFO - Processing manager email for: Summers, Paul
+2025-05-22 13:04:35,247 - manager_service - INFO - Successfully sent email to manager: Summers, Paul
+2025-05-22 13:04:35,247 - manager_service - INFO - Processing manager email for: Johannsen, Travis
+2025-05-22 13:04:35,451 - manager_service - INFO - Successfully sent email to manager: Johannsen, Travis
+2025-05-22 13:04:35,452 - manager_service - INFO - Processing manager email for: Doane, Dawn D
+2025-05-22 13:04:35,804 - manager_service - INFO - Successfully sent email to manager: Doane, Dawn D
+2025-05-22 13:04:35,805 - manager_service - INFO - Processing manager email for: Bennett, Teall
+2025-05-22 13:04:35,996 - manager_service - INFO - Successfully sent email to manager: Bennett, Teall
+2025-05-22 13:04:35,997 - manager_service - INFO - Processing manager email for: Kelly, Veronica
+2025-05-22 13:04:36,212 - manager_service - INFO - Successfully sent email to manager: Kelly, Veronica
+2025-05-22 13:04:36,213 - manager_service - INFO - Processing manager email for: Derner, Jules
+2025-05-22 13:04:36,417 - manager_service - INFO - Successfully sent email to manager: Derner, Jules
+2025-05-22 13:04:36,417 - manager_service - INFO - Processing manager email for: Weber, Deryk J
+2025-05-22 13:04:36,714 - manager_service - INFO - Successfully sent email to manager: Weber, Deryk J
+2025-05-22 13:04:36,715 - manager_service - INFO - Processing manager email for: Sciarra, Anthony
+2025-05-22 13:04:36,911 - manager_service - INFO - Successfully sent email to manager: Sciarra, Anthony
+2025-05-22 13:18:58,165 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-05-22 13:18:58,428 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-05-22 13:18:58,429 - manager_service - INFO - Processing manager email for: Seymour, Kristine
+2025-05-22 13:18:58,771 - manager_service - INFO - Successfully sent email to manager: Seymour, Kristine
+2025-05-22 13:18:58,772 - manager_service - INFO - Processing manager email for: Pinon-Grillo, Ghislaine F
+2025-05-22 13:18:58,985 - manager_service - INFO - Successfully sent email to manager: Pinon-Grillo, Ghislaine F
+2025-05-22 13:18:58,987 - manager_service - INFO - Processing manager email for: Keeter, Matthew
+2025-05-22 13:18:59,201 - manager_service - INFO - Successfully sent email to manager: Keeter, Matthew
+2025-05-22 13:18:59,202 - manager_service - INFO - Processing manager email for: Mcneil, Helen
+2025-05-22 13:18:59,421 - manager_service - INFO - Successfully sent email to manager: Mcneil, Helen
+2025-05-22 13:18:59,422 - manager_service - INFO - Processing manager email for: Blunt, Laurel
+2025-05-22 13:18:59,737 - manager_service - INFO - Successfully sent email to manager: Blunt, Laurel
+2025-05-22 13:18:59,739 - manager_service - INFO - Processing manager email for: Fosheim, Todd R
+2025-05-22 13:18:59,947 - manager_service - INFO - Successfully sent email to manager: Fosheim, Todd R
+2025-05-22 13:18:59,948 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-05-22 13:19:00,177 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-05-22 13:19:00,178 - manager_service - INFO - Processing manager email for: Boone, Michael Robert
+2025-05-22 13:19:00,387 - manager_service - INFO - Successfully sent email to manager: Boone, Michael Robert
+2025-05-22 13:19:00,388 - manager_service - INFO - Processing manager email for: Allen, Marley B
+2025-05-22 13:19:00,725 - manager_service - INFO - Successfully sent email to manager: Allen, Marley B
+2025-05-22 13:19:00,727 - manager_service - INFO - Processing manager email for: Vicha, Nicole B
+2025-05-22 13:19:00,954 - manager_service - INFO - Successfully sent email to manager: Vicha, Nicole B
+2025-05-22 13:19:00,955 - manager_service - INFO - Processing manager email for: Senuta, Colin
+2025-05-22 13:19:01,162 - manager_service - INFO - Successfully sent email to manager: Senuta, Colin
+2025-05-22 13:19:01,162 - manager_service - INFO - Processing manager email for: Paianini, Craig
+2025-05-22 13:19:01,386 - manager_service - INFO - Successfully sent email to manager: Paianini, Craig
+2025-05-22 13:19:01,388 - manager_service - INFO - Processing manager email for: Faris, Ross
+2025-05-22 13:19:01,949 - manager_service - INFO - Successfully sent email to manager: Faris, Ross
+2025-05-22 13:19:01,949 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-05-22 13:19:02,175 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-05-22 13:19:02,176 - manager_service - INFO - Processing manager email for: Pleva, Joseph C
+2025-05-22 13:19:02,370 - manager_service - INFO - Successfully sent email to manager: Pleva, Joseph C
+2025-05-22 13:19:02,371 - manager_service - INFO - Processing manager email for: Stone, Tom
+2025-05-22 13:19:02,725 - manager_service - INFO - Successfully sent email to manager: Stone, Tom
+2025-05-22 13:19:02,726 - manager_service - INFO - Processing manager email for: Benedict, William Robert
+2025-05-22 13:19:02,939 - manager_service - INFO - Successfully sent email to manager: Benedict, William Robert
+2025-05-22 13:19:02,939 - manager_service - INFO - Processing manager email for: Tighe, Donald K
+2025-05-22 13:19:03,169 - manager_service - INFO - Successfully sent email to manager: Tighe, Donald K
+2025-05-22 13:19:03,170 - manager_service - INFO - Processing manager email for: Kromer, Lauren
+2025-05-22 13:19:03,385 - manager_service - INFO - Successfully sent email to manager: Kromer, Lauren
+2025-05-22 13:19:03,387 - manager_service - INFO - Processing manager email for: Reisinger, Jeremy
+2025-05-22 13:19:03,715 - manager_service - INFO - Successfully sent email to manager: Reisinger, Jeremy
+2025-05-22 13:19:03,716 - manager_service - INFO - Processing manager email for: Waclawek, Anna
+2025-05-22 13:19:03,918 - manager_service - INFO - Successfully sent email to manager: Waclawek, Anna
+2025-05-22 13:19:03,919 - manager_service - INFO - Processing manager email for: Dunton, Stanley Charles
+2025-05-22 13:19:04,144 - manager_service - INFO - Successfully sent email to manager: Dunton, Stanley Charles
+2025-05-22 13:19:04,145 - manager_service - INFO - Processing manager email for: Hutson, Anthony
+2025-05-22 13:19:04,346 - manager_service - INFO - Successfully sent email to manager: Hutson, Anthony
+2025-05-22 13:19:04,347 - manager_service - INFO - Processing manager email for: Gardner, Stephon
+2025-05-22 13:19:04,709 - manager_service - INFO - Successfully sent email to manager: Gardner, Stephon
+2025-05-22 13:19:04,711 - manager_service - INFO - Processing manager email for: Burkhead, Matthew
+2025-05-22 13:19:04,920 - manager_service - INFO - Successfully sent email to manager: Burkhead, Matthew
+2025-05-22 13:19:04,921 - manager_service - INFO - Processing manager email for: Rogers, Robert
+2025-05-22 13:19:05,134 - manager_service - INFO - Successfully sent email to manager: Rogers, Robert
+2025-05-22 13:19:05,135 - manager_service - INFO - Processing manager email for: Spencer, Robert B
+2025-05-22 13:19:05,353 - manager_service - INFO - Successfully sent email to manager: Spencer, Robert B
+2025-05-22 13:19:05,354 - manager_service - INFO - Processing manager email for: Napolitano, Nicholas
+2025-05-22 13:19:05,661 - manager_service - INFO - Successfully sent email to manager: Napolitano, Nicholas
+2025-05-22 13:19:05,662 - manager_service - INFO - Processing manager email for: Peters, Mike
+2025-05-22 13:19:05,882 - manager_service - INFO - Successfully sent email to manager: Peters, Mike
+2025-05-22 13:19:05,883 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-05-22 13:19:06,100 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-05-22 13:19:06,100 - manager_service - INFO - Processing manager email for: Renfro, Trevor
+2025-05-22 13:19:06,314 - manager_service - INFO - Successfully sent email to manager: Renfro, Trevor
+2025-05-22 13:19:06,314 - manager_service - INFO - Processing manager email for: Karhoff, Jeff
+2025-05-22 13:19:06,532 - manager_service - INFO - Successfully sent email to manager: Karhoff, Jeff
+2025-05-22 13:19:06,533 - manager_service - INFO - Processing manager email for: Mengeu, Sean C
+2025-05-22 13:19:06,835 - manager_service - INFO - Successfully sent email to manager: Mengeu, Sean C
+2025-05-22 13:19:06,835 - manager_service - INFO - Processing manager email for: Hutchison, Daniel
+2025-05-22 13:19:07,031 - manager_service - INFO - Successfully sent email to manager: Hutchison, Daniel
+2025-05-22 13:19:07,032 - manager_service - INFO - Processing manager email for: Harris Jr., Marvin
+2025-05-22 13:19:07,243 - manager_service - INFO - Successfully sent email to manager: Harris Jr., Marvin
+2025-05-22 13:19:07,244 - manager_service - INFO - Processing manager email for: Leudesdorff, Joanne
+2025-05-22 13:19:07,468 - manager_service - INFO - Successfully sent email to manager: Leudesdorff, Joanne
+2025-05-22 13:19:07,469 - manager_service - INFO - Processing manager email for: Robben, Anita
+2025-05-22 13:19:07,799 - manager_service - INFO - Successfully sent email to manager: Robben, Anita
+2025-05-22 13:19:07,800 - manager_service - INFO - Processing manager email for: Gergen, Maria
+2025-05-22 13:19:08,015 - manager_service - INFO - Successfully sent email to manager: Gergen, Maria
+2025-05-22 13:19:08,016 - manager_service - INFO - Processing manager email for: Thongsinthusak, Kevin
+2025-05-22 13:19:08,231 - manager_service - INFO - Successfully sent email to manager: Thongsinthusak, Kevin
+2025-05-22 13:19:08,232 - manager_service - INFO - Processing manager email for: Buckley, Wesley
+2025-05-22 13:19:08,461 - manager_service - INFO - Successfully sent email to manager: Buckley, Wesley
+2025-05-22 13:19:08,461 - manager_service - INFO - Processing manager email for: Chow, Vanny
+2025-05-22 13:19:08,813 - manager_service - INFO - Successfully sent email to manager: Chow, Vanny
+2025-05-22 13:19:08,814 - manager_service - INFO - Processing manager email for: Robb, Jeremy
+2025-05-22 13:19:09,025 - manager_service - INFO - Successfully sent email to manager: Robb, Jeremy
+2025-05-22 13:19:09,026 - manager_service - INFO - Processing manager email for: Jaramillo, Charles
+2025-05-22 13:19:09,234 - manager_service - INFO - Successfully sent email to manager: Jaramillo, Charles
+2025-05-22 13:19:09,234 - manager_service - INFO - Processing manager email for: Fromm, David
+2025-05-22 13:19:09,440 - manager_service - INFO - Successfully sent email to manager: Fromm, David
+2025-05-22 13:19:09,441 - manager_service - INFO - Processing manager email for: Todd, Mathew
+2025-05-22 13:19:09,774 - manager_service - INFO - Successfully sent email to manager: Todd, Mathew
+2025-05-22 13:19:09,775 - manager_service - INFO - Processing manager email for: Miller, Sonja
+2025-05-22 13:19:10,108 - manager_service - INFO - Successfully sent email to manager: Miller, Sonja
+2025-05-22 13:19:10,108 - manager_service - INFO - Processing manager email for: Hausman, Aaron
+2025-05-22 13:19:10,320 - manager_service - INFO - Successfully sent email to manager: Hausman, Aaron
+2025-05-22 13:19:10,321 - manager_service - INFO - Processing manager email for: Breon, Benjamin
+2025-05-22 13:19:10,522 - manager_service - INFO - Successfully sent email to manager: Breon, Benjamin
+2025-05-22 13:19:10,522 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-05-22 13:19:10,854 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-05-22 13:19:10,855 - manager_service - INFO - Processing manager email for: Peterson, Eric
+2025-05-22 13:19:11,115 - manager_service - INFO - Successfully sent email to manager: Peterson, Eric
+2025-05-22 13:19:11,116 - manager_service - INFO - Processing manager email for: Fergusson, Keith E
+2025-05-22 13:19:11,316 - manager_service - INFO - Successfully sent email to manager: Fergusson, Keith E
+2025-05-22 13:19:11,317 - manager_service - INFO - Processing manager email for: Mccain, Alan V
+2025-05-22 13:19:11,529 - manager_service - INFO - Successfully sent email to manager: Mccain, Alan V
+2025-05-22 13:19:11,530 - manager_service - INFO - Processing manager email for: Basilii, Mark W
+2025-05-22 13:19:12,101 - manager_service - INFO - Successfully sent email to manager: Basilii, Mark W
+2025-05-22 13:19:12,102 - manager_service - INFO - Processing manager email for: Corff, Daniel
+2025-05-22 13:19:12,471 - manager_service - INFO - Successfully sent email to manager: Corff, Daniel
+2025-05-22 13:19:12,472 - manager_service - INFO - Processing manager email for: Richie-Zehr, Jenna
+2025-05-22 13:19:12,934 - manager_service - INFO - Successfully sent email to manager: Richie-Zehr, Jenna
+2025-05-22 13:19:12,935 - manager_service - INFO - Processing manager email for: Haghighi, Farid
+2025-05-22 13:19:13,280 - manager_service - INFO - Successfully sent email to manager: Haghighi, Farid
+2025-05-22 13:19:13,280 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-05-22 13:19:13,723 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-05-22 13:19:13,724 - manager_service - INFO - Processing manager email for: Turner, Travis B
+2025-05-22 13:19:14,017 - manager_service - INFO - Successfully sent email to manager: Turner, Travis B
+2025-05-22 13:19:14,018 - manager_service - INFO - Processing manager email for: Erramouspe, James A
+2025-05-22 13:19:14,350 - manager_service - INFO - Successfully sent email to manager: Erramouspe, James A
+2025-05-22 13:19:14,351 - manager_service - INFO - Processing manager email for: Sedlacek, Bradley J
+2025-05-22 13:19:14,762 - manager_service - INFO - Successfully sent email to manager: Sedlacek, Bradley J
+2025-05-22 13:19:14,762 - manager_service - INFO - Processing manager email for: Sellers, Aaron
+2025-05-22 13:19:14,968 - manager_service - INFO - Successfully sent email to manager: Sellers, Aaron
+2025-05-22 13:19:14,969 - manager_service - INFO - Processing manager email for: Hespe, Lucas A
+2025-05-22 13:19:15,176 - manager_service - INFO - Successfully sent email to manager: Hespe, Lucas A
+2025-05-22 13:19:15,176 - manager_service - INFO - Processing manager email for: Roehm, Brandon
+2025-05-22 13:19:15,404 - manager_service - INFO - Successfully sent email to manager: Roehm, Brandon
+2025-05-22 13:19:15,405 - manager_service - INFO - Processing manager email for: Chantarapan, Erik
+2025-05-22 13:19:15,732 - manager_service - INFO - Successfully sent email to manager: Chantarapan, Erik
+2025-05-22 13:19:15,733 - manager_service - INFO - Processing manager email for: Johnson Iii, David
+2025-05-22 13:19:15,938 - manager_service - INFO - Successfully sent email to manager: Johnson Iii, David
+2025-05-22 13:19:15,939 - manager_service - INFO - Processing manager email for: Summers, Paul
+2025-05-22 13:19:16,147 - manager_service - INFO - Successfully sent email to manager: Summers, Paul
+2025-05-22 13:19:16,148 - manager_service - INFO - Processing manager email for: Johannsen, Travis
+2025-05-22 13:19:16,354 - manager_service - INFO - Successfully sent email to manager: Johannsen, Travis
+2025-05-22 13:19:16,355 - manager_service - INFO - Processing manager email for: Doane, Dawn D
+2025-05-22 13:19:16,742 - manager_service - INFO - Successfully sent email to manager: Doane, Dawn D
+2025-05-22 13:19:16,743 - manager_service - INFO - Processing manager email for: Bennett, Teall
+2025-05-22 13:19:16,953 - manager_service - INFO - Successfully sent email to manager: Bennett, Teall
+2025-05-22 13:19:16,954 - manager_service - INFO - Processing manager email for: Kelly, Veronica
+2025-05-22 13:19:17,163 - manager_service - INFO - Successfully sent email to manager: Kelly, Veronica
+2025-05-22 13:19:17,164 - manager_service - INFO - Processing manager email for: Derner, Jules
+2025-05-22 13:19:17,384 - manager_service - INFO - Successfully sent email to manager: Derner, Jules
+2025-05-22 13:19:17,385 - manager_service - INFO - Processing manager email for: Weber, Deryk J
+2025-05-22 13:19:17,713 - manager_service - INFO - Successfully sent email to manager: Weber, Deryk J
+2025-05-22 13:19:17,714 - manager_service - INFO - Processing manager email for: Sciarra, Anthony
+2025-05-22 13:19:17,919 - manager_service - INFO - Successfully sent email to manager: Sciarra, Anthony
+2025-05-22 13:23:45,523 - manager_service - INFO - Processing manager email for: Tungate, William Baylor
+2025-05-22 13:23:45,890 - manager_service - INFO - Successfully sent email to manager: Tungate, William Baylor
+2025-05-22 13:23:45,891 - manager_service - INFO - Processing manager email for: Seymour, Kristine
+2025-05-22 13:23:46,121 - manager_service - INFO - Successfully sent email to manager: Seymour, Kristine
+2025-05-22 13:23:46,122 - manager_service - INFO - Processing manager email for: Pinon-Grillo, Ghislaine F
+2025-05-22 13:23:46,407 - manager_service - INFO - Successfully sent email to manager: Pinon-Grillo, Ghislaine F
+2025-05-22 13:23:46,408 - manager_service - INFO - Processing manager email for: Keeter, Matthew
+2025-05-22 13:23:46,782 - manager_service - INFO - Successfully sent email to manager: Keeter, Matthew
+2025-05-22 13:23:46,783 - manager_service - INFO - Processing manager email for: Mcneil, Helen
+2025-05-22 13:23:47,068 - manager_service - INFO - Successfully sent email to manager: Mcneil, Helen
+2025-05-22 13:23:47,069 - manager_service - INFO - Processing manager email for: Blunt, Laurel
+2025-05-22 13:23:47,324 - manager_service - INFO - Successfully sent email to manager: Blunt, Laurel
+2025-05-22 13:23:47,326 - manager_service - INFO - Processing manager email for: Fosheim, Todd R
+2025-05-22 13:23:47,720 - manager_service - INFO - Successfully sent email to manager: Fosheim, Todd R
+2025-05-22 13:23:47,721 - manager_service - INFO - Processing manager email for: Montbriand, Thomas
+2025-05-22 13:23:47,972 - manager_service - INFO - Successfully sent email to manager: Montbriand, Thomas
+2025-05-22 13:23:47,974 - manager_service - INFO - Processing manager email for: Boone, Michael Robert
+2025-05-22 13:23:48,266 - manager_service - INFO - Successfully sent email to manager: Boone, Michael Robert
+2025-05-22 13:23:48,267 - manager_service - INFO - Processing manager email for: Allen, Marley B
+2025-05-22 13:23:48,506 - manager_service - INFO - Successfully sent email to manager: Allen, Marley B
+2025-05-22 13:23:48,507 - manager_service - INFO - Processing manager email for: Vicha, Nicole B
+2025-05-22 13:23:48,838 - manager_service - INFO - Successfully sent email to manager: Vicha, Nicole B
+2025-05-22 13:23:48,840 - manager_service - INFO - Processing manager email for: Senuta, Colin
+2025-05-22 13:23:49,099 - manager_service - INFO - Successfully sent email to manager: Senuta, Colin
+2025-05-22 13:23:49,100 - manager_service - INFO - Processing manager email for: Paianini, Craig
+2025-05-22 13:23:49,397 - manager_service - INFO - Successfully sent email to manager: Paianini, Craig
+2025-05-22 13:23:49,398 - manager_service - INFO - Processing manager email for: Faris, Ross
+2025-05-22 13:23:50,405 - manager_service - INFO - Successfully sent email to manager: Faris, Ross
+2025-05-22 13:23:50,407 - manager_service - INFO - Processing manager email for: Quinlan, Martin
+2025-05-22 13:23:50,761 - manager_service - INFO - Successfully sent email to manager: Quinlan, Martin
+2025-05-22 13:23:50,761 - manager_service - INFO - Processing manager email for: Pleva, Joseph C
+2025-05-22 13:23:51,018 - manager_service - INFO - Successfully sent email to manager: Pleva, Joseph C
+2025-05-22 13:23:51,020 - manager_service - INFO - Processing manager email for: Stone, Tom
+2025-05-22 13:23:51,289 - manager_service - INFO - Successfully sent email to manager: Stone, Tom
+2025-05-22 13:23:51,290 - manager_service - INFO - Processing manager email for: Benedict, William Robert
+2025-05-22 13:23:51,551 - manager_service - INFO - Successfully sent email to manager: Benedict, William Robert
+2025-05-22 13:23:51,551 - manager_service - INFO - Processing manager email for: Tighe, Donald K
+2025-05-22 13:23:51,836 - manager_service - INFO - Successfully sent email to manager: Tighe, Donald K
+2025-05-22 13:23:51,837 - manager_service - INFO - Processing manager email for: Kromer, Lauren
+2025-05-22 13:23:52,105 - manager_service - INFO - Successfully sent email to manager: Kromer, Lauren
+2025-05-22 13:23:52,106 - manager_service - INFO - Processing manager email for: Reisinger, Jeremy
+2025-05-22 13:23:52,381 - manager_service - INFO - Successfully sent email to manager: Reisinger, Jeremy
+2025-05-22 13:23:52,383 - manager_service - INFO - Processing manager email for: Waclawek, Anna
+2025-05-22 13:23:52,788 - manager_service - INFO - Successfully sent email to manager: Waclawek, Anna
+2025-05-22 13:23:52,788 - manager_service - INFO - Processing manager email for: Dunton, Stanley Charles
+2025-05-22 13:23:53,021 - manager_service - INFO - Successfully sent email to manager: Dunton, Stanley Charles
+2025-05-22 13:23:53,022 - manager_service - INFO - Processing manager email for: Hutson, Anthony
+2025-05-22 13:23:53,254 - manager_service - INFO - Successfully sent email to manager: Hutson, Anthony
+2025-05-22 13:23:53,255 - manager_service - INFO - Processing manager email for: Gardner, Stephon
+2025-05-22 13:23:53,513 - manager_service - INFO - Successfully sent email to manager: Gardner, Stephon
+2025-05-22 13:23:53,514 - manager_service - INFO - Processing manager email for: Burkhead, Matthew
+2025-05-22 13:23:53,870 - manager_service - INFO - Successfully sent email to manager: Burkhead, Matthew
+2025-05-22 13:23:53,871 - manager_service - INFO - Processing manager email for: Rogers, Robert
+2025-05-22 13:23:54,176 - manager_service - INFO - Successfully sent email to manager: Rogers, Robert
+2025-05-22 13:23:54,177 - manager_service - INFO - Processing manager email for: Spencer, Robert B
+2025-05-22 13:23:54,498 - manager_service - INFO - Successfully sent email to manager: Spencer, Robert B
+2025-05-22 13:23:54,498 - manager_service - INFO - Processing manager email for: Napolitano, Nicholas
+2025-05-22 13:23:54,831 - manager_service - INFO - Successfully sent email to manager: Napolitano, Nicholas
+2025-05-22 13:23:54,833 - manager_service - INFO - Processing manager email for: Peters, Mike
+2025-05-22 13:23:55,096 - manager_service - INFO - Successfully sent email to manager: Peters, Mike
+2025-05-22 13:23:55,097 - manager_service - INFO - Processing manager email for: Guenette, Thomas
+2025-05-22 13:23:55,345 - manager_service - INFO - Successfully sent email to manager: Guenette, Thomas
+2025-05-22 13:23:55,346 - manager_service - INFO - Processing manager email for: Renfro, Trevor
+2025-05-22 13:23:55,738 - manager_service - INFO - Successfully sent email to manager: Renfro, Trevor
+2025-05-22 13:23:55,739 - manager_service - INFO - Processing manager email for: Karhoff, Jeff
+2025-05-22 13:23:55,997 - manager_service - INFO - Successfully sent email to manager: Karhoff, Jeff
+2025-05-22 13:23:55,999 - manager_service - INFO - Processing manager email for: Mengeu, Sean C
+2025-05-22 13:23:56,270 - manager_service - INFO - Successfully sent email to manager: Mengeu, Sean C
+2025-05-22 13:23:56,271 - manager_service - INFO - Processing manager email for: Hutchison, Daniel
+2025-05-22 13:23:56,538 - manager_service - INFO - Successfully sent email to manager: Hutchison, Daniel
+2025-05-22 13:23:56,539 - manager_service - INFO - Processing manager email for: Harris Jr., Marvin
+2025-05-22 13:23:56,870 - manager_service - INFO - Successfully sent email to manager: Harris Jr., Marvin
+2025-05-22 13:23:56,871 - manager_service - INFO - Processing manager email for: Leudesdorff, Joanne
+2025-05-22 13:23:57,141 - manager_service - INFO - Successfully sent email to manager: Leudesdorff, Joanne
+2025-05-22 13:23:57,142 - manager_service - INFO - Processing manager email for: Robben, Anita
+2025-05-22 13:23:57,404 - manager_service - INFO - Successfully sent email to manager: Robben, Anita
+2025-05-22 13:23:57,404 - manager_service - INFO - Processing manager email for: Gergen, Maria
+2025-05-22 13:23:57,847 - manager_service - INFO - Successfully sent email to manager: Gergen, Maria
+2025-05-22 13:23:57,848 - manager_service - INFO - Processing manager email for: Thongsinthusak, Kevin
+2025-05-22 13:23:58,106 - manager_service - INFO - Successfully sent email to manager: Thongsinthusak, Kevin
+2025-05-22 13:23:58,107 - manager_service - INFO - Processing manager email for: Buckley, Wesley
+2025-05-22 13:23:58,478 - manager_service - INFO - Successfully sent email to manager: Buckley, Wesley
+2025-05-22 13:23:58,479 - manager_service - INFO - Processing manager email for: Chow, Vanny
+2025-05-22 13:23:58,870 - manager_service - INFO - Successfully sent email to manager: Chow, Vanny
+2025-05-22 13:23:58,871 - manager_service - INFO - Processing manager email for: Robb, Jeremy
+2025-05-22 13:23:59,165 - manager_service - INFO - Successfully sent email to manager: Robb, Jeremy
+2025-05-22 13:23:59,166 - manager_service - INFO - Processing manager email for: Jaramillo, Charles
+2025-05-22 13:23:59,444 - manager_service - INFO - Successfully sent email to manager: Jaramillo, Charles
+2025-05-22 13:23:59,445 - manager_service - INFO - Processing manager email for: Fromm, David
+2025-05-22 13:23:59,832 - manager_service - INFO - Successfully sent email to manager: Fromm, David
+2025-05-22 13:23:59,833 - manager_service - INFO - Processing manager email for: Todd, Mathew
+2025-05-22 13:24:00,142 - manager_service - INFO - Successfully sent email to manager: Todd, Mathew
+2025-05-22 13:24:00,143 - manager_service - INFO - Processing manager email for: Miller, Sonja
+2025-05-22 13:24:00,396 - manager_service - INFO - Successfully sent email to manager: Miller, Sonja
+2025-05-22 13:24:00,397 - manager_service - INFO - Processing manager email for: Hausman, Aaron
+2025-05-22 13:24:00,835 - manager_service - INFO - Successfully sent email to manager: Hausman, Aaron
+2025-05-22 13:24:00,836 - manager_service - INFO - Processing manager email for: Breon, Benjamin
+2025-05-22 13:24:01,146 - manager_service - INFO - Successfully sent email to manager: Breon, Benjamin
+2025-05-22 13:24:01,147 - manager_service - INFO - Processing manager email for: Shields, Arthur
+2025-05-22 13:24:01,419 - manager_service - INFO - Successfully sent email to manager: Shields, Arthur
+2025-05-22 13:24:01,420 - manager_service - INFO - Processing manager email for: Peterson, Eric
+2025-05-22 13:24:01,811 - manager_service - INFO - Successfully sent email to manager: Peterson, Eric
+2025-05-22 13:24:01,812 - manager_service - INFO - Processing manager email for: Fergusson, Keith E
+2025-05-22 13:24:02,106 - manager_service - INFO - Successfully sent email to manager: Fergusson, Keith E
+2025-05-22 13:24:02,107 - manager_service - INFO - Processing manager email for: Mccain, Alan V
+2025-05-22 13:24:02,390 - manager_service - INFO - Successfully sent email to manager: Mccain, Alan V
+2025-05-22 13:24:02,391 - manager_service - INFO - Processing manager email for: Basilii, Mark W
+2025-05-22 13:24:02,770 - manager_service - INFO - Successfully sent email to manager: Basilii, Mark W
+2025-05-22 13:24:02,771 - manager_service - INFO - Processing manager email for: Corff, Daniel
+2025-05-22 13:24:03,049 - manager_service - INFO - Successfully sent email to manager: Corff, Daniel
+2025-05-22 13:24:03,050 - manager_service - INFO - Processing manager email for: Richie-Zehr, Jenna
+2025-05-22 13:24:03,322 - manager_service - INFO - Successfully sent email to manager: Richie-Zehr, Jenna
+2025-05-22 13:24:03,323 - manager_service - INFO - Processing manager email for: Haghighi, Farid
+2025-05-22 13:24:03,752 - manager_service - INFO - Successfully sent email to manager: Haghighi, Farid
+2025-05-22 13:24:03,753 - manager_service - INFO - Processing manager email for: Owens, Brian R
+2025-05-22 13:24:04,037 - manager_service - INFO - Successfully sent email to manager: Owens, Brian R
+2025-05-22 13:24:04,038 - manager_service - INFO - Processing manager email for: Turner, Travis B
+2025-05-22 13:24:04,330 - manager_service - INFO - Successfully sent email to manager: Turner, Travis B
+2025-05-22 13:24:04,331 - manager_service - INFO - Processing manager email for: Erramouspe, James A
+2025-05-22 13:24:04,769 - manager_service - INFO - Successfully sent email to manager: Erramouspe, James A
+2025-05-22 13:24:04,770 - manager_service - INFO - Processing manager email for: Sedlacek, Bradley J
+2025-05-22 13:24:05,040 - manager_service - INFO - Successfully sent email to manager: Sedlacek, Bradley J
+2025-05-22 13:24:05,041 - manager_service - INFO - Processing manager email for: Sellers, Aaron
+2025-05-22 13:24:05,288 - manager_service - INFO - Successfully sent email to manager: Sellers, Aaron
+2025-05-22 13:24:05,289 - manager_service - INFO - Processing manager email for: Hespe, Lucas A
+2025-05-22 13:24:05,663 - manager_service - INFO - Successfully sent email to manager: Hespe, Lucas A
+2025-05-22 13:24:05,664 - manager_service - INFO - Processing manager email for: Roehm, Brandon
+2025-05-22 13:24:05,910 - manager_service - INFO - Successfully sent email to manager: Roehm, Brandon
+2025-05-22 13:24:05,911 - manager_service - INFO - Processing manager email for: Chantarapan, Erik
+2025-05-22 13:24:06,211 - manager_service - INFO - Successfully sent email to manager: Chantarapan, Erik
+2025-05-22 13:24:06,212 - manager_service - INFO - Processing manager email for: Johnson Iii, David
+2025-05-22 13:24:06,497 - manager_service - INFO - Successfully sent email to manager: Johnson Iii, David
+2025-05-22 13:24:06,498 - manager_service - INFO - Processing manager email for: Summers, Paul
+2025-05-22 13:24:06,874 - manager_service - INFO - Successfully sent email to manager: Summers, Paul
+2025-05-22 13:24:06,875 - manager_service - INFO - Processing manager email for: Johannsen, Travis
+2025-05-22 13:24:07,199 - manager_service - INFO - Successfully sent email to manager: Johannsen, Travis
+2025-05-22 13:24:07,200 - manager_service - INFO - Processing manager email for: Doane, Dawn D
+2025-05-22 13:24:07,462 - manager_service - INFO - Successfully sent email to manager: Doane, Dawn D
+2025-05-22 13:24:07,463 - manager_service - INFO - Processing manager email for: Bennett, Teall
+2025-05-22 13:24:07,900 - manager_service - INFO - Successfully sent email to manager: Bennett, Teall
+2025-05-22 13:24:07,901 - manager_service - INFO - Processing manager email for: Kelly, Veronica
+2025-05-22 13:24:08,171 - manager_service - INFO - Successfully sent email to manager: Kelly, Veronica
+2025-05-22 13:24:08,171 - manager_service - INFO - Processing manager email for: Derner, Jules
+2025-05-22 13:24:08,483 - manager_service - INFO - Successfully sent email to manager: Derner, Jules
+2025-05-22 13:24:08,484 - manager_service - INFO - Processing manager email for: Weber, Deryk J
+2025-05-22 13:24:08,881 - manager_service - INFO - Successfully sent email to manager: Weber, Deryk J
+2025-05-22 13:24:08,882 - manager_service - INFO - Processing manager email for: Sciarra, Anthony
+2025-05-22 13:24:09,158 - manager_service - INFO - Successfully sent email to manager: Sciarra, Anthony
+2025-05-22 13:34:09,448 - manager_service - INFO - Processing manager email for: Faris, Ross
+2025-05-22 13:34:10,052 - manager_service - INFO - Successfully sent email to manager: Faris, Ross
+2025-05-22 13:35:31,844 - manager_service - INFO - Processing manager email for: Summers, Paul
+2025-05-22 13:35:32,496 - manager_service - INFO - Successfully sent email to manager: Summers, Paul

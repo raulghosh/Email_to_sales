@@ -43,9 +43,10 @@ def clean_data(data: pd.DataFrame) -> pd.DataFrame:
     if data.empty:
         logger.warning("Empty DataFrame received for cleaning")
         return data
+    logger.info("Cleaning data")
         
     initial_rows = len(data)
-    cleaned_data = data.dropna(subset=["Sales Rep Email", "Manager Email"])
+    cleaned_data = data.dropna(subset=["Manager Email"])
     dropped_rows = initial_rows - len(cleaned_data)
     
     if dropped_rows > 0:
@@ -53,14 +54,12 @@ def clean_data(data: pd.DataFrame) -> pd.DataFrame:
     
     cleaned_data=cleaned_data[cleaned_data["Category"]!='Others']
     
-    dropped_rows = initial_rows - len(cleaned_data)
+    dropped_rows = dropped_rows - len(cleaned_data)
     
     if dropped_rows > 0:
-        logger.warning(f"Dropped {dropped_rows} rows with missing emails")
+        logger.warning(f"Dropped {dropped_rows} rows with others category")
         
     logger.debug(f"Data after cleaning:\n{cleaned_data.head()}")
-    
-    
     
     return cleaned_data
 
@@ -79,8 +78,8 @@ def format_columns(data: pd.DataFrame) -> pd.DataFrame:
     """
     try:
         data = data.copy()
-        # columns = Category | Customer Name | Bill_to # | Legacy Item # | Item Desc | Channel | $ Gross Sales (TTM) | Comm. Margin (TTM) | Last Comm. Margin |\
-        # Last Trans. Date | Floor Margin | Target Margin | Start Margin | Opp to Floor | Opp to Target | Item Visibility |Vendor Name | Cat1 |\
+        # columns = Category | Customer Name | Bill_to # | Item # | Item Desc | Channel | $ Gross Sales (TTM) | Comm. Margin (TTM) | Last Comm. Margin |\
+        # Last Trans. Date | Floor Margin | Target Margin | Start Margin | Opp to Floor | Opp to Target | Item Visibility |Vendor Name | Cat1 | Customer Margin |\
         # Sales Rep Name | Sales Rep Email | Manager Name | Manager Email | RVP Name | RVP Email | VP Name | VP Email
 
         sales_columns = [col for col in data.columns if 'sales' in col.lower() and 'rep' not in col.lower() and 'margin' not in col.lower()]
@@ -94,15 +93,15 @@ def format_columns(data: pd.DataFrame) -> pd.DataFrame:
         if 'Gross Sales (TTM)' in data.columns:
             data.rename(columns={'Gross Sales (TTM)': '$ Gross Sales (TTM)'}, inplace=True)
             sales_columns = [col.replace('Gross Sales (TTM)', '$ Gross Sales (TTM)') if col == 'Gross Sales (TTM)' else col for col in sales_columns]
-        
+            
         logger.debug(f"Sales columns: {sales_columns}")
         logger.debug(f"Opp columns: {opp_columns}")
         logger.debug(f"Margin columns: {margin_columns}")
         
-        # Force Legacy Item # to string
-        if "Legacy Item #" in data.columns:
-            data["Legacy Item #"] = data["Legacy Item #"].astype(str)
-            logger.debug("Converted 'Legacy Item #' to string")
+        # Force Item # to string
+        if "Item #" in data.columns:
+            data["Item #"] = data["Item #"].astype(str)
+            logger.debug("Converted 'Item #' to string")
         
         # Format sales and opp columns
         for col in sales_columns + opp_columns:
@@ -116,11 +115,11 @@ def format_columns(data: pd.DataFrame) -> pd.DataFrame:
             logger.debug(f"Formatted column: {col}")
             logger.debug(f"Data after formatting {col}:\n{data[[col]].head()}")
         
-        for col in opp_columns:
-            data.rename(columns={col: col.replace("Opp", "$ Opp")}, inplace=True)
+        # for col in opp_columns:
+        #     data.rename(columns={col: col.replace("Opp", "$ Opp")}, inplace=True)
         
-        logger.debug(f"Data after formatting all columns:\n{data.head()}")        
-        return data[data['Manager Email']=='rfaris@veritivcorp.com'] # Filter to only include rows with the specified manager email for testing purposes
+        logger.debug(f"Data after formatting all columns:\n{data.head()}")       
+        return data[data['Manager Email']=='psummer@veritivcorp.com'] # Filter to only include rows with the specified manager email for testing purposes
         
     except Exception as e:
         logger.error(f"Error formatting columns: {str(e)}")

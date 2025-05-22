@@ -589,3 +589,10 @@
 2025-04-28 10:43:22,857 - sales_rep_service - INFO - Successfully sent email to Shaw, Dean W
 2025-04-28 10:43:22,864 - sales_rep_service - INFO - Generating sales rep report: C:\Users\rghosh\OneDrive - Veritiv Corp\AI Lab\Attic and Basement\Email_to_sales\Temp_Files\Filtered_Reports\Gebhart, Michael_Report.xlsx
 2025-04-28 10:43:23,103 - sales_rep_service - INFO - Successfully sent email to Gebhart, Michael
+2025-05-22 12:48:51,606 - sales_rep_service - ERROR - Failed to process sales rep Green, Sheri: No data found for sales rep: Green, Sheri
+2025-05-22 13:00:04,261 - sales_rep_service - ERROR - Failed to process sales rep Green, Sheri: No data found for sales rep: Green, Sheri
+2025-05-22 13:00:04,275 - sales_rep_service - ERROR - Failed to process sales rep Tungate, William Baylor: No data found for sales rep: Tungate, William Baylor
+2025-05-22 13:04:18,861 - sales_rep_service - ERROR - Failed to process sales rep Green, Sheri: No data found for sales rep: Green, Sheri
+2025-05-22 13:04:18,872 - sales_rep_service - ERROR - Failed to process sales rep Tungate, William Baylor: No data found for sales rep: Tungate, William Baylor
+2025-05-22 13:18:58,153 - sales_rep_service - ERROR - Failed to process sales rep Green, Sheri: No data found for sales rep: Green, Sheri
+2025-05-22 13:18:58,164 - sales_rep_service - ERROR - Failed to process sales rep Tungate, William Baylor: No data found for sales rep: Tungate, William Baylor

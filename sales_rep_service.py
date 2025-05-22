@@ -94,7 +94,7 @@ def _prepare_report_data(data: pd.DataFrame, category: str, include_sales_rep_na
     if not include_sales_rep_name:
         columns_to_drop.append("Sales Rep Name")
     
-    formatted = data.drop(columns=columns_to_drop)
+    formatted = data.drop(columns=columns_to_drop, errors='ignore')
     
     formatted["$ Gross Sales (TTM)1"] = formatted["$ Gross Sales (TTM)"]
     formatted["$ Opp to Floor1"] = formatted["$ Opp to Floor"]
@@ -119,7 +119,7 @@ def _prepare_report_data(data: pd.DataFrame, category: str, include_sales_rep_na
     formatted = formatted.drop(columns=["$ Gross Sales (TTM)1", "$ Opp to Floor1"])
     
     # Convert $ Gross Sales (TTM) and $ Opp to Floor to strings, right-aligned without decimals
-    formatted["Legacy Item #"] = formatted["Legacy Item #"].astype(float).astype(int).astype(str)
+    formatted["Item #"] = formatted["Item #"].astype(float).astype(int).astype(str)
     formatted["$ Gross Sales (TTM)"] = formatted["$ Gross Sales (TTM)"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
     formatted["$ Opp to Floor"] = formatted["$ Opp to Floor"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
     formatted["$ Opp to Target"] = formatted["$ Opp to Target"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "")
